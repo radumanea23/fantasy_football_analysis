@@ -44,15 +44,16 @@ canvas { background: transparent; }
 
 /* Power Rankings cards */
 .rankings { display: grid; grid-template-columns: 1fr; gap: 12px; }
-.rank-card { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); padding: 12px 16px; transition: box-shadow .2s, border-color .2s; cursor: pointer; }
+.rank-card { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); padding: 12px 16px; transition: box-shadow .2s, border-color .2s; cursor: pointer; width: 100%; overflow: hidden; }
 .rank-card:hover { border-color: var(--accent); box-shadow: 0 6px 18px rgba(2,6,23,0.08); }
 .rank-card-header { display: flex; align-items: center; gap: 12px; }
 .rank-num { width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; background: rgba(30,64,175,0.12); color: var(--accent-2); font-weight: 700; }
 .rank-avatar { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); object-fit: cover; background: #e2e8f0; }
 .rank-team { font-weight: 600; }
 .rank-expand { color: var(--muted); font-size: 14px; margin-left: 48px; margin-top: 6px; }
-.rank-details { display: none; margin-left: 48px; color: var(--muted); padding-top: 8px; }
-.rank-card.expanded .rank-details { display: block; }
+.rank-details { margin-left: 48px; color: var(--muted); padding-top: 8px; max-height: 0; opacity: 0; overflow: hidden; transition: max-height .28s ease, opacity .24s ease; }
+.rank-card.expanded .rank-details { max-height: 600px; opacity: 1; }
+.rank-expand, .rank-details { overflow-wrap: anywhere; word-break: break-word; }
 
 /* Footer */
 .footer { margin-top: 24px; background: var(--surface); border-top: 1px solid var(--border); }
@@ -68,6 +69,8 @@ canvas { background: transparent; }
   .rank-avatar { width: 28px; height: 28px; }
   .rank-num { width: 28px; height: 28px; font-size: 12px; }
   th, td { padding: 8px 10px; }
+  .rank-card-header { flex-wrap: wrap; align-items: flex-start; }
+  .rank-expand, .rank-details { margin-left: 0; }
 }
 
 @media (max-width: 420px) {

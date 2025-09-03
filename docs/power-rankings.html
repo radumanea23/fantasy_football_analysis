@@ -90,12 +90,9 @@
               </div>
             `;
             card.addEventListener('click', () => {
-              if (card.classList.contains('expanded')) {
-                card.classList.remove('expanded');
-              } else {
-                collapseAll();
-                card.classList.add('expanded');
-              }
+              const wasExpanded = card.classList.contains('expanded');
+              collapseAll();
+              if (!wasExpanded) card.classList.add('expanded');
             });
             container.appendChild(card);
             // Populate details if present
