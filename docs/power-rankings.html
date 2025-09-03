@@ -66,10 +66,18 @@
           [...container.children].forEach(c => c.classList.remove('expanded'));
         }
 
-        function linkify(text) {
+        function renderLinks(text) {
           if (!text) return '';
-          const urlRegex = /(https?:\/\/[^\s)]+)(?![^<]*>|[^\(]*\))/g;
-          return String(text).replace(urlRegex, (url) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`);
+          let html = String(text);
+          // Markdown links: [label](https://url)
+          html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (m, label, url) => {
+            return `<a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+          });
+          // Bare URLs
+          html = html.replace(/(https?:\/\/[^\s)]+)(?![^<]*>)/g, (url) => {
+            return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+          });
+          return html;
         }
 
         data.rankings
@@ -129,7 +137,7 @@
             container.appendChild(card);
             // Populate summary (with linkification if URLs present)
             const summaryEl = card.querySelector('.rank-expand');
-            if (summaryEl) summaryEl.innerHTML = linkify(r.summary || 'Expand for analysis');
+            if (summaryEl) summaryEl.innerHTML = renderLinks(r.summary || 'Expand for analysis');
 
             // Populate details if present
             const details = card.querySelector('.rank-details');
@@ -142,12 +150,12 @@
             if (kp && Array.isArray(analysis.key_players)) {
               analysis.key_players.forEach(k => {
                 const li = document.createElement('li');
-                li.innerHTML = `${k.name}: ${linkify(k.note)}`;
+                li.innerHTML = `${k.name}: ${renderLinks(k.note)}`;
                 kp.appendChild(li);
               });
             }
-            if (bp) bp.innerHTML = linkify(analysis.bench_potential || '');
-            if (mb) mb.innerHTML = linkify(analysis.make_or_break || '');
+            if (bp) bp.innerHTML = renderLinks(analysis.bench_potential || '');
+            if (mb) mb.innerHTML = renderLinks(analysis.make_or_break || '');
 
             // Optional sources field: array of strings or objects {title,url}
             if (sourcesList && Array.isArray(r.sources) && r.sources.length) {
