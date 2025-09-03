@@ -1,0 +1,95 @@
+{
+  "league_id": "1248075580834856960",
+  "teams": [
+    {
+      "roster_id": 6,
+      "owner_user_id": "863581976450449408",
+      "owner_display_name": "jdamocles",
+      "team_name": "jdamocles"
+    },
+    {
+      "roster_id": 10,
+      "owner_user_id": "867570078953148416",
+      "owner_display_name": "benm1",
+      "team_name": "benm1"
+    },
+    {
+      "roster_id": null,
+      "owner_user_id": "872927730126237696",
+      "owner_display_name": "Ryanklainos",
+      "team_name": "Ryanklainos"
+    },
+    {
+      "roster_id": null,
+      "owner_user_id": "977933008231534592",
+      "owner_display_name": "Jvd29",
+      "team_name": "Jvd29"
+    },
+    {
+      "roster_id": 3,
+      "owner_user_id": "994634650008039424",
+      "owner_display_name": "maxsauers13",
+      "team_name": "maxsauers13"
+    },
+    {
+      "roster_id": 9,
+      "owner_user_id": "1131379417156087808",
+      "owner_display_name": "masonwill24",
+      "team_name": "Hit it From the Dak"
+    },
+    {
+      "roster_id": 1,
+      "owner_user_id": "1131458197988020224",
+      "owner_display_name": "Swagner19",
+      "team_name": "She Bledsoe I\u2019m Good"
+    },
+    {
+      "roster_id": null,
+      "owner_user_id": "1196198156396679168",
+      "owner_display_name": "Redsabr27",
+      "team_name": "Redsabr27"
+    },
+    {
+      "roster_id": 2,
+      "owner_user_id": "1248076505188159488",
+      "owner_display_name": "radumanea",
+      "team_name": "OTPHJSN"
+    },
+    {
+      "roster_id": 4,
+      "owner_user_id": "1248443055988543488",
+      "owner_display_name": "DerekCal4",
+      "team_name": "DerekCal4"
+    },
+    {
+      "roster_id": 5,
+      "owner_user_id": "1248518837637218304",
+      "owner_display_name": "DQBuquets9",
+      "team_name": "DQBuquets9"
+    },
+    {
+      "roster_id": 7,
+      "owner_user_id": "1248647269796827136",
+      "owner_display_name": "evanras9",
+      "team_name": "evanras9"
+    },
+    {
+      "roster_id": 8,
+      "owner_user_id": "1248652299572625408",
+      "owner_display_name": "schweiger14",
+      "team_name": "schweiger14"
+    },
+    {
+      "roster_id": 11,
+      "owner_user_id": "1250607104104878080",
+      "owner_display_name": "bwilt44",
+      "team_name": "bwilt44"
+    },
+    {
+      "roster_id": 12,
+      "owner_user_id": "1251045525856202752",
+      "owner_display_name": "TClark1742",
+      "team_name": "TClark1742"
+    }
+  ]
+}

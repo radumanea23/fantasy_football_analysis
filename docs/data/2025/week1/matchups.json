@@ -1,0 +1,49 @@
+{
+  "league_id": "1248075580834856960",
+  "season": 2025,
+  "week": 1,
+  "matchups": [
+    {
+      "home_roster_id": 1,
+      "away_roster_id": 6,
+      "home_team_name": "She Bledsoe I\u2019m Good",
+      "away_team_name": "jdamocles",
+      "prediction": null
+    },
+    {
+      "home_roster_id": 2,
+      "away_roster_id": 8,
+      "home_team_name": "OTPHJSN",
+      "away_team_name": "schweiger14",
+      "prediction": null
+    },
+    {
+      "home_roster_id": 3,
+      "away_roster_id": 10,
+      "home_team_name": "maxsauers13",
+      "away_team_name": "benm1",
+      "prediction": null
+    },
+    {
+      "home_roster_id": 4,
+      "away_roster_id": 11,
+      "home_team_name": "DerekCal4",
+      "away_team_name": "bwilt44",
+      "prediction": null
+    },
+    {
+      "home_roster_id": 5,
+      "away_roster_id": 7,
+      "home_team_name": "DQBuquets9",
+      "away_team_name": "evanras9",
+      "prediction": null
+    },
+    {
+      "home_roster_id": 9,
+      "away_roster_id": 12,
+      "home_team_name": "Hit it From the Dak",
+      "away_team_name": "TClark1742",
+      "prediction": null
+    }
+  ]
+}
