@@ -1,0 +1,48 @@
+{
+  "league_id": "1248075580834856960",
+  "season": 2025,
+  "week": 1,
+  "predictions": [
+    {
+      "home_roster_id": 1,
+      "away_roster_id": 6,
+      "predicted_winner_roster_id": 6,
+      "reasoning": "Kyler Murray and Bijan Robinson could run rings around She Bledsoe's less impressive collection of skill players. Plus, Jalen Hurts can't do it all himself!"
+    },
+    {
+      "home_roster_id": 2,
+      "away_roster_id": 8,
+      "predicted_winner_roster_id": 8,
+      "reasoning": "Schweiger14's dynamic duo of McCaffrey and Chase will leave Brock Purdy wondering where his offense went. A true David vs. Goliath moment!"
+    },
+    {
+      "home_roster_id": 3,
+      "away_roster_id": 10,
+      "predicted_winner_roster_id": 3,
+      "reasoning": "Lamar and Saquon could outscore benm1\u2019s entire lineup on their own. Joe Burrow better bring his A-game or it'll be a blowout."
+    },
+    {
+      "home_roster_id": 4,
+      "away_roster_id": 11,
+      "predicted_winner_roster_id": 11,
+      "reasoning": "Baker Mayfield and Josh Jacobs should feast against DerekCal4's questionable starters. Don\u2019t count on Travis Hunter to save the day!"
+    },
+    {
+      "home_roster_id": 5,
+      "away_roster_id": 7,
+      "predicted_winner_roster_id": 5,
+      "reasoning": "Jordan Love and Tyreek Hill's combo looks too tasty for even Derrick Henry to chomp through. Sorry, evanras9!"
+    },
+    {
+      "home_roster_id": 9,
+      "away_roster_id": 12,
+      "predicted_winner_roster_id": 12,
+      "reasoning": "Patrick Mahomes against Dak Prescott? That's like bringing a butter knife to a gunfight. TClark1742 wins easy!"
+    }
+  ],
+  "spicy_matchup": {
+    "home_roster_id": 4,
+    "away_roster_id": 11,
+    "why": "DerekCal4 could actually surprise with Jayden Daniels and TreVeyon Henderson against bwilt44, who's riding high after last season but could be in for a rude awakening. Don't count out the underdog!"
+  }
+}
