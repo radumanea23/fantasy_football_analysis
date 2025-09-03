@@ -4,387 +4,387 @@
   "week": 1,
   "rankings": [
     {
-      "team_name": "schweiger14",
-      "roster_id": 8,
-      "rank": 1,
-      "summary": "Superflex cheat code: Stroud/Tua/Goff plus CMC\u2013Etienne\u2013Achane and Ja\u2019Marr. If this loses Week 1, blame the fantasy gods, not the roster. Bench depth is silly good.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "C.J. Stroud",
-            "note": "Team captain and franchise centerpiece; ascendant QB play stabilizes the floor in SFLEX."
-          },
-          {
-            "name": "Christian McCaffrey",
-            "note": "Still the gold standard at RB; volume + receiving keeps PPR ceiling elite."
-          },
-          {
-            "name": "Ja\u2019Marr Chase",
-            "note": "Locked up long-term in CIN; target hog profile intact after extension."
-          },
-          {
-            "name": "Travis Etienne",
-            "note": "Three-down usage keeps him matchup-proof."
-          },
-          {
-            "name": "De\u2019Von Achane",
-            "note": "Explosive PPR spike weeks are a feature, not a bug."
-          }
-        ],
-        "bench_potential": "Jordan Addison and Jayden Reed give weekly WR3/FLEX juice; Jerome Ford and Tahj Brooks offer injury-contingent RB value.",
-        "make_or_break": "Health of the RB trio (CMC/Etienne/Achane). If two are active, no one wants this smoke."
-      }
-    },
-    {
       "team_name": "TClark1742",
       "roster_id": 12,
-      "rank": 2,
-      "summary": "Mahomes + Herbert + Kelce with A.J. Brown and Gibbs in PPR? That\u2019s an Avengers lineup. Also, starting three elite QBs in a superflex is downright rude.",
+      "rank": 1,
+      "summary": "Unfair in Superflex: Mahomes + Herbert with Gibbs/Kamara/Swift and Kelce/A.J. Brown is Week 1 juggernaut. Depth everywhere; even the bench scares people.",
       "analysis": {
         "key_players": [
           {
             "name": "Patrick Mahomes",
-            "note": "Still the weekly ceiling king; early schedule neutral, talent isn\u2019t."
-          },
-          {
-            "name": "Travis Kelce",
-            "note": "Age jokes aside, still a focal point and red-zone monster with Mahomes."
-          },
-          {
-            "name": "Jahmyr Gibbs",
-            "note": "Top-tier PPR profile; explosive plays and catch volume = weekly edge."
-          },
-          {
-            "name": "A.J. Brown",
-            "note": "Alpha usage keeps him top-5 WR viable."
+            "note": "Still the weekly nuclear option; no notes needed."
           },
           {
             "name": "Justin Herbert",
-            "note": "Gives you a top-8 QB at superflex every week."
+            "note": "Top-8 Superflex anchor beside Mahomes; elite weekly floor."
+          },
+          {
+            "name": "Jahmyr Gibbs",
+            "note": "Consensus top-5 PPR RB entering 2025; mismatch every week. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai), [pff.com](https://www.pff.com/news/fantasy-football-2025-rankings-ppr-top-250?utm_source=openai), [athlonsports.com](https://athlonsports.com/fantasy/fantasy-football-top-200-ppr-rankings-draft-2025/?utm_source=openai))"
+          },
+          {
+            "name": "Travis Kelce",
+            "note": "Ages like fine bourbon; still projected as an elite TE1 for 2025. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai))"
+          },
+          {
+            "name": "A.J. Brown",
+            "note": "Locked-in WR1 usage/efficiency again. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai))"
           }
         ],
-        "bench_potential": "Dalton Schultz/Ja\u2019Tavion Sanders provide TE insulation; Keenan Allen/Jameson Williams give matchup leverage if you want to get spicy.",
-        "make_or_break": "Kelce\u2019s weekly route/target share. If he\u2019s still 1A, this team bullies the league."
+        "bench_potential": "Jameson Williams boom routes, Javonte Williams volume spikes, Dalton Schultz TD-stream. Also\u2026 Henry Ruggs on the roster? lmao delete that fossil from your app.",
+        "make_or_break": "WR2/3 volatility (Keenan Allen age curve) and Kelce\u2019s weekly snap load are the only sweat points."
       }
     },
     {
-      "team_name": "jdamocles",
-      "roster_id": 6,
-      "rank": 3,
-      "summary": "Four WR1s (Amon-Ra, Adams, Kupp, DJ Moore), Bijan, and TE2 McBride with Kyler at SFLEX. Dynasty core and win-now. Opponents: bring tissues.",
+      "team_name": "schweiger14",
+      "roster_id": 8,
+      "rank": 2,
+      "summary": "RB avalanche (CMC/Etienne/Achane) plus Stroud + Tua and Ja\u2019Marr Chase. Week 1 ceiling and depth are absurd.",
       "analysis": {
         "key_players": [
           {
-            "name": "Bijan Robinson",
-            "note": "Falcons hint at more explosives in Year 3; usage remains massive."
+            "name": "Christian McCaffrey",
+            "note": "PPR cheat code. Top-4 overall in every set. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai), [pff.com](https://www.pff.com/news/fantasy-football-2025-rankings-ppr-top-250?utm_source=openai))"
           },
           {
-            "name": "Amon-Ra St. Brown",
-            "note": "Relentless target machine; PPR cheat code."
+            "name": "C.J. Stroud",
+            "note": "Ascendant QB1 with elite efficiency; offense remains aggressive."
           },
           {
-            "name": "Trey McBride",
-            "note": "Consensus top-2 TE for 2025; target share is elite for the position. ([africa.espn.com](https://africa.espn.com/fantasy/football/story/_/id/44505152/2025-fantasy-football-rankings-profiles-te?utm_source=openai), [arizonasports.com](https://arizonasports.com/nfl/arizona-cardinals/trey-mcbride-fan/3579538/?utm_source=openai))"
+            "name": "De'Von Achane",
+            "note": "Explosive PPR RB1/2 profile when healthy; track touches but wheels up. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai))"
           },
           {
-            "name": "Kyler Murray",
-            "note": "Dual-threat floor + McBride stack adds weekly correlation upside."
+            "name": "Ja'Marr Chase",
+            "note": "Consensus WR1/2 overall entering 2025. ([pff.com](https://www.pff.com/news/fantasy-football-2025-rankings-ppr-top-250?utm_source=openai), [athlonsports.com](https://athlonsports.com/fantasy/fantasy-football-top-200-ppr-rankings-draft-2025/?utm_source=openai))"
           },
           {
-            "name": "Davante Adams/Cooper Kupp/Calvin Ridley",
-            "note": "Veteran WR room with weekly top-12 outcomes."
+            "name": "Tua Tagovailoa",
+            "note": "High weekly ceiling paired with elite weapons."
           }
         ],
-        "bench_potential": "Rachaad White and Roman Wilson add FLEX depth; Keaton Mitchell a stash with league-winning speed if healthy.",
-        "make_or_break": "Kyler\u2019s consistency and Bijan\u2019s TD variance. If TDs swing up, it\u2019s lights out. ([atlantafalcons.com](https://www.atlantafalcons.com/news/bijan-robinson-explosive-season-runs?utm_source=openai))"
+        "bench_potential": "Jayden Reed and Jordan Addison can both post WR2 weeks early; Audric Estim\u00e9/Tahj Brooks are stash-and-see rookies.",
+        "make_or_break": "Health in a stars-and-scrubs RB room behind the big three; TE room is fine-but-not-great (Freiermuth/Okonkwo/Kraft)."
       }
     },
     {
       "team_name": "DQBuquets9",
       "roster_id": 5,
-      "rank": 4,
-      "summary": "Tyreek + Jefferson with Drake London is illegal in 12 states. Jordan Love is steady, and ARich is a stash with week-winning legs\u2026 whenever he actually starts. Also, rostering three stud TEs is a flex. Lmao why are you hoarding tight ends like they\u2019re NFTs?",
+      "rank": 3,
+      "summary": "Tyreek + JJ + London is silly. ARich/Love at QB, Kincaid/Andrews at TE, and deep RBs = weekly sledgehammer.",
       "analysis": {
         "key_players": [
           {
             "name": "Tyreek Hill",
-            "note": "Weekly nuke button; matchup proof."
+            "note": "Still speed warps defenses; perennial WR1."
           },
           {
             "name": "Justin Jefferson",
-            "note": "Overall WR1 candidate when fully ramped; contract secure."
-          },
-          {
-            "name": "Drake London",
-            "note": "Arrow up with improved QB play and OC scheme."
-          },
-          {
-            "name": "Xavier Worthy",
-            "note": "Early-season target bump with Rice suspended six games; big-play role. ([nfl.com](https://www.nfl.com/news/chiefs-wr-rashee-rice-six-game-suspension-2025-nfl-season/?utm_source=openai), [profootballnetwork.com](https://www.profootballnetwork.com/fantasy-football/kansas-city-chiefs-wr-depth-chart-analysis-how-fantasy-football-managers-should-value-xavier-worthy-rashee-rice/?utm_source=openai), [espn.com](https://www.espn.com/nfl/story/_/id/44095152/kansas-city-chiefs-xavier-worthy-2025-expectations?utm_source=openai))"
+            "note": "Consensus top-3 WR; weekly floor-ceiling monster. ([pff.com](https://www.pff.com/news/fantasy-football-2025-rankings-ppr-top-250?utm_source=openai))"
           },
           {
             "name": "Anthony Richardson",
-            "note": "Not the Week 1 starter; long-term rushing upside remains elite stash. ([nfl.com](https://www.nfl.com/news/colts-naming-daniel-jones-as-starting-qb-over-anthony-richardson?utm_source=openai), [colts.com](https://www.colts.com/news/daniel-jones-starting-quarterback-qb1-shane-steichen-anthony-richardson?utm_source=openai))"
+            "note": "Konami-code QB with top-5 fantasy upside if healthy."
+          },
+          {
+            "name": "Dalton Kincaid",
+            "note": "Poised for 100+ targets; safe TE1."
+          },
+          {
+            "name": "Xavier Worthy",
+            "note": "Early-season volume bump with Rashee Rice suspended six games. lmao thanks, Goodell. ([nfl.com](https://www.nfl.com/news/chiefs-wr-rashee-rice-six-game-suspension-2025-nfl-season?utm_source=openai), [new.cbssports.com](https://new.cbssports.com/nfl/news/rashee-rice-suspension-how-receivers-six-game-ban-impacts-chiefs-fantasy-football-owners/?utm_source=openai))"
           }
         ],
-        "bench_potential": "Rhamondre Stevenson/James Cook/Aaron Jones form a strong flex carousel; Xavier Worthy could be a September league-winner while KC is shorthanded. ([nfl.com](https://www.nfl.com/news/chiefs-wr-rashee-rice-six-game-suspension-2025-nfl-season/?utm_source=openai))",
-        "make_or_break": "When ARich takes the job back. If he starts sooner than later, this roster\u2019s ceiling goes interstellar. ([nfl.com](https://www.nfl.com/news/colts-naming-daniel-jones-as-starting-qb-over-anthony-richardson?utm_source=openai))"
+        "bench_potential": "James Cook/Rhamondre/Aaron Jones form a matchup-proof flex carousel; Jonathon Brooks/Braelon Allen are premium dynasty stashes.",
+        "make_or_break": "ARich health + who starts at TE (Kincaid vs. Andrews) each week; otherwise cruise control."
       }
     },
     {
       "team_name": "maxsauers13",
       "roster_id": 3,
-      "rank": 5,
-      "summary": "Lamar + Trevor with Saquon, Waddle, Garrett Wilson, Flowers, Tank Dell\u2014this is a weekly fireworks show. Depth at WR is comically unfair.",
+      "rank": 4,
+      "summary": "Dual elite QBs (Lamar + Trevor), Saquon and a nasty WR room. Tank Dell likely out, but still deep enough to bully Week 1.",
       "analysis": {
         "key_players": [
           {
             "name": "Lamar Jackson",
-            "note": "Tier-1 fantasy QB with rushing insulation every week. ([washingtonpost.com](https://www.washingtonpost.com/sports/2025/08/29/fantasy-football-draft-tiers/?utm_source=openai))"
-          },
-          {
-            "name": "Saquon Barkley",
-            "note": "Top-tier RB in PPR with goal-line access; elite floor/ceiling combo. ([washingtonpost.com](https://www.washingtonpost.com/sports/2025/08/29/fantasy-football-draft-tiers/?utm_source=openai))"
-          },
-          {
-            "name": "Jaylen Waddle",
-            "note": "High-efficiency WR2 with WR1 weeks baked in."
-          },
-          {
-            "name": "Garrett Wilson",
-            "note": "Target alpha; even with QB variance, volume is king."
+            "note": "Top-3 QB every week; rushing floor is a cheat code."
           },
           {
             "name": "Trevor Lawrence",
-            "note": "Top-10-ish SFLEX stabilizer; Week 1 sleeper vibes. ([bigblueview.com](https://www.bigblueview.com/fantasy-football-2/134599/fantasy-football-25-week-1-fantasy-preview-start-sit-and-more?utm_source=openai))"
+            "note": "Top-10 QB with cushy Week 1 streamer vibes. ([bigblueview.com](https://www.bigblueview.com/fantasy-football-2/134599/fantasy-football-25-week-1-fantasy-preview-start-sit-and-more?utm_source=openai))"
+          },
+          {
+            "name": "Saquon Barkley",
+            "note": "RB1 workload on a strong offense. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai))"
+          },
+          {
+            "name": "Garrett Wilson",
+            "note": "Target hog; WR1 profile intact."
+          },
+          {
+            "name": "Tank Dell",
+            "note": "Multiple-ligament knee injury; reporting suggested 2025 season in jeopardy. Don\u2019t plan on him early. ([si.com](https://www.si.com/nfl/texans/news/houston-texans-major-injury-update-tank-dell?utm_source=openai))"
           }
         ],
-        "bench_potential": "Zay Flowers, Tee Higgins, Pittman, Tank Dell\u2014good luck choosing; this bench would start for half the league.",
-        "make_or_break": "Ravens-Jags offensive efficiency. If both hum, you\u2019re a weekly 180+ candidate."
+        "bench_potential": "Blake Corum/Kendre Miller could surge by October; Jaylen Warren is a PPR thorn who forces start-sit headaches (in a good way).",
+        "make_or_break": "WR decisions among Waddle/Pittman/Higgins/Flowers each week. Good problem to have; set it and laugh."
+      }
+    },
+    {
+      "team_name": "jdamocles",
+      "roster_id": 6,
+      "rank": 5,
+      "summary": "Bijan + ARSB + Kyler with Adams/Kupp/Ridley/Moore and McBride? If Bryce/Shedeur give anything in SF, this team cooks.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Bijan Robinson",
+            "note": "Consensus top-2 RB; massive receiving share. ([pff.com](https://www.pff.com/news/fantasy-football-2025-rankings-ppr-top-250?utm_source=openai))"
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "note": "Route-win robot; weekly WR1. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai))"
+          },
+          {
+            "name": "Kyler Murray",
+            "note": "Positive trajectory and full offseason; QB1 range. ([nfl.com](https://www.nfl.com/news/kyler-murray-cardinals-on-the-up-and-up-in-2025?utm_source=openai))"
+          },
+          {
+            "name": "Trey McBride",
+            "note": "Breakout TE who earns WR-level targets."
+          },
+          {
+            "name": "Davante Adams",
+            "note": "Still elite separator; age only matters to your knees, not his routes (yet)."
+          }
+        ],
+        "bench_potential": "Rachaad White PPR sponge; Keaton Mitchell speed package is a mid-season flex wildcard if usage materializes. ([cbssports.com](https://www.cbssports.com/fantasy/football/news/ravens-keaton-mitchell-feels-back-to-full-form/?utm_source=openai))",
+        "make_or_break": "Superflex slot\u2014if Bryce or Shedeur are replaceable-level, you\u2019ll still win; if one pops, you\u2019re terrifying."
       }
     },
     {
       "team_name": "She Bledsoe I\u2019m Good",
       "roster_id": 1,
       "rank": 6,
-      "summary": "Hurts + Caleb + JT with Aiyuk/Nico/Kittle\u2014built like a bully for PPR/SFLEX. Also rostering two elite defenses like you\u2019re streaming 2017 is hilarious.",
+      "summary": "Hurts + Caleb with JT/Kittle and Aiyuk/Nico/Odunze is a balanced Week 1 hammer. Dynasty arrow screaming up.",
       "analysis": {
         "key_players": [
           {
             "name": "Jalen Hurts",
-            "note": "Tier-1 dual-threat gives top-5 QB odds weekly. ([washingtonpost.com](https://www.washingtonpost.com/sports/2025/08/29/fantasy-football-draft-tiers/?utm_source=openai))"
+            "note": "Top-5 QB with double-digit rush TD upside."
+          },
+          {
+            "name": "Caleb Williams",
+            "note": "Named a captain; Year 2 leap buzz is real. ([windycitygridiron.com](https://www.windycitygridiron.com/chicago-bears-news/97417/chicago-bears-den-september-3-2025-depth-chart-week-one-minnesota-vikings?utm_source=openai))"
           },
           {
             "name": "Jonathan Taylor",
-            "note": "Workhorse profile; TD equity strong."
+            "note": "RB1 usage with pass-game viability."
           },
           {
             "name": "Brandon Aiyuk",
-            "note": "Efficiency monster; YAC king with spike-week profile."
+            "note": "Efficient WR1/2; touchdowns swing the spike weeks."
           },
           {
-            "name": "Nico Collins",
-            "note": "Established alpha next to Stroud; captains status in HOU\u2019s O is a good omen. ([battleredblog.com](https://www.battleredblog.com/houston-texans-news/70749/houston-texans-name-5-captains-for-2025-season?utm_source=openai))"
-          },
-          {
-            "name": "George Kittle",
-            "note": "Top-3 TE per ESPN positional tiers. ([africa.espn.com](https://africa.espn.com/fantasy/football/story/_/id/44505152/2025-fantasy-football-rankings-profiles-te?utm_source=openai))"
+            "name": "Rome Odunze",
+            "note": "Every-week flex now, future WR1; all-in locker-room backing. ([windycitygridiron.com](https://www.windycitygridiron.com/chicago-bears-news/97450/rome-odunze-pulls-no-punches-in-defending-caleb-williams-on-podcast?utm_source=openai))"
           }
         ],
-        "bench_potential": "Rome Odunze/Emeka Egbuka offer juicy dynasty upside; Ben Sinnott could see real rookie usage for NYJ. ([nypost.com](https://nypost.com/2025/09/03/sports/jets-mailbag-wideout-trades-center-mystery-mason-taylors-task/?utm_source=openai))",
-        "make_or_break": "Caleb Williams\u2019 year-two jump. If he hits fast, this team moves into the top-3 tier."
+        "bench_potential": "James Conner TD heater never dies; Emeka Egbuka could be a mid-season WR3; Isaac Guerendo is a Shanahan lottery ticket.",
+        "make_or_break": "Deciding which WR3 to flex weekly (Odunze vs. Nico vs. Aiyuk matchups). Nice \u2018problem.\u2019"
       }
     },
     {
       "team_name": "evanras9",
       "roster_id": 7,
       "rank": 7,
-      "summary": "Josh Allen backpacking this squad like a college freshman on Eurail. Kyren + Henry grind; LaPorta a weekly hammer. WR depth is the only thing keeping you from the S-tier.",
+      "summary": "Josh Allen + LaPorta is a cheat. Henry/Kyren/Monty stabilize RB. WRs are streaky but dangerous.",
       "analysis": {
         "key_players": [
           {
             "name": "Josh Allen",
-            "note": "Tier-1 QB with week-winning rushing and bombs. ([washingtonpost.com](https://www.washingtonpost.com/sports/2025/08/29/fantasy-football-draft-tiers/?utm_source=openai))"
-          },
-          {
-            "name": "Kyren Williams",
-            "note": "Feature back with fresh extension security\u2014PPR volume is sticky. ([nfl.com](https://www.nfl.com/news/rams-rb-kyren-williams-agree-to-terms-contract-extension/?utm_source=openai))"
+            "note": "QB1 overall candidate\u2014rushing + bombs."
           },
           {
             "name": "Sam LaPorta",
-            "note": "Set-and-forget elite TE."
-          },
-          {
-            "name": "Stefon Diggs",
-            "note": "NE addition; if he\u2019s full-go, target share should be immediate. ([houstonchronicle.com](https://www.houstonchronicle.com/sports/texans/article/stefon-diggs-contract-new-england-patriots-20240946.php?utm_source=openai), [patriots.com](https://www.patriots.com/news/report-patriots-sign-four-time-pro-bowl-wr-stefon-diggs?utm_source=openai))"
+            "note": "Tier-1 TE after historic rookie year; all systems go for Week 1. ([prideofdetroit.com](https://www.prideofdetroit.com/detroit-lions-injury-report/140595/lions-packers-injury-report-initial-statuses-for-week-1?utm_source=openai))"
           },
           {
             "name": "Derrick Henry",
-            "note": "TD factory even on lower volume."
+            "note": "Still a volume sledgehammer; TDs keep the party going. ([bleacherreport.com](https://bleacherreport.com/articles/25229883-top-100-fantasy-football-rankings-ppr-and-standard-leagues-2025//?utm_source=openai))"
+          },
+          {
+            "name": "Kyren Williams",
+            "note": "Camp optimism and locked-in role; solid RB1/2. ([turfshowtimes.com](https://www.turfshowtimes.com/los-angeles-rams-roster/125525/final-training-camp-thoughts-as-the-rams-ready-for-week-1?utm_source=openai), [therams.com](https://www.therams.com/news/kyren-williams-discusses-state-of-contract-negotiations-offseason-improvements-training-camp-2025?utm_source=openai))"
+          },
+          {
+            "name": "Marquise \"Hollywood\" Brown",
+            "note": "Early-season opportunity spike in KC with Rice suspended. ([nfl.com](https://www.nfl.com/news/chiefs-wr-rashee-rice-six-game-suspension-2025-nfl-season?utm_source=openai))"
           }
         ],
-        "bench_potential": "Kyren/David Montgomery handcuff vibes; Quinshon Judkins/LeQuint Allen are intriguing dynasty stashes.",
-        "make_or_break": "WR2/3 outcomes. If McLaurin/Hollywood click, this team can steal the bye."
-      }
-    },
-    {
-      "team_name": "OTPHJSN",
-      "roster_id": 2,
-      "rank": 8,
-      "summary": "QB room is stable (Purdy/Geno) and you\u2019ve got a rookie nuke (Nabers) plus Bowers at TE1. RBs are scrappy, not sexy\u2014like wearing Crocs to a wedding. Comfortable? Sure. Fashionable? Eh.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Brock Bowers",
-            "note": "Consensus TE1 entering 2025; positional advantage weekly. ([africa.espn.com](https://africa.espn.com/fantasy/football/story/_/id/44505152/2025-fantasy-football-rankings-profiles-te?utm_source=openai))"
-          },
-          {
-            "name": "Malik Nabers",
-            "note": "Immediate WR1 traits; target magnet profile."
-          },
-          {
-            "name": "Brock Purdy",
-            "note": "High-efficiency QB2 for SFLEX stability."
-          },
-          {
-            "name": "Tony Pollard",
-            "note": "Catch volume sustains PPR viability despite team change."
-          },
-          {
-            "name": "Jaxon Smith-Njigba",
-            "note": "Year-3 breakout watch with route volume climbing."
-          }
-        ],
-        "bench_potential": "Ricky Pearsall, JSN, and Courtland Sutton provide matchup-based WR3/FLEX pivots; Phil Mafah/Chuba are \u201chold your nose and start\u201d bye-week RBs.",
-        "make_or_break": "Pollard/Shipley/Chuba production. If two hit, this jumps to the 4\u20136 range."
-      }
-    },
-    {
-      "team_name": "Hit it From the Dak",
-      "roster_id": 9,
-      "rank": 9,
-      "summary": "Dak\u2013CeeDee stack prints points. Olave/Walker stabilize. Rice\u2019s six-game suspension is a wet blanket on early-season upside. Also, drafting two kickers is a cry for help.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Dak Prescott",
-            "note": "High-floor QB1; plus correlation with Lamb."
-          },
-          {
-            "name": "CeeDee Lamb",
-            "note": "Top-3 WR usage; stack amplifies weekly ceiling."
-          },
-          {
-            "name": "Rashee Rice",
-            "note": "Suspended first six games (elig. Week 7); stash for back-half push. ([nfl.com](https://www.nfl.com/news/chiefs-wr-rashee-rice-six-game-suspension-2025-nfl-season/?utm_source=openai))"
-          },
-          {
-            "name": "Kenneth Walker III",
-            "note": "Explosive runner; TD-driven but durable weekly FLEX."
-          },
-          {
-            "name": "Chris Olave",
-            "note": "Target earner with WR1 outcomes in range."
-          }
-        ],
-        "bench_potential": "Brian Thomas Jr. and Josh Downs offer weekly FLEX volatility; Cedric Tillman is a deep stash.",
-        "make_or_break": "Surviving Weeks 1\u20136 without Rice. If you\u2019re 3\u20133 or better, this team can surge. ([nfl.com](https://www.nfl.com/news/chiefs-wr-rashee-rice-six-game-suspension-2025-nfl-season/?utm_source=openai))"
-      }
-    },
-    {
-      "team_name": "benm1",
-      "roster_id": 10,
-      "rank": 10,
-      "summary": "Burrow + (Jets) Fields + Daniel Jones named Indy\u2019s starter gives you SFLEX options, but WR depth after Evans/McConkey gets thin. Also, three kickers energy with two defenses\u2014lmao why are we doing 2012 streaming cosplay?",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Breece Hall",
-            "note": "Jets leaning run-heavier; still the back to bet on in PPR. ([nypost.com](https://nypost.com/2025/09/03/sports/jets-mailbag-wideout-trades-center-mystery-mason-taylors-task/?utm_source=openai), [newyorkjets.com](https://www.newyorkjets.com/news/jets-breece-hall-setting-goals-for-season-training-camp-06-30-2025?utm_source=openai))"
-          },
-          {
-            "name": "Joe Burrow",
-            "note": "Bankable QB1 outcomes if healthy; pairs with Evans nicely in shootouts."
-          },
-          {
-            "name": "Daniel Jones (IND)",
-            "note": "Officially the Colts\u2019 Week 1 starter; superflex floor if Fields\u2019 variance bites. ([nfl.com](https://www.nfl.com/news/colts-naming-daniel-jones-as-starting-qb-over-anthony-richardson?utm_source=openai))"
-          },
-          {
-            "name": "Kyle Pitts",
-            "note": "OC Zac Robinson expects a big jump in Year 2 of the scheme. ([amp.nfl.com](https://amp.nfl.com/news/falcons-oc-zac-robinson-expects-te-kyle-pitts-to-take-a-big-jump-in-second-year-in-scheme?utm_source=openai))"
-          },
-          {
-            "name": "Ladd McConkey",
-            "note": "Immediate route earner; rookie WR with strong early role."
-          }
-        ],
-        "bench_potential": "Tyjae Spears/Bucky Irving/Omarion Hampton give lottery tickets at RB; Khalil Shakir/Jalin Hyatt are matchup darts.",
-        "make_or_break": "Fields\u2019 weekly range. If he\u2019s efficient enough as a passer, this team can upset anyone. ([nypost.com](https://nypost.com/2025/09/03/sports/nfl-preview-aaron-glenns-jets-turnaround-task-begins-now/?utm_source=openai))"
+        "bench_potential": "Bo Nix/Russ can spot-start in soft matchups; Judkins/LeQuint/Damien Martinez are dynasty slow-cookers.",
+        "make_or_break": "WR volatility (Diggs in a new spot, Hollywood\u2019s weekly role). Also\u2026 Zach Ertz? lmao AARP tight ends are for bye weeks only."
       }
     },
     {
       "team_name": "DerekCal4",
       "roster_id": 4,
-      "rank": 11,
-      "summary": "Dynasty treasure chest (Jayden + MHJ + Pitts + Benson/Charbonnet), but Week 1 scoring could be bumpy. Also carrying five tight ends like you\u2019re starting TE-premium, lmao.",
+      "rank": 8,
+      "summary": "Youth explosion: Jayden Daniels + Penix, MHJ headliner, and RB depth (Pacheco/Chubb/Charbonnet). High variance, scary ceiling.",
       "analysis": {
         "key_players": [
           {
             "name": "Jayden Daniels",
-            "note": "Tier-1 fantasy archetype with rushing floor right away. ([washingtonpost.com](https://www.washingtonpost.com/sports/2025/08/29/fantasy-football-draft-tiers/?utm_source=openai))"
+            "note": "Dual-threat cheat code; immediate top-12 QB outlook."
+          },
+          {
+            "name": "Michael Penix Jr.",
+            "note": "Locked as ATL starter heading into 2025; live SF play. ([nfl.com](https://www.nfl.com/news/falcons-hc-raheem-morris-names-michael-penix-starting-qb-benches-kirk-cousins?utm_source=openai), [atlantafalcons.com](https://www.atlantafalcons.com/news/kirk-cousins-backup-qb-michael-penix-jr?utm_source=openai))"
           },
           {
             "name": "Marvin Harrison Jr.",
-            "note": "Day-one alpha traits; WR1 future."
+            "note": "Alpha usage incoming; dynasty WR1 vibes. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai))"
+          },
+          {
+            "name": "Nick Chubb",
+            "note": "Texans\u2019 early-season lead back with Mixon on NFI. ([nfl.com](https://www.nfl.com/news/texans-rb-joe-mixon-foot-placed-on-reserve-nfi-list-to-miss-at-least-first-four-games-of-season/?utm_source=openai))"
           },
           {
             "name": "Isiah Pacheco",
-            "note": "Rock-solid RB2/FLEX with TD equity in KC."
-          },
-          {
-            "name": "Jake Ferguson/Cole Kmet",
-            "note": "PPR-friendly tight ends if Pitts starts slow."
-          },
-          {
-            "name": "Trey Benson",
-            "note": "Rookie runner with three-down traits; could seize ARI backfield early."
+            "note": "Red-zone hammer in elite offense; weekly RB2 floor."
           }
         ],
-        "bench_potential": "Legette, Adonai Mitchell, Luke McCaffrey, Luther Burden\u2014an entire future WR room on the bench.",
-        "make_or_break": "Rookie QB variance. If Jayden hits immediately, you\u2019ll outscore this rank fast."
+        "bench_potential": "Luther Burden/Travis Hunter/Adonai Mitchell could pop early; Cade Stover is a sneaky TE2 streamer.",
+        "make_or_break": "Rookie WR week-to-week swings; if Penix is merely fine, Daniels has to carry the SF slot."
+      }
+    },
+    {
+      "team_name": "benm1",
+      "roster_id": 10,
+      "rank": 9,
+      "summary": "Burrow/Fields + Breece gives a top-heavy core; Evans/McConkey/Shakir can fill PPR gaps. TE room is quietly stacked.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Joe Burrow",
+            "note": "Healthy Burrow = weekly top-8 QB."
+          },
+          {
+            "name": "Justin Fields",
+            "note": "Konami floor; new surroundings, still fantasy-friendly. ([nypost.com](https://nypost.com/2025/09/03/sports/nfl-preview-aaron-glenns-jets-turnaround-task-begins-now/?utm_source=openai))"
+          },
+          {
+            "name": "Breece Hall",
+            "note": "Top-5 PPR RB talent; matchup-dependent spikes. ([athlonsports.com](https://athlonsports.com/fantasy/fantasy-football-top-200-ppr-rankings-draft-2025/?utm_source=openai))"
+          },
+          {
+            "name": "Ladd McConkey",
+            "note": "Rookie ready-made separator; immediate target share projection."
+          },
+          {
+            "name": "Tyjae Spears",
+            "note": "Early-season absence dings depth\u2014monitor. ([sbnation.com](https://www.sbnation.com/fantasy/24480984/fantasy-football-rankings-week-1-running-backs-ppr?utm_source=openai))"
+          }
+        ],
+        "bench_potential": "Bucky Irving/Jaylen Wright/Omarion Hampton/Jordan James = a whole devy team waiting to happen; one will matter by October.",
+        "make_or_break": "Fields\u2019 weekly passing volume and who emerges as WR2 behind Evans/McConkey."
+      }
+    },
+    {
+      "team_name": "OTPHJSN",
+      "roster_id": 2,
+      "rank": 10,
+      "summary": "Solid floor with Purdy/Geno and a nasty young WR stack (Nabers/JSN/Pearsall/DK). RB room is the only \"gulp\" here.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Malik Nabers",
+            "note": "Top-10 WR in 2025 ranks\u2014already that dude. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai))"
+          },
+          {
+            "name": "Brock Purdy",
+            "note": "Rock-steady SF QB2 with weekly efficiency spikes."
+          },
+          {
+            "name": "Brock Bowers",
+            "note": "Rookie TE unicorn usage in LV should be real. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai))"
+          },
+          {
+            "name": "DK Metcalf",
+            "note": "Still red-zone tyrant; WR2 with WR1 weeks."
+          },
+          {
+            "name": "Tony Pollard",
+            "note": "Lead-back volume early, but TD variance will test your zen."
+          }
+        ],
+        "bench_potential": "Cam Ward is a live-wire rookie SF stash; Phil Mafah/Will Shipley could force their way into touches by midseason. ([fantasypros.com](https://www.fantasypros.com/2025/04/superflex-dynasty-rookie-draft-rankings-mcmillan-fantasy-football/?utm_source=openai))",
+        "make_or_break": "Finding weekly RB2 points (Hubbard/Mason/Sanders darts) while the WRs carry you."
+      }
+    },
+    {
+      "team_name": "Hit it From the Dak",
+      "roster_id": 9,
+      "rank": 11,
+      "summary": "Dak + elite WR trio (Lamb/Olave/Brian Thomas) keeps you competitive, but Rice\u2019s 6-game sit and middling RBs cap Week 1 ceiling.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Dak Prescott",
+            "note": "Bankable QB1 passer; high weekly floor."
+          },
+          {
+            "name": "CeeDee Lamb",
+            "note": "Top-3 WR overall; lock him in. ([bleacherreport.com](https://bleacherreport.com/articles/25229883-top-100-fantasy-football-rankings-ppr-and-standard-leagues-2025//?utm_source=openai))"
+          },
+          {
+            "name": "Chris Olave",
+            "note": "Volume magnet; WR1/2 every week."
+          },
+          {
+            "name": "Brian Thomas Jr.",
+            "note": "Sky-high aDOT and TD equity; 2025 riser. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai))"
+          },
+          {
+            "name": "Rashee Rice",
+            "note": "Suspended six games\u2014stash only until Week 7. lmao why draft-and-start a ghost? ([nfl.com](https://www.nfl.com/news/chiefs-wr-rashee-rice-six-game-suspension-2025-nfl-season?utm_source=openai), [cbssports.com](https://www.cbssports.com/nfl/news/rashee-rice-suspension-chiefs-wr-to-miss-first-six-games-of-season-as-part-of-disciplinary-action/amp/?utm_source=openai))"
+          }
+        ],
+        "bench_potential": "Josh Downs PPR glue; Ray Davis could be a sneaky goal-line vulture. If Drake Maye flashes early, SF slot jumps a tier.",
+        "make_or_break": "RB room (Walker/Ekeler/Pierce) needs weekly TDs to hang with top squads; monitor Maye\u2019s leash in NE."
       }
     },
     {
       "team_name": "bwilt44",
       "roster_id": 11,
       "rank": 12,
-      "summary": "Elite WR/TE core (Puka, DeVonta, Hockenson) but QB room is Baker + JJ McCarthy roulette and RB room is a vibes-based economy. Dynasty arrow up; Week 1 sweat down.",
+      "summary": "WRs/TEs are awesome (Puka/DeVonta/Pickens + Hock), but QB room is a prayer circle and Mixon\u2019s out early. Dynasty outlook still strong.",
       "analysis": {
         "key_players": [
           {
             "name": "Puka Nacua",
-            "note": "Target hog with weekly WR1 ceiling."
+            "note": "Perennial PPR WR1 candidate when healthy. ([espn.com](https://www.espn.com/fantasy/football/story/_/id/43261183/2025-fantasy-football-rankings-ppr-mike-clay?utm_source=openai))"
           },
           {
             "name": "T.J. Hockenson",
-            "note": "Top-5 TE usage when healthy; early-season safety valve for a young QB."
+            "note": "Back healthy and ready\u2014top-5 TE. ([cbssports.com](https://www.cbssports.com/fantasy/football/news/vikings-t-j-hockenson-plays-in-preseason-opener/?utm_source=openai))"
+          },
+          {
+            "name": "Joe Mixon",
+            "note": "On reserve/NFI\u2014misses at least 4 games; Texans noncommittal beyond that. ([nfl.com](https://www.nfl.com/news/texans-rb-joe-mixon-foot-placed-on-reserve-nfi-list-to-miss-at-least-first-four-games-of-season/?utm_source=openai), [espn.com](https://www.espn.com/nfl/story/_/id/46087650/texans-gm-noncommittal-rb-joe-mixon-playing-season?utm_source=openai))"
+          },
+          {
+            "name": "Ashton Jeanty",
+            "note": "Rookie RB1 profile and elite receiving chops; 2025\u2019s splash rookie. ([pff.com](https://www.pff.com/news/fantasy-football-2025-dynasty-rookie-superflex-rankings?utm_source=openai))"
           },
           {
             "name": "J.J. McCarthy",
-            "note": "Vikes are turning to him; exciting but volatile early for fantasy. ([nfl.com](https://www.nfl.com/news/confident-j-j-mccarthy-i-know-i-m-ready-to-start-at-qb-for-vikings?utm_source=openai))"
-          },
-          {
-            "name": "Josh Jacobs",
-            "note": "Workload should be there; receiving usage determines PPR ceiling."
-          },
-          {
-            "name": "Keon Coleman/George Pickens",
-            "note": "Big-play profiles; boom/bust WR3 options."
+            "note": "Dynasty value fine, but Week 1 range = volatile QB2."
           }
         ],
-        "bench_potential": "Ashton Jeanty is a worthwhile rookie stash; Isaiah Likely offers TE premium insurance.",
-        "make_or_break": "QB stability. If JJ takes off quickly, this team climbs the ranks\u2014if not, it\u2019s Puka or bust most weeks."
+        "bench_potential": "Najee/Jacobs can grind you through Mixon\u2019s absence; Keon Coleman/Christian Watson spike weeks will save matchups.",
+        "make_or_break": "QB stability (Baker/JJ) and whether Jeanty hits early while Mixon sits. Also\u2026 carrying 4 TEs is bold\u2014Isaiah Likely is hurt anyway. ([reuters.com](https://www.reuters.com/sports/report-ravens-te-isaiah-likely-foot-expected-out-vs-bills-2025-09-03/?utm_source=openai))"
       }
     }
   ]

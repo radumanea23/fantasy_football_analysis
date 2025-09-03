@@ -3,28 +3,28 @@
   "weeks": {
     "1": [
       {
-        "roster_id": 8,
-        "team_name": "schweiger14",
+        "roster_id": 12,
+        "team_name": "TClark1742",
         "rank": 1
       },
       {
-        "roster_id": 12,
-        "team_name": "TClark1742",
+        "roster_id": 8,
+        "team_name": "schweiger14",
         "rank": 2
-      },
-      {
-        "roster_id": 6,
-        "team_name": "jdamocles",
-        "rank": 3
       },
       {
         "roster_id": 5,
         "team_name": "DQBuquets9",
-        "rank": 4
+        "rank": 3
       },
       {
         "roster_id": 3,
         "team_name": "maxsauers13",
+        "rank": 4
+      },
+      {
+        "roster_id": 6,
+        "team_name": "jdamocles",
         "rank": 5
       },
       {
@@ -38,23 +38,23 @@
         "rank": 7
       },
       {
-        "roster_id": 2,
-        "team_name": "OTPHJSN",
+        "roster_id": 4,
+        "team_name": "DerekCal4",
         "rank": 8
-      },
-      {
-        "roster_id": 9,
-        "team_name": "Hit it From the Dak",
-        "rank": 9
       },
       {
         "roster_id": 10,
         "team_name": "benm1",
+        "rank": 9
+      },
+      {
+        "roster_id": 2,
+        "team_name": "OTPHJSN",
         "rank": 10
       },
       {
-        "roster_id": 4,
-        "team_name": "DerekCal4",
+        "roster_id": 9,
+        "team_name": "Hit it From the Dak",
         "rank": 11
       },
       {
