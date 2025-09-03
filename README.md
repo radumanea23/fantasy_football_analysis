@@ -1,4 +1,4 @@
-## Sean Farrell's Carpool – Fantasy Football Site
+## Fantasy Football Site for the fellas
 
 Static site hosted via GitHub Pages with weekly power rankings, matchup predictions, and an analytics chart. Data comes from the Sleeper API and optional GPT generation.
 
