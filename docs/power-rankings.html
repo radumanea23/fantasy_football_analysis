@@ -66,6 +66,12 @@
           [...container.children].forEach(c => c.classList.remove('expanded'));
         }
 
+        function linkify(text) {
+          if (!text) return '';
+          const urlRegex = /(https?:\/\/[^\s)]+)(?![^<]*>|[^\(]*\))/g;
+          return String(text).replace(urlRegex, (url) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`);
+        }
+
         data.rankings
           .slice()
           .sort((a,b) => (a.rank||999) - (b.rank||999))
@@ -79,7 +85,7 @@
                 <img class="rank-avatar" src="${team.avatar_url || ''}" alt="avatar" onerror="this.style.display='none'" />
                 <div class="rank-team">${team.team_name || r.team_name}</div>
               </div>
-              <div class="rank-expand">${r.summary || 'Expand for analysis'}</div>
+              <div class="rank-expand"></div>
               <div class="rank-details">
                 <div style="font-weight:600;margin-bottom:6px;">Key Players</div>
                 <ul class="kp"></ul>
@@ -87,6 +93,10 @@
                 <div class="bp"></div>
                 <div style="font-weight:600;margin:10px 0 6px;">Make or Break</div>
                 <div class="mb"></div>
+                <div class="sources-wrap" style="margin-top:10px; display:none;">
+                  <div style="font-weight:600;margin:10px 0 6px;">Sources</div>
+                  <ul class="sources"></ul>
+                </div>
               </div>
             `;
             card.addEventListener('click', () => {
@@ -117,21 +127,42 @@
               }
             });
             container.appendChild(card);
+            // Populate summary (with linkification if URLs present)
+            const summaryEl = card.querySelector('.rank-expand');
+            if (summaryEl) summaryEl.innerHTML = linkify(r.summary || 'Expand for analysis');
+
             // Populate details if present
             const details = card.querySelector('.rank-details');
             const kp = details ? details.querySelector('.kp') : null;
             const bp = details ? details.querySelector('.bp') : null;
             const mb = details ? details.querySelector('.mb') : null;
+            const sourcesWrap = details ? details.querySelector('.sources-wrap') : null;
+            const sourcesList = details ? details.querySelector('.sources') : null;
             const analysis = r.analysis || {};
             if (kp && Array.isArray(analysis.key_players)) {
               analysis.key_players.forEach(k => {
                 const li = document.createElement('li');
-                li.textContent = `${k.name}: ${k.note}`;
+                li.innerHTML = `${k.name}: ${linkify(k.note)}`;
                 kp.appendChild(li);
               });
             }
-            if (bp) bp.textContent = analysis.bench_potential || '';
-            if (mb) mb.textContent = analysis.make_or_break || '';
+            if (bp) bp.innerHTML = linkify(analysis.bench_potential || '');
+            if (mb) mb.innerHTML = linkify(analysis.make_or_break || '');
+
+            // Optional sources field: array of strings or objects {title,url}
+            if (sourcesList && Array.isArray(r.sources) && r.sources.length) {
+              if (sourcesWrap) sourcesWrap.style.display = 'block';
+              r.sources.forEach(s => {
+                const li = document.createElement('li');
+                if (typeof s === 'string') {
+                  li.innerHTML = `<a href="${s}" target="_blank" rel="noopener noreferrer">${s}</a>`;
+                } else if (s && s.url) {
+                  const title = s.title || s.url;
+                  li.innerHTML = `<a href="${s.url}" target="_blank" rel="noopener noreferrer">${title}</a>`;
+                }
+                sourcesList.appendChild(li);
+              });
+            }
           });
       }
       loadRankings();
