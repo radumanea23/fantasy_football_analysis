@@ -39,6 +39,8 @@ def build_teams_json(league_id: str, users: List[dict], rosters: List[dict]) -> 
         owner_id = str(user.get("user_id") or "")
         display_name = str(user.get("display_name") or "")
         team_name = preferred_team_name(user)
+        avatar = user.get("avatar") or ""
+        avatar_url = f"https://sleepercdn.com/avatars/{avatar}" if avatar else ""
         roster_id = owner_to_roster.get(owner_id, None)
         # Filter out co-owners without a roster_id
         if roster_id is None:
@@ -49,6 +51,7 @@ def build_teams_json(league_id: str, users: List[dict], rosters: List[dict]) -> 
                 "owner_user_id": owner_id,
                 "owner_display_name": display_name,
                 "team_name": team_name,
+                "avatar_url": avatar_url,
             }
         )
     return {"league_id": league_id, "teams": teams}

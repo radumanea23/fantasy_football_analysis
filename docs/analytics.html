@@ -10,7 +10,7 @@
   <body>
     <nav class="nav">
       <div class="nav-inner">
-        <div class="brand">Fantasy League</div>
+        <div class="brand">Sean Farrell's Carpool</div>
         <a href="./power-rankings.html">Power Rankings</a>
         <a href="./matchups.html">Matchups</a>
         <a href="./analytics.html">Analytics</a>
@@ -50,7 +50,8 @@
         const resW1 = await fetch('./data/2025/week1/power_rankings.json');
         const w1 = await resW1.json();
 
-        const points = w1.rankings.map(r => ({ x: r.rank, y: 1, team: r.team_name }));
+        // Switch axes: x = week, y = rank (invert y so 1 is at top)
+        const points = w1.rankings.map(r => ({ x: 1, y: r.rank, team: r.team_name }));
         const ctx = document.getElementById('chart').getContext('2d');
         const chart = new Chart(ctx, {
           type: 'scatter',
@@ -72,23 +73,24 @@
               legend: { display: false },
               tooltip: {
                 callbacks: {
-                  label: (ctx) => `${ctx.raw.team} – rank ${ctx.raw.x}, week ${ctx.raw.y}`,
+                  label: (ctx) => `${ctx.raw.team} – week ${ctx.raw.x}, rank ${ctx.raw.y}`,
                 },
               },
             },
             scales: {
               x: {
-                title: { display: true, text: 'Rank', color: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim() },
-                ticks: { color: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize: 1 },
-                grid: { color: 'rgba(0,0,0,0.06)' },
-                min: 1,
-              },
-              y: {
                 title: { display: true, text: 'Week', color: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim() },
                 ticks: { color: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize: 1 },
                 grid: { color: 'rgba(0,0,0,0.06)' },
                 min: 1,
                 max: 18,
+              },
+              y: {
+                title: { display: true, text: 'Rank', color: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim() },
+                ticks: { color: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize: 1 },
+                grid: { color: 'rgba(0,0,0,0.06)' },
+                reverse: true,
+                min: 1,
               },
             },
           },

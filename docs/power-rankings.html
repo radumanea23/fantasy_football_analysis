@@ -21,17 +21,8 @@
     <div class="container">
       <div class="card">
         <h1 class="title">Power Rankings</h1>
-        <p class="muted">Generated with love.</p>
-        <table id="rankings-table">
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Team</th>
-              <th>Roster ID</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+        <p class="muted">Tap a team to expand analysis</p>
+        <div id="rankings" class="rankings"></div>
       </div>
     </div>
     <script>
@@ -54,13 +45,44 @@
       async function loadRankings() {
         const res = await fetch('./data/2025/week1/power_rankings.json');
         const data = await res.json();
-        const tbody = document.querySelector('#rankings-table tbody');
-        tbody.innerHTML = '';
-        data.rankings.sort((a,b) => a.rank - b.rank).forEach(r => {
-          const tr = document.createElement('tr');
-          tr.innerHTML = `<td>${r.rank}</td><td>${r.team_name}</td><td>${r.roster_id ?? ''}</td>`;
-          tbody.appendChild(tr);
-        });
+        const teamsRes = await fetch('./data/teams.json');
+        const teamsData = await teamsRes.json();
+        const rosterIdToTeam = new Map(teamsData.teams.map(t => [t.roster_id, t]));
+
+        const container = document.getElementById('rankings');
+        container.innerHTML = '';
+
+        let expanded = null;
+        function collapseAll() {
+          [...container.children].forEach(c => c.classList.remove('expanded'));
+        }
+
+        data.rankings
+          .slice()
+          .sort((a,b) => a.rank - b.rank)
+          .forEach(r => {
+            const team = rosterIdToTeam.get(r.roster_id) || { team_name: r.team_name, avatar_url: '' };
+            const card = document.createElement('div');
+            card.className = 'rank-card';
+            card.innerHTML = `
+              <div class="rank-card-header">
+                <div class="rank-num">${r.rank}</div>
+                <img class="rank-avatar" src="${team.avatar_url || ''}" alt="avatar" onerror="this.style.display='none'" />
+                <div class="rank-team">${team.team_name || r.team_name}</div>
+              </div>
+              <div class="rank-expand">Expand for analysis</div>
+              <div class="rank-details">Analysis coming soon...</div>
+            `;
+            card.addEventListener('click', () => {
+              if (card.classList.contains('expanded')) {
+                card.classList.remove('expanded');
+              } else {
+                collapseAll();
+                card.classList.add('expanded');
+              }
+            });
+            container.appendChild(card);
+          });
       }
       loadRankings();
     </script>
