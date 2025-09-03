@@ -70,8 +70,15 @@
                 <img class="rank-avatar" src="${team.avatar_url || ''}" alt="avatar" onerror="this.style.display='none'" />
                 <div class="rank-team">${team.team_name || r.team_name}</div>
               </div>
-              <div class="rank-expand">Expand for analysis</div>
-              <div class="rank-details">Analysis coming soon...</div>
+              <div class="rank-expand">${r.summary || 'Expand for analysis'}</div>
+              <div class="rank-details">
+                <div style="font-weight:600;margin-bottom:6px;">Key Players</div>
+                <ul class="kp"></ul>
+                <div style="font-weight:600;margin:10px 0 6px;">Bench Potential</div>
+                <div class="bp"></div>
+                <div style="font-weight:600;margin:10px 0 6px;">Make or Break</div>
+                <div class="mb"></div>
+              </div>
             `;
             card.addEventListener('click', () => {
               if (card.classList.contains('expanded')) {
@@ -82,6 +89,19 @@
               }
             });
             container.appendChild(card);
+            // Populate details if present
+            const details = card.querySelector('.rank-details');
+            const kp = details.querySelector('.kp');
+            const bp = details.querySelector('.bp');
+            const mb = details.querySelector('.mb');
+            const analysis = r.analysis || {};
+            (analysis.key_players || []).forEach(k => {
+              const li = document.createElement('li');
+              li.textContent = `${k.name}: ${k.note}`;
+              kp.appendChild(li);
+            });
+            bp.textContent = analysis.bench_potential || '';
+            mb.textContent = analysis.make_or_break || '';
           });
       }
       loadRankings();

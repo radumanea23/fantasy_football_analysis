@@ -61,3 +61,24 @@ This will write two files:
 - The script fetches `players/nfl` once per run to map player IDs to names/positions.
 - `is_starter` marks whether the player is currently in a starting slot according to Sleeper.
 
+### Weekly Data Build and History
+
+Build or update a specific week (stores history at `docs/data/2025/history.json`):
+
+```bash
+source .venv/bin/activate
+python scripts/build_site_data.py --league-id 1248075580834856960 --season 2025 --week 1 --docs-dir ./docs
+```
+
+### Generate GPT-based Power Rankings & Analysis (optional)
+
+Set your OpenAI key and run the generator. This writes to `docs/data/<season>/week<week>/power_rankings.json` with `summary` and `analysis` fields per team.
+
+```bash
+export OPENAI_API_KEY=sk-... # required
+pip install -r requirements.txt
+python scripts/generate_power_rankings.py --league-id 1248075580834856960 --season 2025 --week 1 --docs-dir ./docs --model gpt-4o-mini
+```
+
+If you want web-enriched analysis (latest injuries/usage), consider pre-enriching inputs or using a browsing-capable model and vendor. The current script expects structured JSON back.
+

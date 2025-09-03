@@ -47,11 +47,16 @@
         // For now we only have week 1; structure allows future weeks appended
         const resTeams = await fetch('./data/teams.json');
         const teamsJson = await resTeams.json();
-        const resW1 = await fetch('./data/2025/week1/power_rankings.json');
-        const w1 = await resW1.json();
+        const resHist = await fetch('./data/2025/history.json');
+        const hist = await resHist.json();
 
-        // Switch axes: x = week, y = rank (invert y so 1 is at top)
-        const points = w1.rankings.map(r => ({ x: 1, y: r.rank, team: r.team_name }));
+        // Build scatter points from history: x = week, y = rank
+        const points = [];
+        const weeks = hist.weeks || {};
+        Object.keys(weeks).forEach(wk => {
+          const entries = weeks[wk];
+          entries.forEach(r => points.push({ x: Number(wk), y: r.rank, team: r.team_name }));
+        });
         const ctx = document.getElementById('chart').getContext('2d');
         const chart = new Chart(ctx, {
           type: 'scatter',

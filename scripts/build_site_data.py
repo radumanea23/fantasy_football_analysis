@@ -57,7 +57,7 @@ def build_teams_json(league_id: str, users: List[dict], rosters: List[dict]) -> 
     return {"league_id": league_id, "teams": teams}
 
 
-def build_power_rankings_week1(league_id: str, season: int, users: List[dict], rosters: List[dict]) -> dict:
+def build_power_rankings_week(league_id: str, season: int, week: int, users: List[dict], rosters: List[dict]) -> dict:
     # Placeholder: alphabetical by team_name
     teams_info = []
     owner_to_roster: Dict[str, int] = {str(r.get("owner_id") or ""): r.get("roster_id") for r in rosters}
@@ -72,12 +72,18 @@ def build_power_rankings_week1(league_id: str, season: int, users: List[dict], r
 
     rankings = []
     for idx, (team_name, roster_id) in enumerate(teams_info, start=1):
-        rankings.append({"roster_id": roster_id, "team_name": team_name, "rank": idx})
+        rankings.append({
+            "roster_id": roster_id,
+            "team_name": team_name,
+            "rank": idx,
+            "summary": "",
+            "analysis": {"key_players": [], "bench_potential": "", "make_or_break": ""}
+        })
 
-    return {"league_id": league_id, "season": season, "week": 1, "rankings": rankings}
+    return {"league_id": league_id, "season": season, "week": week, "rankings": rankings}
 
 
-def build_matchups_week1(league_id: str, season: int, users: List[dict], rosters: List[dict]) -> dict:
+def build_matchups_week(league_id: str, season: int, week: int, users: List[dict], rosters: List[dict]) -> dict:
     # Try to fetch from Sleeper; if empty, pair sequentially by roster_id
     owner_to_team_name: Dict[str, str] = {str(u.get("user_id") or ""): preferred_team_name(u) for u in users}
     roster_id_to_team_name: Dict[int, str] = {}
@@ -86,7 +92,7 @@ def build_matchups_week1(league_id: str, season: int, users: List[dict], rosters
         roster_id = r.get("roster_id")
         roster_id_to_team_name[roster_id] = owner_to_team_name.get(owner_id, f"Team {roster_id}")
 
-    matchups = get_matchups(league_id, 1)
+    matchups = get_matchups(league_id, week)
     pairs: List[Tuple[int, int]] = []
     if matchups:
         # Sleeper returns list of matchup entries; group by matchup_id
@@ -119,7 +125,26 @@ def build_matchups_week1(league_id: str, season: int, users: List[dict], rosters
             }
         )
 
-    return {"league_id": league_id, "season": season, "week": 1, "matchups": matchups_out}
+    return {"league_id": league_id, "season": season, "week": week, "matchups": matchups_out}
+
+
+def update_history_file(data_dir: Path, season: int, week: int, rankings: List[dict]) -> None:
+    history_path = data_dir / f"{season}/history.json"
+    ensure_dir(history_path.parent)
+    history = {"season": season, "weeks": {}}  # type: ignore[dict-item]
+    if history_path.exists():
+        try:
+            history = json.loads(history_path.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    weeks = history.setdefault("weeks", {})
+    # Store minimal info per week for charting/history
+    weeks[str(week)] = [
+        {"roster_id": r.get("roster_id"), "team_name": r.get("team_name"), "rank": r.get("rank")}
+        for r in rankings
+    ]
+    with history_path.open("w", encoding="utf-8") as f:
+        json.dump(history, f, indent=2)
 
 
 def write_json(path: Path, obj: dict) -> None:
@@ -132,6 +157,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Build site data JSON under docs/data")
     parser.add_argument("--league-id", default="1248075580834856960")
     parser.add_argument("--season", type=int, default=2025)
+    parser.add_argument("--week", type=int, default=1)
     parser.add_argument("--docs-dir", default=str(Path.cwd() / "docs"))
     args = parser.parse_args(argv)
 
@@ -145,16 +171,19 @@ def main(argv: Optional[List[str]] = None) -> int:
     _players = get_players_nfl()  # reserved for future use
 
     teams = build_teams_json(league_id, users, rosters)
-    power_rankings_w1 = build_power_rankings_week1(league_id, season, users, rosters)
-    matchups_w1 = build_matchups_week1(league_id, season, users, rosters)
+    week = int(args.week)
+    power_rankings = build_power_rankings_week(league_id, season, week, users, rosters)
+    matchups = build_matchups_week(league_id, season, week, users, rosters)
 
     write_json(data_dir / "teams.json", teams)
-    write_json(data_dir / f"{season}/week1/power_rankings.json", power_rankings_w1)
-    write_json(data_dir / f"{season}/week1/matchups.json", matchups_w1)
+    write_json(data_dir / f"{season}/week{week}/power_rankings.json", power_rankings)
+    write_json(data_dir / f"{season}/week{week}/matchups.json", matchups)
+    update_history_file(data_dir, season, week, power_rankings["rankings"])  # type: ignore[index]
 
     print(f"Wrote: {data_dir / 'teams.json'}")
-    print(f"Wrote: {data_dir / f'{season}/week1/power_rankings.json'}")
-    print(f"Wrote: {data_dir / f'{season}/week1/matchups.json'}")
+    print(f"Wrote: {data_dir / f'{season}/week{week}/power_rankings.json'}")
+    print(f"Wrote: {data_dir / f'{season}/week{week}/matchups.json'}")
+    print(f"Updated: {data_dir / f'{season}/history.json'}")
     return 0
 
 
