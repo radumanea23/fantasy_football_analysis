@@ -16,15 +16,32 @@
         <a href="./analytics.html">Analytics</a>
         <div class="spacer"></div>
         <span class="badge">2025 • Week 1</span>
+        <button id="theme-toggle" class="btn" aria-label="Toggle theme">Light</button>
       </div>
     </nav>
     <div class="container">
       <div class="card">
         <h1 class="title">Power Rankings – Trend</h1>
-        <p class="muted">Line chart: x = teams, y = week, value = rank position</p>
+        <p class="muted">Scatter: x = rank, y = week (hover for team)</p>
         <canvas id="chart" height="120"></canvas>
       </div>
     </div>
+    <script>
+      (function initTheme(){
+        const stored = localStorage.getItem('theme') || 'light';
+        if (stored === 'dark') document.documentElement.setAttribute('data-theme','dark');
+        const btn = document.getElementById('theme-toggle');
+        const update = () => { btn.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? 'Dark' : 'Light'; };
+        update();
+        btn.addEventListener('click', () => {
+          const curr = document.documentElement.getAttribute('data-theme');
+          const next = curr === 'dark' ? null : 'dark';
+          if (next) document.documentElement.setAttribute('data-theme', next); else document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('theme', next ? 'dark' : 'light');
+          update();
+        });
+      })();
+    </script>
     <script>
       async function loadData() {
         // For now we only have week 1; structure allows future weeks appended
@@ -33,50 +50,45 @@
         const resW1 = await fetch('./data/2025/week1/power_rankings.json');
         const w1 = await resW1.json();
 
-        const labels = w1.rankings
-          .slice()
-          .sort((a,b) => a.rank - b.rank)
-          .map(r => r.team_name);
-
-        // Build one dataset for week 1 using rank as value
-        const week1Data = w1.rankings
-          .slice()
-          .sort((a,b) => a.rank - b.rank)
-          .map(r => r.rank);
-
+        const points = w1.rankings.map(r => ({ x: r.rank, y: 1, team: r.team_name }));
         const ctx = document.getElementById('chart').getContext('2d');
         const chart = new Chart(ctx, {
-          type: 'line',
+          type: 'scatter',
           data: {
-            labels,
             datasets: [
               {
-                label: 'Week 1 Rank',
-                data: week1Data,
-                tension: 0.35,
-                borderColor: '#4F46E5',
-                backgroundColor: 'rgba(79,70,229,0.25)',
-                pointRadius: 4,
-                pointHoverRadius: 6,
+                label: 'Week 1',
+                data: points,
+                borderColor: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim(),
+                backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim(),
+                pointRadius: 5,
+                pointHoverRadius: 7,
               },
             ],
           },
           options: {
             responsive: true,
             plugins: {
-              legend: { labels: { color: '#C7D2FE' } },
-              tooltip: { mode: 'index', intersect: false },
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: (ctx) => `${ctx.raw.team} – rank ${ctx.raw.x}, week ${ctx.raw.y}`,
+                },
+              },
             },
             scales: {
               x: {
-                ticks: { color: '#9AA5B1' },
-                grid: { color: 'rgba(255,255,255,0.06)' },
+                title: { display: true, text: 'Rank', color: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim() },
+                ticks: { color: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize: 1 },
+                grid: { color: 'rgba(0,0,0,0.06)' },
+                min: 1,
               },
               y: {
-                reverse: false, // smaller rank is better; display natural ascending but annotate
-                ticks: { color: '#9AA5B1', stepSize: 1 },
-                grid: { color: 'rgba(255,255,255,0.06)' },
-                title: { display: true, text: 'Rank', color: '#9AA5B1' },
+                title: { display: true, text: 'Week', color: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim() },
+                ticks: { color: getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize: 1 },
+                grid: { color: 'rgba(0,0,0,0.06)' },
+                min: 1,
+                max: 18,
               },
             },
           },

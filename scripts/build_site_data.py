@@ -40,6 +40,9 @@ def build_teams_json(league_id: str, users: List[dict], rosters: List[dict]) -> 
         display_name = str(user.get("display_name") or "")
         team_name = preferred_team_name(user)
         roster_id = owner_to_roster.get(owner_id, None)
+        # Filter out co-owners without a roster_id
+        if roster_id is None:
+            continue
         teams.append(
             {
                 "roster_id": roster_id,
@@ -59,6 +62,8 @@ def build_power_rankings_week1(league_id: str, season: int, users: List[dict], r
         team_name = preferred_team_name(u)
         owner_id = str(u.get("user_id") or "")
         roster_id = owner_to_roster.get(owner_id)
+        if roster_id is None:
+            continue
         teams_info.append((team_name, roster_id))
     teams_info.sort(key=lambda t: (t[0] or ""))
 

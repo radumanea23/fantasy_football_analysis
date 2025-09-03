@@ -15,6 +15,7 @@
         <a href="./analytics.html">Analytics</a>
         <div class="spacer"></div>
         <span class="badge">2025 • Week 1</span>
+        <button id="theme-toggle" class="btn" aria-label="Toggle theme">Light</button>
       </div>
     </nav>
     <div class="container">
@@ -34,5 +35,21 @@
       </div>
     </div>
   </body>
+  <script>
+    (function initTheme(){
+      const stored = localStorage.getItem('theme') || 'light';
+      if (stored === 'dark') document.documentElement.setAttribute('data-theme','dark');
+      const btn = document.getElementById('theme-toggle');
+      const update = () => { btn.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? 'Dark' : 'Light'; };
+      update();
+      btn.addEventListener('click', () => {
+        const curr = document.documentElement.getAttribute('data-theme');
+        const next = curr === 'dark' ? null : 'dark';
+        if (next) document.documentElement.setAttribute('data-theme', next); else document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', next ? 'dark' : 'light');
+        update();
+      });
+    })();
+  </script>
   </html>
 
