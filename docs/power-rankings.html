@@ -59,7 +59,7 @@
 
         data.rankings
           .slice()
-          .sort((a,b) => a.rank - b.rank)
+          .sort((a,b) => (a.rank||999) - (b.rank||999))
           .forEach(r => {
             const team = rosterIdToTeam.get(r.roster_id) || { team_name: r.team_name, avatar_url: '' };
             const card = document.createElement('div');
@@ -91,17 +91,19 @@
             container.appendChild(card);
             // Populate details if present
             const details = card.querySelector('.rank-details');
-            const kp = details.querySelector('.kp');
-            const bp = details.querySelector('.bp');
-            const mb = details.querySelector('.mb');
+            const kp = details ? details.querySelector('.kp') : null;
+            const bp = details ? details.querySelector('.bp') : null;
+            const mb = details ? details.querySelector('.mb') : null;
             const analysis = r.analysis || {};
-            (analysis.key_players || []).forEach(k => {
-              const li = document.createElement('li');
-              li.textContent = `${k.name}: ${k.note}`;
-              kp.appendChild(li);
-            });
-            bp.textContent = analysis.bench_potential || '';
-            mb.textContent = analysis.make_or_break || '';
+            if (kp && Array.isArray(analysis.key_players)) {
+              analysis.key_players.forEach(k => {
+                const li = document.createElement('li');
+                li.textContent = `${k.name}: ${k.note}`;
+                kp.appendChild(li);
+              });
+            }
+            if (bp) bp.textContent = analysis.bench_potential || '';
+            if (mb) mb.textContent = analysis.make_or_break || '';
           });
       }
       loadRankings();
