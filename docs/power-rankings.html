@@ -15,7 +15,7 @@
         <a href="./analytics.html">Analytics</a>
         <div class="spacer"></div>
         <span class="badge">2025 • Week 1</span>
-        <button id="theme-toggle" class="btn" aria-label="Toggle theme">Light</button>
+        <button id="theme-toggle" class="btn" aria-label="Toggle theme" title="Toggle theme">☀️</button>
       </div>
     </nav>
     <div class="container">
@@ -30,7 +30,7 @@
         const stored = localStorage.getItem('theme') || 'light';
         if (stored === 'dark') document.documentElement.setAttribute('data-theme','dark');
         const btn = document.getElementById('theme-toggle');
-        const update = () => { btn.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? 'Dark' : 'Light'; };
+        const update = () => { btn.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? '🌙' : '☀️'; };
         update();
         btn.addEventListener('click', () => {
           const curr = document.documentElement.getAttribute('data-theme');
@@ -41,6 +41,15 @@
         });
       })();
     </script>
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="muted">© 2025 Sean Farrell's Carpool</div>
+        <div class="footer-links">
+          <a href="https://www.hudl.com/profile/8700482/Dominic-Quigley" target="_blank" rel="noopener noreferrer">Dom's huddle highlights</a>
+          <a href="https://github.com/radumanea23/fantasy_football_analysis" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+      </div>
+    </footer>
     <script>
       async function loadRankings() {
         const res = await fetch('./data/2025/week1/power_rankings.json');

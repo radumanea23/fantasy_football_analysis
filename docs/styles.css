@@ -54,3 +54,24 @@ canvas { background: transparent; }
 .rank-details { display: none; margin-left: 48px; color: var(--muted); padding-top: 8px; }
 .rank-card.expanded .rank-details { display: block; }
 
+/* Footer */
+.footer { margin-top: 24px; background: var(--surface); border-top: 1px solid var(--border); }
+.footer-inner { max-width: 1100px; margin: 0 auto; padding: 16px 24px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  .container { padding: 16px; }
+  .nav-inner { padding: 12px 16px; gap: 12px; flex-wrap: wrap; }
+  .title { font-size: 22px; }
+  .card { padding: 16px; }
+  .rank-avatar { width: 28px; height: 28px; }
+  .rank-num { width: 28px; height: 28px; font-size: 12px; }
+  th, td { padding: 8px 10px; }
+}
+
+@media (max-width: 420px) {
+  .brand { font-size: 16px; }
+  .btn { padding: 6px 10px; }
+}
+
