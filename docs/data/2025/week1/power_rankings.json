@@ -19,64 +19,49 @@
       "rank": 3
     },
     {
-      "roster_id": null,
-      "team_name": "Jvd29",
-      "rank": 4
-    },
-    {
       "roster_id": 2,
       "team_name": "OTPHJSN",
-      "rank": 5
-    },
-    {
-      "roster_id": null,
-      "team_name": "Redsabr27",
-      "rank": 6
-    },
-    {
-      "roster_id": null,
-      "team_name": "Ryanklainos",
-      "rank": 7
+      "rank": 4
     },
     {
       "roster_id": 1,
       "team_name": "She Bledsoe I\u2019m Good",
-      "rank": 8
+      "rank": 5
     },
     {
       "roster_id": 12,
       "team_name": "TClark1742",
-      "rank": 9
+      "rank": 6
     },
     {
       "roster_id": 10,
       "team_name": "benm1",
-      "rank": 10
+      "rank": 7
     },
     {
       "roster_id": 11,
       "team_name": "bwilt44",
-      "rank": 11
+      "rank": 8
     },
     {
       "roster_id": 7,
       "team_name": "evanras9",
-      "rank": 12
+      "rank": 9
     },
     {
       "roster_id": 6,
       "team_name": "jdamocles",
-      "rank": 13
+      "rank": 10
     },
     {
       "roster_id": 3,
       "team_name": "maxsauers13",
-      "rank": 14
+      "rank": 11
     },
     {
       "roster_id": 8,
       "team_name": "schweiger14",
-      "rank": 15
+      "rank": 12
     }
   ]
 }
