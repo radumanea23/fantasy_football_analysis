@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 import requests
+from dotenv import load_dotenv
 
 # Optional: use OPENAI SDK if available
 try:
@@ -25,7 +26,7 @@ from sleeper_client import (
 SYSTEM_PROMPT = (
 	"You are an expert fantasy football analyst. Given Sleeper rosters and standings, "
 	"produce JSON ranking output for the week with: rankings: [ { team_name, roster_id, rank, summary, analysis: { key_players: [ {name, note}... ], bench_potential, make_or_break } }... ]. "
-	"Use current NFL context (injuries, depth charts, trends). Keep summaries concise and objective."
+	"Use current NFL context (injuries, depth charts, trends). Keep summaries concise and objective. Add in comedic roasts throughout analysis such as lmao why would you pcik this player type of things."
 )
 
 USER_TEMPLATE = (
@@ -69,20 +70,32 @@ def format_users(users: List[dict], rosters: List[dict]) -> str:
 	return "\n".join(lines)
 
 
-def call_openai(model: str, api_key: str, system_prompt: str, user_prompt: str) -> dict:
+def call_openai(model: str, api_key: str, system_prompt: str, user_prompt: str, enable_web: bool = False) -> dict:
 	if OpenAI is None:
 		raise RuntimeError("openai package not installed. Add to requirements.txt and set OPENAI_API_KEY.")
 	client = OpenAI(api_key=api_key)
-	resp = client.chat.completions.create(
-		model=model,
-		messages=[
-			{"role": "system", "content": system_prompt},
-			{"role": "user", "content": user_prompt},
-		],
-		response_format={"type": "json_object"},
-		temperature=0.7,
-	)
-	content = resp.choices[0].message.content or "{}"
+	if enable_web:
+		resp = client.responses.create(
+			model=model,
+			tools=[{"type": "web_search"}],
+			input=[
+				{"role": "system", "content": system_prompt},
+				{"role": "user", "content": user_prompt},
+			],
+			response_format={"type": "json_object"},
+		)
+		content = resp.output_text or "{}"
+	else:
+		resp = client.chat.completions.create(
+			model=model,
+			messages=[
+				{"role": "system", "content": system_prompt},
+				{"role": "user", "content": user_prompt},
+			],
+			response_format={"type": "json_object"},
+			temperature=0.7,
+		)
+		content = resp.choices[0].message.content or "{}"
 	return json.loads(content)
 
 
@@ -95,6 +108,7 @@ def main(argv: Optional[List[str]] = None) -> int:
 	parser.add_argument("--model", default="gpt-4o-mini")
 	args = parser.parse_args(argv)
 
+	load_dotenv()
 	api_key = os.getenv("OPENAI_API_KEY")
 	if not api_key:
 		print("Missing OPENAI_API_KEY environment variable.")
@@ -114,7 +128,7 @@ def main(argv: Optional[List[str]] = None) -> int:
 	rosters_str = "\n".join([f"- roster_id={rid}: {', '.join(players)}" for rid, players in rosters_map.items()])
 
 	user_prompt = USER_TEMPLATE.format(season=season, week=week, teams=teams_str, rosters=rosters_str)
-	result = call_openai(args.model, api_key, SYSTEM_PROMPT, user_prompt)
+	result = call_openai(args.model, api_key, SYSTEM_PROMPT, user_prompt, enable_web=False)
 
 	# Expect result["rankings"] structure
 	out_path = data_dir / f"{season}/week{week}/power_rankings.json"
