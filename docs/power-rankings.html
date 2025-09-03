@@ -90,9 +90,31 @@
               </div>
             `;
             card.addEventListener('click', () => {
+              const details = card.querySelector('.rank-details');
               const wasExpanded = card.classList.contains('expanded');
-              collapseAll();
-              if (!wasExpanded) card.classList.add('expanded');
+              // Collapse others first
+              [...container.children].forEach(c => {
+                if (c !== card) {
+                  const d = c.querySelector('.rank-details');
+                  if (d) d.style.maxHeight = '0px';
+                  c.classList.remove('expanded');
+                }
+              });
+              if (wasExpanded) {
+                if (details) details.style.maxHeight = '0px';
+                card.classList.remove('expanded');
+              } else {
+                card.classList.add('expanded');
+                // Measure full height then animate to avoid cutoff
+                if (details) {
+                  details.style.maxHeight = 'none';
+                  const full = details.scrollHeight;
+                  details.style.maxHeight = '0px';
+                  requestAnimationFrame(() => {
+                    details.style.maxHeight = full + 'px';
+                  });
+                }
+              }
             });
             container.appendChild(card);
             // Populate details if present

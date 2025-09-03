@@ -52,7 +52,7 @@ canvas { background: transparent; }
 .rank-team { font-weight: 600; }
 .rank-expand { color: var(--muted); font-size: 14px; margin-left: 48px; margin-top: 6px; }
 .rank-details { margin-left: 48px; color: var(--muted); padding-top: 8px; max-height: 0; opacity: 0; overflow: hidden; transition: max-height .28s ease, opacity .24s ease; }
-.rank-card.expanded .rank-details { max-height: 600px; opacity: 1; }
+.rank-card.expanded .rank-details { opacity: 1; }
 .rank-expand, .rank-details { overflow-wrap: anywhere; word-break: break-word; }
 
 /* Footer */
