@@ -5,6 +5,7 @@ import argparse
 import json
 import os
 from pathlib import Path
+import sys
 from typing import Dict, List, Optional
 
 import requests
@@ -16,6 +17,10 @@ try:
 except Exception:
 	OpenAI = None  # type: ignore
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 from sleeper_client import (
 	get_league_users,
 	get_league_rosters,
@@ -26,16 +31,16 @@ from sleeper_client import (
 SYSTEM_PROMPT = (
 	"You are an expert fantasy football analyst. Given Sleeper rosters and standings, "
 	"produce JSON ranking output for the week with: rankings: [ { team_name, roster_id, rank, summary, analysis: { key_players: [ {name, note}... ], bench_potential, make_or_break } }... ]. "
-	"Use current NFL context (injuries, depth charts, trends). Keep summaries concise and objective. Add in comedic roasts throughout analysis such as lmao why would you pcik this player type of things."
+	"Use web search to get the current NFL context (injuries, depth charts, trending players- this is super important). Also make sure you are looking at rookie rankings so that you don't hype up bad rookies. Keep summaries somewhat concise. Add in comedic roasts throughout analysis such as lmao why would you pick this player type of things. Do not include links to sources."
 )
 
 USER_TEMPLATE = (
-	"LEAGUE CONTEXT\n"
+	"League Context: This league is a dynasty league so rookies, age matters. It is also a full PPR league with a super flex spot so QB depth also matters- but you can only start 2 QBS.\n"
 	"Season: {season} Week: {week}\n"
 	"Teams (owner display/team name):\n{teams}\n\n"
 	"ROSTERS (roster_id -> players list with position/team):\n{rosters}\n\n"
 	"STANDINGS: All teams are 0-0 to start.\n\n"
-	"Write only JSON with this shape: {\"rankings\":[{\"team_name\":...,\"roster_id\":...,\"rank\":1,\"summary\":...,\"analysis\":{\"key_players\":[{\"name\":...,\"note\":...}],\"bench_potential\":...,\"make_or_break\":...}}...]}"
+	"Write only JSON with this shape: {{\"rankings\":[{{\"team_name\":...,\"roster_id\":...,\"rank\":1,\"summary\":...,\"analysis\":{{\"key_players\":[{{\"name\":...,\"note\":...}}],\"bench_potential\":...,\"make_or_break\":...}}}}...]}}"
 )
 
 
@@ -75,16 +80,17 @@ def call_openai(model: str, api_key: str, system_prompt: str, user_prompt: str, 
 		raise RuntimeError("openai package not installed. Add to requirements.txt and set OPENAI_API_KEY.")
 	client = OpenAI(api_key=api_key)
 	if enable_web:
+		# Use Responses API. Embed system guidance into the input and instruct strict JSON output.
 		resp = client.responses.create(
 			model=model,
 			tools=[{"type": "web_search"}],
-			input=[
-				{"role": "system", "content": system_prompt},
-				{"role": "user", "content": user_prompt},
-			],
-			response_format={"type": "json_object"},
+			input=(
+				f"SYSTEM INSTRUCTIONS:\n{system_prompt}\n\n"
+				f"USER INPUT:\n{user_prompt}\n\n"
+				"Return only valid JSON with the described schema, no extra text."
+			),
 		)
-		content = resp.output_text or "{}"
+		content = getattr(resp, "output_text", None) or "{}"
 	else:
 		resp = client.chat.completions.create(
 			model=model,
@@ -106,6 +112,7 @@ def main(argv: Optional[List[str]] = None) -> int:
 	parser.add_argument("--week", type=int, default=1)
 	parser.add_argument("--docs-dir", default=str(Path.cwd() / "docs"))
 	parser.add_argument("--model", default="gpt-4o-mini")
+	parser.add_argument("--enable-web", action="store_true", help="Enable web search tool if model supports it")
 	args = parser.parse_args(argv)
 
 	load_dotenv()
@@ -128,7 +135,11 @@ def main(argv: Optional[List[str]] = None) -> int:
 	rosters_str = "\n".join([f"- roster_id={rid}: {', '.join(players)}" for rid, players in rosters_map.items()])
 
 	user_prompt = USER_TEMPLATE.format(season=season, week=week, teams=teams_str, rosters=rosters_str)
-	result = call_openai(args.model, api_key, SYSTEM_PROMPT, user_prompt, enable_web=False)
+	try:
+		result = call_openai(args.model, api_key, SYSTEM_PROMPT, user_prompt, enable_web=args.enable_web)
+	except Exception as e:
+		print(f"Warning: primary model/tool failed ({e}). Falling back to non-web gpt-4o-mini.")
+		result = call_openai("gpt-4o-mini", api_key, SYSTEM_PROMPT, user_prompt, enable_web=False)
 
 	# Expect result["rankings"] structure
 	out_path = data_dir / f"{season}/week{week}/power_rankings.json"
