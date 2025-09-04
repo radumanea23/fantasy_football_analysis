@@ -88,10 +88,17 @@
             const card = document.createElement('div');
             card.className = 'rank-card';
             card.innerHTML = `
-              <div class="rank-card-header">
-                <div class="rank-num">${r.rank}</div>
-                <img class="rank-avatar" src="${team.avatar_url || ''}" alt="avatar" onerror="this.style.display='none'" />
-                <div class="rank-team">${team.team_name || r.team_name}</div>
+              <div class="rank-card-header" style="justify-content:space-between;">
+                <div style="display:flex;align-items:center;gap:12px;">
+                  <div class="rank-num">${r.rank}</div>
+                  <img class="rank-avatar" src="${team.avatar_url || ''}" alt="avatar" onerror="this.style.display='none'" />
+                  <div class="rank-team">${team.team_name || r.team_name}</div>
+                </div>
+                <div class="rank-meta" style="display:flex;align-items:center;gap:10px;">
+                  <span class="muted" data-record></span>
+                  <span class="muted" data-pfpa></span>
+                  <span data-delta></span>
+                </div>
               </div>
               <div class="rank-expand"></div>
               <div class="rank-details">
@@ -171,6 +178,36 @@
                 sourcesList.appendChild(li);
               });
             }
+
+            // Enrich header meta: record, PF/PA, rank delta
+            const standingsRes = await fetch('./data/2025/standings.json');
+            const standings = await standingsRes.json().catch(()=>({standings:[]}));
+            const byRid = new Map((standings.standings||[]).map(s => [s.roster_id, s]));
+            const s = byRid.get(r.roster_id) || {wins:0,losses:0,ties:0,pf:0,pa:0};
+            const recEl = card.querySelector('[data-record]');
+            const pfpaEl = card.querySelector('[data-pfpa]');
+            if (recEl) recEl.textContent = `${s.wins}-${s.losses}${s.ties?('-'+s.ties):''}`;
+            if (pfpaEl) pfpaEl.textContent = `PF ${s.pf} • PA ${s.pa}`;
+
+            const historyRes = await fetch('./data/2025/history.json');
+            const hist = await historyRes.json().catch(()=>({weeks:{}}));
+            const deltaEl = card.querySelector('[data-delta]');
+            let deltaText = '–'; let color = 'var(--muted)';
+            try {
+              const weeks = hist.weeks || {};
+              const weekNums = Object.keys(weeks).map(n=>parseInt(n,10)).sort((a,b)=>a-b);
+              if (weekNums.length >= 2) {
+                const lastWeek = weekNums[weekNums.length-2];
+                const prev = (weeks[String(lastWeek)]||[]).find(x=>x.roster_id===r.roster_id);
+                if (prev && typeof prev.rank==='number') {
+                  const delta = prev.rank - r.rank; // positive if moved up
+                  if (delta > 0) { deltaText = `▲ ${delta}`; color = '#16a34a'; }
+                  else if (delta < 0) { deltaText = `▼ ${Math.abs(delta)}`; color = '#dc2626'; }
+                  else { deltaText = '■ 0'; color = 'var(--muted)'; }
+                } else { deltaText = '■ 0'; }
+              } else { deltaText = '■ 0'; }
+            } catch(e) { deltaText = '■ 0'; }
+            if (deltaEl) { deltaEl.textContent = deltaText; deltaEl.style.color = color; }
           });
       }
       loadRankings();

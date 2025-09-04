@@ -1,0 +1,101 @@
+{
+  "season": 2025,
+  "standings": [
+    {
+      "roster_id": 1,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 2,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 3,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 4,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 5,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 6,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 7,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 8,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 9,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 10,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 11,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    },
+    {
+      "roster_id": 12,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pf": 0.0,
+      "pa": 0.0
+    }
+  ]
+}
