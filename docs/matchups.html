@@ -50,20 +50,23 @@
     <script>
       async function loadPredictions() {
         const season = 2025; const week = 1;
-        const [teamsRes, predRes, standingsRes, rostersMinRes] = await Promise.all([
+        const [teamsRes, predRes, standingsRes, rostersMinRes, projectionsRes] = await Promise.all([
           fetch('./data/teams.json'),
           fetch(`./data/${season}/week${week}/matchup_predictions.json`),
           fetch(`./data/${season}/standings.json`).catch(()=>({ json:()=>({standings:[]}) })),
           fetch(`./data/${season}/rosters_min.json`).catch(()=>({ json:()=>({rosters:[]}) })),
+          fetch(`./data/${season}/week${week}/projections.json`).catch(()=>({ json:()=>({projections:[]}) })),
         ]);
         const teams = await teamsRes.json();
         const preds = await predRes.json();
         const standings = await standingsRes.json();
         const rostersMin = await rostersMinRes.json();
+        const projections = await projectionsRes.json();
 
         const teamByRoster = new Map(teams.teams.map(t => [t.roster_id, t]));
         const standingsByRoster = new Map((standings.standings||[]).map(s => [s.roster_id, s]));
         const startersByRoster = new Map((rostersMin.rosters||[]).map(r => [r.roster_id, (r.starters||[]).slice(0,3)]));
+        const projByPid = new Map((projections.projections||[]).map(p => [String(p.player_id), p]));
         const list = document.getElementById('matchups-list');
         list.innerHTML = '';
 
@@ -81,8 +84,8 @@
           const away = teamByRoster.get(p.away_roster_id) || { team_name: `Team ${p.away_roster_id}`, avatar_url: '' };
           const hS = standingsByRoster.get(p.home_roster_id) || {wins:0,losses:0,ties:0,pf:0,pa:0};
           const aS = standingsByRoster.get(p.away_roster_id) || {wins:0,losses:0,ties:0,pf:0,pa:0};
-          const hTop = startersByRoster.get(p.home_roster_id) || [];
-          const aTop = startersByRoster.get(p.away_roster_id) || [];
+          const hTop = (startersByRoster.get(p.home_roster_id) || []).map(t => ({...t, proj: (projByPid.get(String(t.player_id))||{}).points||0})).sort((a,b)=>b.proj-a.proj).slice(0,3);
+          const aTop = (startersByRoster.get(p.away_roster_id) || []).map(t => ({...t, proj: (projByPid.get(String(t.player_id))||{}).points||0})).sort((a,b)=>b.proj-a.proj).slice(0,3);
           const winner = p.predicted_winner_roster_id === p.home_roster_id ? home.team_name : away.team_name;
           const card = document.createElement('div');
           card.className = 'card';
@@ -106,16 +109,24 @@
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px;">
               <div>
-                <div class="muted" style="font-size:12px;margin-bottom:4px;">Top starters</div>
-                <ul style="margin:0;padding-left:18px;">
-                  ${hTop.map(t=>`<li>${t.name} (${t.position}-${t.nfl_team})</li>`).join('')}
-                </ul>
+                <div class="muted" style="font-size:12px;margin-bottom:4px;">Top projected</div>
+                ${hTop.map(t=>`
+                  <div style=\"display:flex;align-items:center;gap:8px;margin:4px 0;\">
+                    <img class=\"rank-avatar\" src=\"https://sleepercdn.com/content/nfl/players/thumb/${t.player_id}.jpg\" onerror=\"this.style.display='none'\" alt=\"headshot\"/>
+                    <div>${t.name} <span class=\"muted\" style=\"font-size:12px;\">(${t.position}-${t.nfl_team})</span></div>
+                    <div style=\"margin-left:auto;font-weight:600;\">${t.proj.toFixed(1)}</div>
+                  </div>
+                `).join('')}
               </div>
               <div>
-                <div class="muted" style="font-size:12px;margin-bottom:4px;">Top starters</div>
-                <ul style="margin:0;padding-left:18px;">
-                  ${aTop.map(t=>`<li>${t.name} (${t.position}-${t.nfl_team})</li>`).join('')}
-                </ul>
+                <div class="muted" style="font-size:12px;margin-bottom:4px;">Top projected</div>
+                ${aTop.map(t=>`
+                  <div style=\"display:flex;align-items:center;gap:8px;margin:4px 0;\">
+                    <img class=\"rank-avatar\" src=\"https://sleepercdn.com/content/nfl/players/thumb/${t.player_id}.jpg\" onerror=\"this.style.display='none'\" alt=\"headshot\"/>
+                    <div>${t.name} <span class=\"muted\" style=\"font-size:12px;\">(${t.position}-${t.nfl_team})</span></div>
+                    <div style=\"margin-left:auto;font-weight:600;\">${t.proj.toFixed(1)}</div>
+                  </div>
+                `).join('')}
               </div>
             </div>
             <div style="margin-top:10px;">
