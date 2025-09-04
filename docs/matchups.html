@@ -50,16 +50,20 @@
     <script>
       async function loadPredictions() {
         const season = 2025; const week = 1;
-        const [teamsRes, prRes, predRes] = await Promise.all([
+        const [teamsRes, predRes, standingsRes, rostersMinRes] = await Promise.all([
           fetch('./data/teams.json'),
-          fetch(`./data/${season}/week${week}/power_rankings.json`),
           fetch(`./data/${season}/week${week}/matchup_predictions.json`),
+          fetch(`./data/${season}/standings.json`).catch(()=>({ json:()=>({standings:[]}) })),
+          fetch(`./data/${season}/rosters_min.json`).catch(()=>({ json:()=>({rosters:[]}) })),
         ]);
         const teams = await teamsRes.json();
-        const pr = await prRes.json();
         const preds = await predRes.json();
+        const standings = await standingsRes.json();
+        const rostersMin = await rostersMinRes.json();
 
         const teamByRoster = new Map(teams.teams.map(t => [t.roster_id, t]));
+        const standingsByRoster = new Map((standings.standings||[]).map(s => [s.roster_id, s]));
+        const startersByRoster = new Map((rostersMin.rosters||[]).map(r => [r.roster_id, (r.starters||[]).slice(0,3)]));
         const list = document.getElementById('matchups-list');
         list.innerHTML = '';
 
@@ -75,18 +79,46 @@
         (preds.predictions || []).forEach(p => {
           const home = teamByRoster.get(p.home_roster_id) || { team_name: `Team ${p.home_roster_id}`, avatar_url: '' };
           const away = teamByRoster.get(p.away_roster_id) || { team_name: `Team ${p.away_roster_id}`, avatar_url: '' };
+          const hS = standingsByRoster.get(p.home_roster_id) || {wins:0,losses:0,ties:0,pf:0,pa:0};
+          const aS = standingsByRoster.get(p.away_roster_id) || {wins:0,losses:0,ties:0,pf:0,pa:0};
+          const hTop = startersByRoster.get(p.home_roster_id) || [];
+          const aTop = startersByRoster.get(p.away_roster_id) || [];
           const winner = p.predicted_winner_roster_id === p.home_roster_id ? home.team_name : away.team_name;
           const card = document.createElement('div');
           card.className = 'card';
           card.innerHTML = `
-            <div style="display:flex;align-items:center;gap:12px;">
-              <img class="rank-avatar" src="${home.avatar_url||''}" alt="home" onerror="this.style.display='none'"/>
-              <div style="font-weight:600;">${home.team_name}</div>
-              <div class="muted" style="margin:0 8px;">vs</div>
-              <img class="rank-avatar" src="${away.avatar_url||''}" alt="away" onerror="this.style.display='none'"/>
-              <div style="font-weight:600;">${away.team_name}</div>
+            <div style="display:flex;align-items:flex-start;gap:16px;justify-content:space-between;flex-wrap:wrap;">
+              <div style="display:flex;align-items:center;gap:10px;min-width:220px;">
+                <img class="rank-avatar" src="${home.avatar_url||''}" alt="home" onerror="this.style.display='none'"/>
+                <div>
+                  <div style="font-weight:600;">${home.team_name}</div>
+                  <div class="muted" style="font-size:12px;">${hS.wins}-${hS.losses}${hS.ties?('-'+hS.ties):''} • PF ${hS.pf} • PA ${hS.pa}</div>
+                </div>
+              </div>
+              <div class="muted" style="margin:4px 8px;">vs</div>
+              <div style="display:flex;align-items:center;gap:10px;min-width:220px;">
+                <img class="rank-avatar" src="${away.avatar_url||''}" alt="away" onerror="this.style.display='none'"/>
+                <div>
+                  <div style="font-weight:600;">${away.team_name}</div>
+                  <div class="muted" style="font-size:12px;">${aS.wins}-${aS.losses}${aS.ties?('-'+aS.ties):''} • PF ${aS.pf} • PA ${aS.pa}</div>
+                </div>
+              </div>
             </div>
-            <div style="margin-top:8px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px;">
+              <div>
+                <div class="muted" style="font-size:12px;margin-bottom:4px;">Top starters</div>
+                <ul style="margin:0;padding-left:18px;">
+                  ${hTop.map(t=>`<li>${t.name} (${t.position}-${t.nfl_team})</li>`).join('')}
+                </ul>
+              </div>
+              <div>
+                <div class="muted" style="font-size:12px;margin-bottom:4px;">Top starters</div>
+                <ul style="margin:0;padding-left:18px;">
+                  ${aTop.map(t=>`<li>${t.name} (${t.position}-${t.nfl_team})</li>`).join('')}
+                </ul>
+              </div>
+            </div>
+            <div style="margin-top:10px;">
               <div><strong>Predicted Winner:</strong> ${winner}</div>
               <div class="muted" style="margin-top:6px;">${p.reasoning || ''}</div>
             </div>
