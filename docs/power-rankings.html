@@ -56,6 +56,14 @@
         const data = await res.json();
         const teamsRes = await fetch('./data/teams.json');
         const teamsData = await teamsRes.json();
+        // Preload standings and history once (avoid await inside loop)
+        const standingsData = await fetch('./data/2025/standings.json')
+          .then(r => r.json())
+          .catch(() => ({ standings: [] }));
+        const standingsMap = new Map((standingsData.standings || []).map(s => [s.roster_id, s]));
+        const historyData = await fetch('./data/2025/history.json')
+          .then(r => r.json())
+          .catch(() => ({ weeks: {} }));
         const rosterIdToTeam = new Map(teamsData.teams.map(t => [t.roster_id, t]));
 
         const container = document.getElementById('rankings');
@@ -180,17 +188,13 @@
             }
 
             // Enrich header meta: record, PF/PA, rank delta
-            const standingsRes = await fetch('./data/2025/standings.json');
-            const standings = await standingsRes.json().catch(()=>({standings:[]}));
-            const byRid = new Map((standings.standings||[]).map(s => [s.roster_id, s]));
-            const s = byRid.get(r.roster_id) || {wins:0,losses:0,ties:0,pf:0,pa:0};
+            const s = standingsMap.get(r.roster_id) || {wins:0,losses:0,ties:0,pf:0,pa:0};
             const recEl = card.querySelector('[data-record]');
             const pfpaEl = card.querySelector('[data-pfpa]');
             if (recEl) recEl.textContent = `${s.wins}-${s.losses}${s.ties?('-'+s.ties):''}`;
             if (pfpaEl) pfpaEl.textContent = `PF ${s.pf} • PA ${s.pa}`;
 
-            const historyRes = await fetch('./data/2025/history.json');
-            const hist = await historyRes.json().catch(()=>({weeks:{}}));
+            const hist = historyData;
             const deltaEl = card.querySelector('[data-delta]');
             let deltaText = '–'; let color = 'var(--muted)';
             try {
