@@ -46,8 +46,9 @@
       (function initWeekSwitcher(){
         const btn = document.getElementById('week-button');
         const pop = document.getElementById('week-pop');
+        const cb = (u)=> u + (u.includes('?') ? '&' : '?') + 'v=' + Date.now();
         async function buildMenu(){
-          const hist = await fetch('./data/2025/history.json').then(r=>r.json()).catch(()=>({weeks:{}}));
+          const hist = await fetch(cb('./data/2025/history.json')).then(r=>r.json()).catch(()=>({weeks:{}}));
           const weeks = Object.keys(hist.weeks||{}).map(n=>parseInt(n,10)).sort((a,b)=>a-b);
           const latest = weeks[weeks.length-1] || 1;
           btn.textContent = `2025 • Week ${latest}`;
