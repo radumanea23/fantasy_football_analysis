@@ -3,99 +3,99 @@
   "standings": [
     {
       "roster_id": 1,
-      "wins": 0,
+      "wins": 2,
       "losses": 0,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 159.0,
+      "pa": 123.0
     },
     {
       "roster_id": 2,
-      "wins": 0,
+      "wins": 2,
       "losses": 0,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 154.0,
+      "pa": 144.0
     },
     {
       "roster_id": 3,
-      "wins": 0,
+      "wins": 2,
       "losses": 0,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 163.0,
+      "pa": 132.0
     },
     {
       "roster_id": 4,
       "wins": 0,
-      "losses": 0,
+      "losses": 2,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 137.0,
+      "pa": 140.0
     },
     {
       "roster_id": 5,
       "wins": 0,
-      "losses": 0,
+      "losses": 2,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 137.0,
+      "pa": 153.0
     },
     {
       "roster_id": 6,
       "wins": 0,
-      "losses": 0,
+      "losses": 2,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 123.0,
+      "pa": 159.0
     },
     {
       "roster_id": 7,
-      "wins": 0,
+      "wins": 2,
       "losses": 0,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 153.0,
+      "pa": 137.0
     },
     {
       "roster_id": 8,
-      "wins": 0,
-      "losses": 0,
+      "wins": 1,
+      "losses": 1,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 144.0,
+      "pa": 154.0
     },
     {
       "roster_id": 9,
       "wins": 0,
-      "losses": 0,
+      "losses": 2,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 109.0,
+      "pa": 134.0
     },
     {
       "roster_id": 10,
       "wins": 0,
-      "losses": 0,
+      "losses": 2,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 132.0,
+      "pa": 163.0
     },
     {
       "roster_id": 11,
-      "wins": 0,
+      "wins": 2,
       "losses": 0,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 140.0,
+      "pa": 137.0
     },
     {
       "roster_id": 12,
-      "wins": 0,
-      "losses": 0,
+      "wins": 1,
+      "losses": 1,
       "ties": 0,
-      "pf": 0.0,
-      "pa": 0.0
+      "pf": 134.0,
+      "pa": 109.0
     }
   ]
 }

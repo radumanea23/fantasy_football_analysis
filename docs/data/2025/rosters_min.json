@@ -35,10 +35,10 @@
           "nfl_team": "CHI"
         },
         {
-          "player_id": "4217",
-          "name": "George Kittle",
+          "player_id": "12498",
+          "name": "Mason Taylor",
           "position": "TE",
-          "nfl_team": "SF"
+          "nfl_team": "NYJ"
         },
         {
           "player_id": "4137",
@@ -88,10 +88,10 @@
           "nfl_team": "CAR"
         },
         {
-          "player_id": "5967",
-          "name": "Tony Pollard",
+          "player_id": "12533",
+          "name": "Jacory Croskey-Merritt",
           "position": "RB",
-          "nfl_team": "TEN"
+          "nfl_team": "WAS"
         },
         {
           "player_id": "11632",
@@ -337,10 +337,10 @@
           "nfl_team": "MIA"
         },
         {
-          "player_id": "10236",
-          "name": "Dalton Kincaid",
-          "position": "TE",
-          "nfl_team": "BUF"
+          "player_id": "96",
+          "name": "Aaron Rodgers",
+          "position": "QB",
+          "nfl_team": "PIT"
         },
         {
           "player_id": "11533",
@@ -372,10 +372,10 @@
           "nfl_team": "ATL"
         },
         {
-          "player_id": "12504",
-          "name": "Kaleb Johnson",
+          "player_id": "8136",
+          "name": "Rachaad White",
           "position": "RB",
-          "nfl_team": "PIT"
+          "nfl_team": "TB"
         },
         {
           "player_id": "7547",
@@ -420,10 +420,10 @@
           "nfl_team": "HOU"
         },
         {
-          "player_id": "NE",
-          "name": "New England",
+          "player_id": "LAR",
+          "name": "Los Angeles",
           "position": "DEF",
-          "nfl_team": "NE"
+          "nfl_team": "LAR"
         }
       ]
     },
@@ -508,10 +508,10 @@
           "nfl_team": "HOU"
         },
         {
-          "player_id": "4034",
-          "name": "Christian McCaffrey",
+          "player_id": "7543",
+          "name": "Travis Etienne",
           "position": "RB",
-          "nfl_team": "SF"
+          "nfl_team": "JAX"
         },
         {
           "player_id": "9226",
@@ -544,10 +544,10 @@
           "nfl_team": "CLE"
         },
         {
-          "player_id": "7543",
-          "name": "Travis Etienne",
+          "player_id": "4034",
+          "name": "Christian McCaffrey",
           "position": "RB",
-          "nfl_team": "JAX"
+          "nfl_team": "SF"
         },
         {
           "player_id": "3163",
@@ -822,10 +822,10 @@
           "nfl_team": "KC"
         },
         {
-          "player_id": "12518",
-          "name": "Tyler Warren",
-          "position": "TE",
-          "nfl_team": "IND"
+          "player_id": "7588",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "nfl_team": "DAL"
         },
         {
           "player_id": "6790",
@@ -840,10 +840,10 @@
           "nfl_team": "LAC"
         },
         {
-          "player_id": "13237",
-          "name": "Mark McNamee",
+          "player_id": "6083",
+          "name": "Matt Gay",
           "position": "K",
-          "nfl_team": "GB"
+          "nfl_team": "WAS"
         },
         {
           "player_id": "BAL",
