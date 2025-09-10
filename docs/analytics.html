@@ -126,6 +126,7 @@
             data: { datasets: datasets },
             options: {
               responsive: true,
+              parsing: false,
               plugins: {
                 legend: { display: false },
                 tooltip: {
@@ -140,8 +141,21 @@
                 }
               },
               scales: {
-                x: { min: 1, max: 17, ticks: { stepSize: 1 } },
-                y: { reverse: true, min: 1, max: 12, ticks: { stepSize: 1 } }
+                x: {
+                  type: 'linear',
+                  min: 1,
+                  max: 17,
+                  ticks: {
+                    stepSize: 1,
+                    callback: function(v){ return v; }
+                  }
+                },
+                y: {
+                  reverse: true,
+                  min: 1,
+                  max: 12,
+                  ticks: { stepSize: 1 }
+                }
               }
             }
           });
