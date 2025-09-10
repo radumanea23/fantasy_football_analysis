@@ -1,0 +1,48 @@
+name: Weekly Data Refresh
+on:
+  schedule:
+    - cron: '0 13 * * 2' # Tuesdays 13:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Determine latest week from history
+        id: week
+        run: |
+          season=2025
+          file=docs/data/${season}/history.json
+          if [ -f "$file" ]; then
+            latest=$(jq -r '.weeks | keys[]' "$file" | sort -n | tail -1)
+            next=$((latest+1))
+          else
+            next=1
+          fi
+          echo "week=$next" >> $GITHUB_OUTPUT
+      - name: Generate GPT power rankings
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/generate_power_rankings.py --league-id 1248075580834856960 --season 2025 --week ${{ steps.week.outputs.week }} --docs-dir ./docs --model gpt-4o-mini || true
+      - name: Update history/standings/rosters
+        run: |
+          python scripts/update_history.py --season 2025 --week ${{ steps.week.outputs.week }} --docs-dir ./docs
+      - name: Generate matchup predictions
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/generate_matchup_predictions.py --league-id 1248075580834856960 --season 2025 --week ${{ steps.week.outputs.week }} --docs-dir ./docs --model gpt-4o-mini || true
+      - name: Commit and push
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add docs/data
+          git commit -m "Week ${{ steps.week.outputs.week }} data refresh" || echo "No changes"
+          git push
+

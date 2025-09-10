@@ -14,10 +14,11 @@
         <a href="./matchups.html">Matchups</a>
         <a href="./analytics.html">Analytics</a>
         <div class="spacer"></div>
-        <span class="badge">2025 • Week 1</span>
+        <span id="week-button" class="badge button">2025 • Week 2</span>
         <button id="theme-toggle" class="btn" aria-label="Toggle theme" title="Toggle theme">☀️</button>
       </div>
     </nav>
+    <div id="week-pop" class="popover" style="display:none;"></div>
     <div class="container">
       <div class="card">
         <h1 class="title">Power Rankings</h1>
@@ -41,6 +42,39 @@
         });
       })();
     </script>
+    <script>
+      (function initWeekSwitcher(){
+        const btn = document.getElementById('week-button');
+        const pop = document.getElementById('week-pop');
+        async function buildMenu(){
+          const hist = await fetch('./data/2025/history.json').then(r=>r.json()).catch(()=>({weeks:{}}));
+          const weeks = Object.keys(hist.weeks||{}).map(n=>parseInt(n,10)).sort((a,b)=>a-b);
+          const latest = weeks[weeks.length-1] || 1;
+          btn.textContent = `2025 • Week ${latest}`;
+          pop.innerHTML = weeks.map(w=>`<a href="#" data-week="${w}">2025 • Week ${w}</a>`).join('');
+          pop.querySelectorAll('a').forEach(a=>{
+            a.addEventListener('click', (e)=>{
+              e.preventDefault();
+              const w = a.getAttribute('data-week');
+              loadRankings(parseInt(w,10));
+              pop.style.display = 'none';
+              btn.textContent = `2025 • Week ${w}`;
+            });
+          });
+        }
+        function place(){
+          const rect = btn.getBoundingClientRect();
+          pop.style.top = (rect.bottom + window.scrollY + 6) + 'px';
+          pop.style.left = (rect.right - 160 + window.scrollX) + 'px';
+          pop.style.minWidth = '160px';
+        }
+        btn.addEventListener('click', ()=>{
+          if (pop.style.display === 'none'){ place(); pop.style.display = 'block'; } else { pop.style.display = 'none'; }
+        });
+        document.addEventListener('click', (e)=>{ if (!btn.contains(e.target) && !pop.contains(e.target)) pop.style.display='none'; });
+        buildMenu();
+      })();
+    </script>
     <footer class="footer">
       <div class="footer-inner">
         <div class="muted">© 2025 Sean Farrell's Carpool</div>
@@ -51,17 +85,17 @@
       </div>
     </footer>
     <script>
-      async function loadRankings() {
-        const res = await fetch('./data/2025/week1/power_rankings.json');
+      async function loadRankings(week=1) {
+        const res = await fetch(`./data/2025/week${week}/power_rankings.json`);
         const data = await res.json();
         const teamsRes = await fetch('./data/teams.json');
         const teamsData = await teamsRes.json();
         // Preload standings and history once (avoid await inside loop)
-        const standingsData = await fetch('./data/2025/standings.json')
+        const standingsData = await fetch(`./data/2025/standings.json`)
           .then(r => r.json())
           .catch(() => ({ standings: [] }));
         const standingsMap = new Map((standingsData.standings || []).map(s => [s.roster_id, s]));
-        const historyData = await fetch('./data/2025/history.json')
+        const historyData = await fetch(`./data/2025/history.json`)
           .then(r => r.json())
           .catch(() => ({ weeks: {} }));
         const rosterIdToTeam = new Map(teamsData.teams.map(t => [t.roster_id, t]));

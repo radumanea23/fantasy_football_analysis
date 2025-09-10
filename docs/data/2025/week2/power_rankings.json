@@ -1,0 +1,391 @@
+{
+  "league_id": "1248075580834856960",
+  "season": 2025,
+  "week": 2,
+  "rankings": [
+    {
+      "team_name": "TClark1742",
+      "roster_id": 12,
+      "rank": 1,
+      "summary": "QB avalanche (Mahomes/Herbert) plus Gibbs/A.J. Brown/Kelce makes you the Week 2 bully. Aging vets? Sure. But you\u2019ve got depth for days.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Patrick Mahomes",
+            "note": "Weekly cheat code in Superflex\u2014even with a 2-QB cap, he\u2019s your floor and ceiling."
+          },
+          {
+            "name": "Justin Herbert",
+            "note": "QB2 with QB1 spikes; stacks nicely with Allen if active."
+          },
+          {
+            "name": "Jahmyr Gibbs",
+            "note": "PPR juice and explosive plays keep the week-winning upside flowing."
+          },
+          {
+            "name": "A.J. Brown",
+            "note": "Target dominator; matchup-proof WR1."
+          },
+          {
+            "name": "Travis Kelce",
+            "note": "Even if the volume dips, positional edge remains silly."
+          }
+        ],
+        "bench_potential": "Jameson Williams\u2019 breakout speed, Jermaine Burton\u2019s route-wins, Javonte/Swift as flex fuel, and Stafford as spot-start insurance. Lmao why are you hoarding QBs like Thanos stones.",
+        "make_or_break": "WR2 health/consistency (Keenan/Jameson) to keep weekly ceilings unlocked."
+      }
+    },
+    {
+      "team_name": "schweiger14",
+      "roster_id": 8,
+      "rank": 2,
+      "summary": "CMC + Etienne + Achane with Chase/Deebo and Stroud/Tua/Goff is a points avalanche. TE is the only mortal spot.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Christian McCaffrey",
+            "note": "Still the walking 20+ PPR baseline."
+          },
+          {
+            "name": "C.J. Stroud",
+            "note": "Surgical efficiency keeps all your WRs live."
+          },
+          {
+            "name": "De'Von Achane",
+            "note": "League-winner speed, touch volatility be damned."
+          },
+          {
+            "name": "Ja'Marr Chase",
+            "note": "Alpha target earner; weekly 30-burger threat."
+          },
+          {
+            "name": "Tua Tagovailoa",
+            "note": "When protected, he feeds your speed; keep a QB3 ready just in case."
+          }
+        ],
+        "bench_potential": "Jayden Reed splash weeks, Jerome Ford volume, Jordan Addison bounce-backs, and Tucker Kraft as TE patch kit. Drafting Quentin Johnston again? Bold\u2014like using Internet Explorer in 2025.",
+        "make_or_break": "Achane/Etienne weekly touch share; if the usage holds, nobody\u2019s safe."
+      }
+    },
+    {
+      "team_name": "DQBuquets9",
+      "roster_id": 5,
+      "rank": 3,
+      "summary": "Tyreek + Jefferson + London with ARich/Love and Kincaid/Andrews is championship math. RB room is deep enough to surf bye weeks.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Tyreek Hill",
+            "note": "Tyreek things. Defenses need seatbelts."
+          },
+          {
+            "name": "Justin Jefferson",
+            "note": "Bankable 10+ targets; elite YPRR keeps the floor nuclear."
+          },
+          {
+            "name": "Anthony Richardson",
+            "note": "Konami code. Health is the only question."
+          },
+          {
+            "name": "James Cook",
+            "note": "RB2 PPR floor with room for more if GL work tilts his way."
+          },
+          {
+            "name": "Dalton Kincaid",
+            "note": "Usage + talent = top-5 TE rest-of-season vibes."
+          }
+        ],
+        "bench_potential": "Rhamondre steady volume, Aaron Jones spike weeks, rookie Jonathon Brooks stash. Aaron Rodgers on PIT? That\u2019s a dynasty museum piece\u2014nice glass case though.",
+        "make_or_break": "ARich health and whether a second RB emerges weekly (Cook/Stevenson/Jones shuffle)."
+      }
+    },
+    {
+      "team_name": "maxsauers13",
+      "roster_id": 3,
+      "rank": 4,
+      "summary": "Balanced juggernaut: Lamar/Lawrence, Saquon/Corum, and a WR armory (Waddle/Garrett/Zay/Dell). TE is fine; depth is elite.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Lamar Jackson",
+            "note": "QB1 overall path any week; rushing = cheat mode."
+          },
+          {
+            "name": "Saquon Barkley",
+            "note": "Three-down workload with PPR gravy."
+          },
+          {
+            "name": "Garrett Wilson",
+            "note": "Target hog; top-8 WR talent shows every route."
+          },
+          {
+            "name": "Jaylen Waddle",
+            "note": "High-aDOT splash paired with sticky efficiency."
+          },
+          {
+            "name": "Tank Dell",
+            "note": "Boom potential elevates weekly ceiling."
+          }
+        ],
+        "bench_potential": "Blake Corum red-zone role, Jaylen Warren standalone flex, Tee Higgins when fully rolling. Starting Sam Darnold for vibes only is a wild lifestyle choice.",
+        "make_or_break": "WR health/usage stacking (Higgins/Dell) to keep 180+ point weeks humming."
+      }
+    },
+    {
+      "team_name": "jdamocles",
+      "roster_id": 6,
+      "rank": 5,
+      "summary": "WR Avengers (Amon-Ra/Davante/Kupp/DJ Moore/Ridley) + Bijan/McBride. QB2 is the only eyebrow raise.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Bijan Robinson",
+            "note": "Top-3 RB talent; passing work keeps the floor plush."
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "note": "Route wizard; double-digit targets are routine."
+          },
+          {
+            "name": "Kyler Murray",
+            "note": "Dual-threat floor; stacks nicely with McBride."
+          },
+          {
+            "name": "Trey McBride",
+            "note": "Elite volume TE; mismatch every week."
+          },
+          {
+            "name": "Davante Adams",
+            "note": "Aging but still separating like taxes from your paycheck."
+          }
+        ],
+        "bench_potential": "Roman Wilson and Tetairoa McMillan rookie pop weeks, Rachaad White PPR safety, Keaton Mitchell post-hype speed. Bryce Young as weekly QB2? That\u2019s the trust fall where no one yelled \u2018ready\u2019.",
+        "make_or_break": "QB2 stability\u2014if Bryce or a streamer hits, this roster is terrifying."
+      }
+    },
+    {
+      "team_name": "evanras9",
+      "roster_id": 7,
+      "rank": 6,
+      "summary": "Josh Allen + LaPorta anchor a steady, veteran-heavy winner. RB room (Henry/Kyren/Monty) keeps touchdown equity flowing.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Josh Allen",
+            "note": "QB1 overall threat every week; rushing TDs are your unfair advantage."
+          },
+          {
+            "name": "Sam LaPorta",
+            "note": "Target magnet at TE; weekly difference-maker."
+          },
+          {
+            "name": "Kyren Williams",
+            "note": "Workhorse usage; PPR-friendly with GL work."
+          },
+          {
+            "name": "Stefon Diggs",
+            "note": "Still a route savant; WR1/2 weekly outlook."
+          },
+          {
+            "name": "Derrick Henry",
+            "note": "Even on a new team, the end zone still knows his name."
+          }
+        ],
+        "bench_potential": "Bo Nix spot starts, Quinshon Judkins stash, Tre\u2019 Harris/Restrepo as bye-week darts. Also, rostering three TEs like you\u2019re starting a tight end boy band\u2014respect the commitment.",
+        "make_or_break": "WR2/3 weekly pop (McLaurin/Hollywood) to complement Allen\u2019s spikes."
+      }
+    },
+    {
+      "team_name": "She Bledsoe I\u2019m Good",
+      "roster_id": 1,
+      "rank": 7,
+      "summary": "Hurts + JT + a nasty WR room (Aiyuk/Nico/Odunze/Egbuka). TE hinges on Kittle\u2019s health, but depth covers a lot.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Jalen Hurts",
+            "note": "Goal-line merchant with elite rushing share."
+          },
+          {
+            "name": "Jonathan Taylor",
+            "note": "Top-5 RB ceiling when receiving work is there."
+          },
+          {
+            "name": "Brandon Aiyuk",
+            "note": "Route/efficiency god; weekly WR1 upside."
+          },
+          {
+            "name": "Nico Collins",
+            "note": "Alpha usage with YAC spice."
+          },
+          {
+            "name": "George Kittle",
+            "note": "If he\u2019s upright, advantage you; if not, pivot fast."
+          }
+        ],
+        "bench_potential": "Chase Brown contingency upside, Caleb Williams boom weeks as SF2, DJ Giddens/Guerendo rook stashes. Drafting JuJu in 2025? That\u2019s like reinstalling AOL Instant Messenger\u2014nostalgic, not helpful.",
+        "make_or_break": "TE availability and whether Caleb stabilizes quickly as your SF2."
+      }
+    },
+    {
+      "team_name": "OTPHJSN",
+      "roster_id": 2,
+      "rank": 8,
+      "summary": "Purdy/Geno are safe points, and the WR/TE youth (Nabers/JSN/Bowers) screams dynasty gold. RB depth needs a weekly hero.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Brock Purdy",
+            "note": "Efficient QB2 with QB1 spike weeks in good scripts."
+          },
+          {
+            "name": "Malik Nabers",
+            "note": "Rookie alpha trajectory; target vacuum."
+          },
+          {
+            "name": "Brock Bowers",
+            "note": "Year 1 TE usage that actually matters\u2014rare and valuable."
+          },
+          {
+            "name": "DK Metcalf",
+            "note": "TD swings define the ceiling; routes still elite."
+          },
+          {
+            "name": "Tony Pollard",
+            "note": "Lead back; PPR-friendly on most game scripts."
+          }
+        ],
+        "bench_potential": "Ricky Pearsall usage growth, Phil Mafah bruiser weeks, Cam Ward as a late-season SF stash. Miles Sanders still on your roster? Lmao, the stubbornness is admirable.",
+        "make_or_break": "Finding a dependable RB2 behind Pollard (Shipley/Chuba/Mafah carousel)."
+      }
+    },
+    {
+      "team_name": "benm1",
+      "roster_id": 10,
+      "rank": 9,
+      "summary": "Burrow + Fields with Breece is a great spine; WR room needs a steady WR2 to emerge behind Mike Evans.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Joe Burrow",
+            "note": "When healthy, weekly 300-yard threat."
+          },
+          {
+            "name": "Breece Hall",
+            "note": "Top-5 RB talent; receiving keeps him script-proof."
+          },
+          {
+            "name": "Justin Fields",
+            "note": "Rushing raises the floor; volatility remains the brand."
+          },
+          {
+            "name": "Ladd McConkey",
+            "note": "Separation specialist; PPR-friendly role incoming."
+          },
+          {
+            "name": "Kyle Pitts",
+            "note": "Usage is king\u2014if he gets it, you\u2019re cooking."
+          }
+        ],
+        "bench_potential": "Tyjae Spears explosive stash, Jaylen Wright track-speed lottery ticket, Khalil Shakir spike weeks. Carrying three kickers\u2019 worth of vibes with Butker/Reichard is a choice.",
+        "make_or_break": "WR2/3 consistency (McConkey/Shakir/Hyatt) to support the Breece/Burrow base."
+      }
+    },
+    {
+      "team_name": "Hit it From the Dak",
+      "roster_id": 9,
+      "rank": 10,
+      "summary": "Elite WRs (CeeDee/Olave) and solid RB1/2 (KWalker/Ekeler). Dak + rookie Maye is viable, but depth gets thin fast.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Dak Prescott",
+            "note": "High-volume passer with top-8 weekly outcomes."
+          },
+          {
+            "name": "CeeDee Lamb",
+            "note": "Target hog; weekly 30-point threat in PPR."
+          },
+          {
+            "name": "Chris Olave",
+            "note": "Air yards + route wins = WR1 upside."
+          },
+          {
+            "name": "Kenneth Walker",
+            "note": "Explosive with TD equity; passing game usage swings."
+          },
+          {
+            "name": "Austin Ekeler",
+            "note": "Aging but PPR-savvy; monitor weekly snap share."
+          }
+        ],
+        "bench_potential": "Brian Thomas Jr. field-stretcher spikes, Josh Downs PPR glue, Dameon Pierce as matchup flex. Collecting Cowboys like it\u2019s a homecoming float is hilarious until the bye week hits.",
+        "make_or_break": "RB health and whether Maye stabilizes as a startable SF option."
+      }
+    },
+    {
+      "team_name": "bwilt44",
+      "roster_id": 11,
+      "rank": 11,
+      "summary": "Skill positions rock (Puka/DeVonta/Pickens + Mixon/Jacobs), but QB room is a rollercoaster. TE depth is a luxury.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Puka Nacua",
+            "note": "Target sponge; YAC monster keeps the floor high."
+          },
+          {
+            "name": "Joe Mixon",
+            "note": "Three-down workload with GL work still present."
+          },
+          {
+            "name": "Josh Jacobs",
+            "note": "Volume > efficiency most weeks; RB2 floor."
+          },
+          {
+            "name": "T.J. Hockenson",
+            "note": "Elite usage when active; top-5 weekly outlook."
+          },
+          {
+            "name": "J.J. McCarthy",
+            "note": "If he hits quickly, your rank jumps 2\u20133 spots."
+          }
+        ],
+        "bench_potential": "Christian Watson and Keon Coleman spike weeks, Isaiah Likely bye-week hammer, Jaleel McLaughlin juice. Starting Baker in 2025? Living dangerously, my friend.",
+        "make_or_break": "QB play\u2014if McCarthy levels up fast, this becomes a playoff build."
+      }
+    },
+    {
+      "team_name": "DerekCal4",
+      "roster_id": 4,
+      "rank": 12,
+      "summary": "Dynasty treasure chest of rookies (MHJ, Daniels, Benson), but Week 2 scoring will be volatile. Future\u2019s bright; present\u2019s bumpy.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Marvin Harrison Jr.",
+            "note": "Already playing like a top-10 WR\u2014routes/ball skills are unfair."
+          },
+          {
+            "name": "Jayden Daniels",
+            "note": "Rushing upside gives instant fantasy juice; rookie swings apply."
+          },
+          {
+            "name": "Trey Benson",
+            "note": "Path to lead-back touches; passing game usage is the key."
+          },
+          {
+            "name": "Isiah Pacheco",
+            "note": "Trusted early-down/GL role; weekly TD roulette."
+          },
+          {
+            "name": "Zach Charbonnet",
+            "note": "Contingent flex with occasional volume spikes."
+          }
+        ],
+        "bench_potential": "Luther Burden and Adonai Mitchell flash weeks, TreVeyon Henderson stash, Luke McCaffrey slot juice. This bench looks like a 2025 draft guide\u2014lmao, it\u2019s beautiful chaos.",
+        "make_or_break": "How quickly the rookies (Daniels/Benson/Legette/Burden) convert routes into reliable snaps/targets."
+      }
+    }
+  ]
+}

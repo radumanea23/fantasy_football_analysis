@@ -1,0 +1,48 @@
+{
+  "league_id": "1248075580834856960",
+  "season": 2025,
+  "week": 2,
+  "predictions": [
+    {
+      "home_roster_id": 1,
+      "away_roster_id": 7,
+      "predicted_winner_roster_id": 1,
+      "reasoning": "Jalen Hurts and Jonathan Taylor lead the charge for She Bledsoe I\u2019m Good, and while Josh Allen is impressive, even he can't carry a team full of 'meh' RBs like Derrick Henry and Kyren Williams against a solid lineup."
+    },
+    {
+      "home_roster_id": 2,
+      "away_roster_id": 3,
+      "predicted_winner_roster_id": 3,
+      "reasoning": "Maxsauers13's star-studded roster, led by Lamar Jackson and Saquon Barkley, is too hot to handle for a squad rolling with Brock Purdy and a no-name RB duo. Sorry, Brock, this isn\u2019t a fairy tale!"
+    },
+    {
+      "home_roster_id": 4,
+      "away_roster_id": 9,
+      "predicted_winner_roster_id": 9,
+      "reasoning": "Hit it From the Dak has the firepower with Dak and CeeDee Lamb against DerekCal4's mix of unproven players. He\u2019s got Marvin Harrison, but when your QB is Jayden Daniels, I\u2019m skeptical."
+    },
+    {
+      "home_roster_id": 5,
+      "away_roster_id": 6,
+      "predicted_winner_roster_id": 5,
+      "reasoning": "DQBuquets9\u2019s combination of Jordan Love and Tyreek Hill is a volatile yet electrifying recipe, while Kyler Murray is still shaking off rust. Good luck, jdamocles, you'll need it!"
+    },
+    {
+      "home_roster_id": 8,
+      "away_roster_id": 10,
+      "predicted_winner_roster_id": 8,
+      "reasoning": "schweiger14 boasts a well-rounded team with Ja'Marr Chase and Christian McCaffrey, whereas benm1 is only hoping Joe Burrow can save them. Spoiler: he won't."
+    },
+    {
+      "home_roster_id": 11,
+      "away_roster_id": 12,
+      "predicted_winner_roster_id": 12,
+      "reasoning": "TClark1742 has Patrick Mahomes, who can make magic happen even with less-than-stellar RBs. Meanwhile, bwilt44\u2019s team feels more like a broken toy than a championship contender."
+    }
+  ],
+  "spicy_matchup": {
+    "home_roster_id": 4,
+    "away_roster_id": 9,
+    "why": "While Hit it From the Dak is favored, DerekCal4 has some intriguing young talent, and if Jayden Daniels pulls off a large upset with a big performance, you could see a surprising twist in this game. It's an underdog story waiting to happen!"
+  }
+}
