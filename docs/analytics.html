@@ -86,7 +86,7 @@
           options: { responsive:true, plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label:(c)=>`${c.raw.team} – week ${c.raw.x}, rank ${c.raw.y}` } } }, scales:{ x:{ title:{display:true,text:'Week',color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim()}, ticks:{color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize:1}, grid:{color:'rgba(0,0,0,0.06)'}, min:1 }, y:{ title:{display:true,text:'Rank',color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim()}, ticks:{color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize:1}, grid:{color:'rgba(0,0,0,0.06)'}, reverse:true, min:1 } } }
         );
       }
-      renderChart();
+      // initial render gets called in week switcher once latest week computed
     </script>
     <footer class="footer">
       <div class="footer-inner">
