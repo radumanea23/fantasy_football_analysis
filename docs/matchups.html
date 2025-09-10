@@ -83,12 +83,13 @@
 
       async function loadPredictions(week=1) {
         const season = 2025;
+        const cb = (u)=> u + (u.includes('?') ? '&' : '?') + 'v=' + Date.now();
         const [teamsRes, predRes, standingsRes, rostersMinRes, projectionsRes] = await Promise.all([
-          fetch('./data/teams.json'),
-          fetch(`./data/${season}/week${week}/matchup_predictions.json`),
-          fetch(`./data/${season}/standings.json`).catch(()=>({ json:()=>({standings:[]}) })),
-          fetch(`./data/${season}/rosters_min.json`).catch(()=>({ json:()=>({rosters:[]}) })),
-          fetch(`./data/${season}/week${week}/projections.json`).catch(()=>({ json:()=>({projections:[]}) })),
+          fetch(cb('./data/teams.json')),
+          fetch(cb(`./data/${season}/week${week}/matchup_predictions.json`)),
+          fetch(cb(`./data/${season}/standings.json`)).catch(()=>({ json:()=>({standings:[]}) })),
+          fetch(cb(`./data/${season}/rosters_min.json`)).catch(()=>({ json:()=>({rosters:[]}) })),
+          fetch(cb(`./data/${season}/week${week}/projections.json`)).catch(()=>({ json:()=>({projections:[]}) })),
         ]);
         const teams = await teamsRes.json();
         const preds = await predRes.json();

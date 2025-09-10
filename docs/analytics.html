@@ -47,8 +47,9 @@
       (function initWeekSwitcher(){
         const btn = document.getElementById('week-button');
         const pop = document.getElementById('week-pop');
+        const cb = (u)=> u + (u.includes('?') ? '&' : '?') + 'v=' + Date.now();
         async function buildMenu(){
-          const hist = await fetch('./data/2025/history.json').then(r=>r.json()).catch(()=>({weeks:{}}));
+          const hist = await fetch(cb('./data/2025/history.json')).then(r=>r.json()).catch(()=>({weeks:{}}));
           const weeks = Object.keys(hist.weeks||{}).map(n=>parseInt(n,10)).sort((a,b)=>a-b);
           const latest = weeks[weeks.length-1] || 1;
           btn.textContent = `2025 • Week ${latest}`;
@@ -62,6 +63,8 @@
               pop.style.display = 'none';
             });
           });
+          // ensure initial render uses latest
+          renderChart();
         }
         function place(){ const r = btn.getBoundingClientRect(); pop.style.top=(r.bottom+window.scrollY+6)+'px'; pop.style.left=(r.right-160+window.scrollX)+'px'; pop.style.minWidth='160px'; }
         btn.addEventListener('click', ()=>{ if(pop.style.display==='none'){place();pop.style.display='block';} else {pop.style.display='none';}});
@@ -70,7 +73,8 @@
       })();
 
       async function renderChart(){
-        const hist = await fetch('./data/2025/history.json').then(r=>r.json());
+        const cb = (u)=> u + (u.includes('?') ? '&' : '?') + 'v=' + Date.now();
+        const hist = await fetch(cb('./data/2025/history.json')).then(r=>r.json());
         const weeks = Object.keys(hist.weeks||{}).map(n=>parseInt(n,10)).sort((a,b)=>a-b);
         const points = [];
         weeks.forEach(w=>{ (hist.weeks[String(w)]||[]).forEach(r=> points.push({x:w, y:r.rank, team:r.team_name})); });

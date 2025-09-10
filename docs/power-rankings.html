@@ -88,16 +88,17 @@
     </footer>
     <script>
       async function loadRankings(week=1) {
-        const res = await fetch(`./data/2025/week${week}/power_rankings.json`);
+        const cb = (u)=> u + (u.includes('?') ? '&' : '?') + 'v=' + Date.now();
+        const res = await fetch(cb(`./data/2025/week${week}/power_rankings.json`));
         const data = await res.json();
-        const teamsRes = await fetch('./data/teams.json');
+        const teamsRes = await fetch(cb('./data/teams.json'));
         const teamsData = await teamsRes.json();
         // Preload standings and history once (avoid await inside loop)
-        const standingsData = await fetch(`./data/2025/standings.json`)
+        const standingsData = await fetch(cb(`./data/2025/standings.json`))
           .then(r => r.json())
           .catch(() => ({ standings: [] }));
         const standingsMap = new Map((standingsData.standings || []).map(s => [s.roster_id, s]));
-        const historyData = await fetch(`./data/2025/history.json`)
+        const historyData = await fetch(cb(`./data/2025/history.json`))
           .then(r => r.json())
           .catch(() => ({ weeks: {} }));
         const rosterIdToTeam = new Map(teamsData.teams.map(t => [t.roster_id, t]));
