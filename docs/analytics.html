@@ -74,17 +74,23 @@
 
       async function renderChart(){
         const cb = (u)=> u + (u.includes('?') ? '&' : '?') + 'v=' + Date.now();
-        const hist = await fetch(cb('./data/2025/history.json')).then(r=>r.json());
-        const weeks = Object.keys(hist.weeks||{}).map(n=>parseInt(n,10)).sort((a,b)=>a-b);
-        const points = [];
-        weeks.forEach(w=>{ (hist.weeks[String(w)]||[]).forEach(r=> points.push({x:w, y:r.rank, team:r.team_name})); });
-        const ctx = document.getElementById('chart').getContext('2d');
-        if (window.__chart) { window.__chart.destroy(); }
-        window.__chart = new Chart(ctx, {
-          type: 'scatter',
-          data: { datasets: [{ label: 'Rank', data: points, borderColor: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim(), backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim(), pointRadius: 4, pointHoverRadius: 6 }] },
-          options: { responsive:true, plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label:(c)=>`${c.raw.team} – week ${c.raw.x}, rank ${c.raw.y}` } } }, scales:{ x:{ title:{display:true,text:'Week',color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim()}, ticks:{color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize:1}, grid:{color:'rgba(0,0,0,0.06)'}, min:1 }, y:{ title:{display:true,text:'Rank',color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim()}, ticks:{color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize:1}, grid:{color:'rgba(0,0,0,0.06)'}, reverse:true, min:1 } } }
-        );
+        try {
+          const hist = await fetch(cb('./data/2025/history.json')).then(r=>r.json());
+          const weeks = Object.keys(hist.weeks||{}).map(n=>parseInt(n,10)).sort((a,b)=>a-b);
+          const points = [];
+          weeks.forEach(w=>{ (hist.weeks[String(w)]||[]).forEach(r=> points.push({x:w, y:r.rank, team:r.team_name})); });
+          const ctx = document.getElementById('chart').getContext('2d');
+          if (window.__chart) { window.__chart.destroy(); }
+          window.__chart = new Chart(ctx, {
+            type: 'scatter',
+            data: { datasets: [{ label: 'Rank', data: points, borderColor: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim(), backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim(), pointRadius: 4, pointHoverRadius: 6 }] },
+            options: { responsive:true, plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label:(c)=>`${c.raw.team} – week ${c.raw.x}, rank ${c.raw.y}` } } }, scales:{ x:{ title:{display:true,text:'Week',color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim()}, ticks:{color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize:1}, grid:{color:'rgba(0,0,0,0.06)'}, min:1 }, y:{ title:{display:true,text:'Rank',color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim()}, ticks:{color:getComputedStyle(document.documentElement).getPropertyValue('--muted').trim(), stepSize:1}, grid:{color:'rgba(0,0,0,0.06)'}, reverse:true, min:1 } } }
+          );
+        } catch (e) {
+          const ctx = document.getElementById('chart').getContext('2d');
+          if (window.__chart) { window.__chart.destroy(); }
+          window.__chart = new Chart(ctx, { type:'scatter', data:{datasets:[]}, options:{responsive:true} });
+        }
       }
       // initial render gets called in week switcher once latest week computed
     </script>
