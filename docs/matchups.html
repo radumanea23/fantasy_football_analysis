@@ -88,18 +88,26 @@
         const spicy = document.getElementById('spicy');
         const reason = document.getElementById('spicy-reason');
         try {
-          const [teamsRes, predRes, standingsRes, rostersMinRes, projectionsRes] = await Promise.all([
-            fetch(cb('./data/teams.json')),
-            fetch(cb(`./data/${season}/week${week}/matchup_predictions.json`)),
-            fetch(cb(`./data/${season}/standings.json`)).catch(()=>({ json:()=>({standings:[]}) })),
-            fetch(cb(`./data/${season}/rosters_min.json`)).catch(()=>({ json:()=>({rosters:[]}) })),
-            fetch(cb(`./data/${season}/week${week}/projections.json`)).catch(()=>({ json:()=>({projections:[]}) })),
-          ]);
-          const teams = await teamsRes.json();
-          const preds = await predRes.json();
-          const standings = await standingsRes.json();
-          const rostersMin = await rostersMinRes.json();
-          const projections = await projectionsRes.json();
+          async function fetchJson(url){
+            const r = await fetch(cb(url));
+            if (!r.ok) throw new Error('http '+r.status);
+            return r.json();
+          }
+          // Try requested week; fallback to previous week if missing
+          let preds;
+          try {
+            preds = await fetchJson(`./data/${season}/week${week}/matchup_predictions.json`);
+          } catch (e) {
+            const prev = Math.max(1, week-1);
+            preds = await fetchJson(`./data/${season}/week${prev}/matchup_predictions.json`);
+          }
+          const teams = await fetchJson('./data/teams.json');
+          let standings = {standings:[]};
+          try { standings = await fetchJson(`./data/${season}/standings.json`); } catch(e) {}
+          let rostersMin = {rosters:[]};
+          try { rostersMin = await fetchJson(`./data/${season}/rosters_min.json`); } catch(e) {}
+          let projections = {projections:[]};
+          try { projections = await fetchJson(`./data/${season}/week${week}/projections.json`); } catch(e) {}
 
           const teamByRoster = new Map((teams.teams||[]).map(t => [t.roster_id, t]));
           const standingsByRoster = new Map((standings.standings||[]).map(s => [s.roster_id, s]));
