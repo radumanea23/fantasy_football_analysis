@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Analytics – Power Rankings Trend</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   </head>
   <body>
     <nav class="nav">
@@ -48,6 +48,18 @@
         const btn = document.getElementById('week-button');
         const pop = document.getElementById('week-pop');
         const cb = (u)=> u + (u.includes('?') ? '&' : '?') + 'v=' + Date.now();
+        // Ensure Chart is available; if not, attempt to load UMD build
+        async function ensureChart(){
+          if (typeof window !== 'undefined' && typeof window.Chart !== 'undefined') return;
+          await new Promise((resolve)=>{
+            const s = document.createElement('script');
+            s.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js';
+            s.async = true;
+            s.onload = resolve;
+            s.onerror = resolve; // resolve anyway; renderChart has guards
+            document.head.appendChild(s);
+          });
+        }
         async function buildMenu(){
           let hist = {weeks:{}};
           try { hist = await fetch(cb('./data/2025/history.json')).then(r=>r.json()); } catch(e) {}
@@ -65,6 +77,7 @@
             });
           });
           // ensure initial render uses latest
+          await ensureChart();
           renderChart();
         }
         function place(){ const r = btn.getBoundingClientRect(); pop.style.top=(r.bottom+window.scrollY+6)+'px'; pop.style.left=(r.right-160+window.scrollX)+'px'; pop.style.minWidth='160px'; }
