@@ -67,6 +67,8 @@
               btn.textContent = `2025 • Week ${w}`;
             });
           });
+          // Load latest by default
+          loadPredictions(latest);
         }
         function place(){
           const rect = btn.getBoundingClientRect();
