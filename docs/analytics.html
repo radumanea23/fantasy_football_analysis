@@ -92,39 +92,56 @@
         try {
           const hist = await fetch(cb('./data/2025/history.json')).then(r=>r.json());
           const weeks = Object.keys(hist.weeks||{}).map(n=>parseInt(n,10)).sort((a,b)=>a-b);
-          const points = [];
-          weeks.forEach(w=>{ (hist.weeks[String(w)]||[]).forEach(r=> points.push({x:w, y:r.rank, team:r.team_name})); });
+          // Build one dataset per team, connecting their ranks across weeks
+          const datasetsMap = new Map();
+          weeks.forEach(function(w){
+            (hist.weeks[String(w)]||[]).forEach(function(r){
+              var rid = r.roster_id;
+              var ds = datasetsMap.get(rid);
+              if (!ds) {
+                var hue = (rid * 31) % 360;
+                ds = {
+                  label: r.team_name || ('Team ' + rid),
+                  data: [],
+                  showLine: true,
+                  fill: false,
+                  borderColor: 'hsl(' + hue + ', 70%, 45%)',
+                  backgroundColor: 'hsla(' + hue + ', 70%, 45%, 0.55)',
+                  pointRadius: 3,
+                  pointHoverRadius: 5,
+                  borderWidth: 2,
+                  tension: 0
+                };
+                datasetsMap.set(rid, ds);
+              }
+              ds.data.push({ x: w, y: r.rank });
+            });
+          });
+          const datasets = Array.from(datasetsMap.values());
           const ctx = document.getElementById('chart').getContext('2d');
           if (window.__chart) { window.__chart.destroy(); }
           if (!hasChart) { return; }
           window.__chart = new Chart(ctx, {
-            type: 'scatter',
-            data: {
-              datasets: [{
-                label: 'Rank',
-                data: points,
-                borderColor: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim(),
-                backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim(),
-                pointRadius: 4,
-                pointHoverRadius: 6
-              }]
-            },
+            type: 'line',
+            data: { datasets: datasets },
             options: {
               responsive: true,
               plugins: {
                 legend: { display: false },
                 tooltip: {
                   callbacks: {
-                    label: function(c){
-                      var r = c && c.raw ? c.raw : {};
-                      return (r.team || 'Team') + ' – week ' + r.x + ', rank ' + r.y;
+                    label: function(context){
+                      var dsLabel = (context && context.dataset && context.dataset.label) ? context.dataset.label : 'Team';
+                      var x = context && context.parsed ? context.parsed.x : '';
+                      var y = context && context.parsed ? context.parsed.y : '';
+                      return dsLabel + ' – week ' + x + ', rank ' + y;
                     }
                   }
                 }
               },
               scales: {
-                x: { ticks: { stepSize: 1 }, min: 1 },
-                y: { ticks: { stepSize: 1 }, reverse: true, min: 1 }
+                x: { min: 1, max: 17, ticks: { stepSize: 1 } },
+                y: { reverse: true, min: 1, max: 12, ticks: { stepSize: 1 } }
               }
             }
           });
