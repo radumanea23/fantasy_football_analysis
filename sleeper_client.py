@@ -44,13 +44,18 @@ def get_matchups(league_id: str, week: int):
     return data
 
 
-def get_projections_nfl(season: int, week: int, position: str | None = None):
+def get_projections_nfl(season: int, week: int, position: str | None = None, season_type: str = "regular"):
     """Fetch Sleeper projections for a given season/week.
 
     Sleeper groups by position; we'll optionally pass position (e.g., QB, RB, WR, TE, K, DEF).
     """
-    pos_part = f"?position={position}" if position else ""
-    url = f"{SLEEPER_API_BASE}/projections/nfl/{season}/{week}{pos_part}"
+    query = []
+    if position:
+        query.append(f"position={position}")
+    if season_type:
+        query.append(f"season_type={season_type}")
+    qs = ("?" + "&".join(query)) if query else ""
+    url = f"{SLEEPER_API_BASE}/projections/nfl/{season}/{week}{qs}"
     data = http_get_json(url)
     if not isinstance(data, list):
         return []
@@ -60,6 +65,14 @@ def get_projections_nfl(season: int, week: int, position: str | None = None):
 def build_player_headshot_url(player_id: str) -> str:
     # Sleeper CDN headshots; if missing the image tag will hide via onerror
     return f"https://sleepercdn.com/content/nfl/players/thumb/{player_id}.jpg"
+
+
+def get_state_nfl() -> dict:
+    url = f"{SLEEPER_API_BASE}/state/nfl"
+    data = http_get_json(url)
+    if not isinstance(data, dict):
+        return {}
+    return data
 
 
 def build_user_maps(users):
