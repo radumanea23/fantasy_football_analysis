@@ -35,11 +35,13 @@ SYSTEM_PROMPT = (
 )
 
 USER_TEMPLATE = (
-	"League Context: This league is a dynasty league so rookies, age matters. It is also a full PPR league with a super flex spot so QB depth also matters- but you can only start 2 QBS.\n"
+	"League Context: dynasty, full PPR, 1 superflex (max 2 QBs).\n"
 	"Season: {season} Week: {week}\n"
 	"Teams (owner display/team name):\n{teams}\n\n"
 	"ROSTERS (roster_id -> players list with position/team):\n{rosters}\n\n"
-	"STANDINGS: All teams are 0-0 to start.\n\n"
+	"STANDINGS through week {prev_week}:\n{standings}\n\n"
+	"PREVIOUS RANKS week {prev_week}:\n{prev_ranks}\n\n"
+	"Use standings and prior ranks to inform movement and tiers, but do not sort purely by record.\n"
 	"Write only JSON with this shape: {{\"rankings\":[{{\"team_name\":...,\"roster_id\":...,\"rank\":1,\"summary\":...,\"analysis\":{{\"key_players\":[{{\"name\":...,\"note\":...}}],\"bench_potential\":...,\"make_or_break\":...}}}}...]}}"
 )
 
@@ -72,6 +74,33 @@ def format_users(users: List[dict], rosters: List[dict]) -> str:
 		display = u.get("display_name") or ""
 		team = preferred_team_name(u)
 		lines.append(f"- roster_id={roster_id}: {display} / {team}")
+	return "\n".join(lines)
+
+
+def build_standings(rosters: List[dict]) -> str:
+	lines: List[str] = []
+	for r in rosters:
+		rid = r.get("roster_id")
+		s = r.get("settings") or {}
+		wins = int(s.get("wins") or 0)
+		losses = int(s.get("losses") or 0)
+		ties = int(s.get("ties") or 0)
+		pf = float(s.get("fpts") or 0)
+		pa = float(s.get("fpts_against") or 0)
+		rec = f"{wins}-{losses}{('-'+str(ties)) if ties else ''}"
+		lines.append(f"- roster_id={rid}: record={rec} PF={pf} PA={pa}")
+	return "\n".join(lines)
+
+
+def build_prev_ranks(history_path: Path, prev_week: int) -> str:
+	try:
+		data = json.loads(history_path.read_text(encoding="utf-8"))
+	except Exception:
+		data = {"weeks": {}}
+	week_list = data.get("weeks", {}).get(str(prev_week), [])
+	lines = []
+	for e in week_list:
+		lines.append(f"- roster_id={e.get('roster_id')}: rank={e.get('rank')} team={e.get('team_name')}")
 	return "\n".join(lines)
 
 
@@ -133,8 +162,20 @@ def main(argv: Optional[List[str]] = None) -> int:
 	teams_str = format_users(users, rosters)
 	rosters_map = build_team_lists(users, rosters, players)
 	rosters_str = "\n".join([f"- roster_id={rid}: {', '.join(players)}" for rid, players in rosters_map.items()])
+	standings_str = build_standings(rosters)
+	prev_week = max(1, week - 1)
+	history_path = Path(args.docs_dir) / "data" / f"{season}" / "history.json"
+	prev_ranks = build_prev_ranks(history_path, prev_week)
 
-	user_prompt = USER_TEMPLATE.format(season=season, week=week, teams=teams_str, rosters=rosters_str)
+	user_prompt = USER_TEMPLATE.format(
+		season=season,
+		week=week,
+		teams=teams_str,
+		rosters=rosters_str,
+		standings=standings_str,
+		prev_week=prev_week,
+		prev_ranks=prev_ranks,
+	)
 	try:
 		result = call_openai(args.model, api_key, SYSTEM_PROMPT, user_prompt, enable_web=args.enable_web)
 	except Exception as e:
