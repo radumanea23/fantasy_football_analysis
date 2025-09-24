@@ -4,135 +4,195 @@
   "week": 4,
   "rankings": [
     {
-      "roster_id": 5,
-      "team_name": "DQBuquets9",
-      "rank": 1,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 4,
-      "team_name": "DerekCal4",
-      "rank": 2,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 9,
-      "team_name": "Hit it From the Dak",
-      "rank": 3,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 2,
-      "team_name": "OTPHJSN",
-      "rank": 4,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 1,
       "team_name": "She Bledsoe I\u2019m Good",
-      "rank": 5,
-      "summary": "",
+      "roster_id": 1,
+      "rank": 1,
+      "summary": "Staying on top like a crowning glory, this team is a PPR beast with a roster that screams victory.",
       "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
+        "key_players": [
+          {
+            "name": "Jalen Hurts",
+            "note": "Flying high with his dual-threat potential, like a superhero on the field."
+          },
+          {
+            "name": "George Kittle",
+            "note": "Kittle's a must-start, but stop calling him the 'best TE'; that's just the desperation talking."
+          },
+          {
+            "name": "Jonathan Taylor",
+            "note": "Finally healthy; if only he could run away from all those trade rumors."
+          }
+        ],
+        "bench_potential": "With depth like this, even the bench players could start for most teams. Where's the bench press when you need it?",
+        "make_or_break": "Keep Hurts healthy, and the championship is yours. Don't let him get sacked like a pi\u00f1ata!"
       }
     },
     {
-      "roster_id": 12,
-      "team_name": "TClark1742",
-      "rank": 6,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 10,
-      "team_name": "benm1",
-      "rank": 7,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 11,
-      "team_name": "bwilt44",
-      "rank": 8,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 7,
-      "team_name": "evanras9",
-      "rank": 9,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 6,
-      "team_name": "jdamocles",
-      "rank": 10,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 3,
       "team_name": "maxsauers13",
-      "rank": 11,
-      "summary": "",
+      "roster_id": 3,
+      "rank": 2,
+      "summary": "Climbing the ranks with a balanced roster, but let's not kid ourselves\u2014Barkley needs to actually be on the field.",
       "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
+        "key_players": [
+          {
+            "name": "Lamar Jackson",
+            "note": "Lamar's feet are quicker than your internet connection when you see a bad trade proposal."
+          },
+          {
+            "name": "Saquon Barkley",
+            "note": "If he can stay healthy, he might just right the ship, or at least stop it from sinking."
+          }
+        ],
+        "bench_potential": "The bench is looking pretty average; maybe consider a couple of late-night waiver wire sweeps.",
+        "make_or_break": "Barkley\u2019s health is the biggest question mark. More injuries, and it's a trip to the bottom of the standings."
       }
     },
     {
-      "roster_id": 8,
-      "team_name": "schweiger14",
-      "rank": 12,
-      "summary": "",
+      "team_name": "OTPJHJSN",
+      "roster_id": 2,
+      "rank": 3,
+      "summary": "A team full of potential, but boy, it's like a buffet of 'maybe' players. Will they feast or starve?",
       "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
+        "key_players": [
+          {
+            "name": "DK Metcalf",
+            "note": "If he could catch a break as easily as he catches passes, this team would be invincible."
+          },
+          {
+            "name": "Tony Pollard",
+            "note": "Pollard is the real deal, but he needs to avoid being a one-hit-wonder."
+          }
+        ],
+        "bench_potential": "Some bench warmers could be starters elsewhere; at least they can keep the seats warm?",
+        "make_or_break": "Consistency is key; if Metcalf doesn\u2019t show up, it\u2019s game over, man!"
+      }
+    },
+    {
+      "team_name": "evanras9",
+      "roster_id": 7,
+      "rank": 4,
+      "summary": "Solid roster, but do we even know who half these guys are? Let's hope the stars align.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Stefon Diggs",
+            "note": "Diggs can score in his sleep; let's hope he doesn't start snoozing during games."
+          },
+          {
+            "name": "Josh Allen",
+            "note": "Allens's been more hit-or-miss than a blindfolded dart player lately."
+          }
+        ],
+        "bench_potential": "Bench isn't bad, but it's not exactly a blockbuster waiting to happen.",
+        "make_or_break": "If Allen gets it together, they could challenge for the title. If not, it's back to the drawing board."
+      }
+    },
+    {
+      "team_name": "schweiger14",
+      "roster_id": 8,
+      "rank": 5,
+      "summary": "Like a box of chocolates, you never know what you\u2019re gonna get. Hopefully, it's not a mouthful of disappointment.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Christian McCaffrey",
+            "note": "C-Mac is the Swiss Army knife of fantasy; if he gets hurt, it\u2019s like losing your favorite tool."
+          },
+          {
+            "name": "Ja'Marr Chase",
+            "note": "Chase is a must-start, but let's not pretend he\u2019s immune to the occasional flop."
+          }
+        ],
+        "bench_potential": "The bench looks like it could use a little more spice; maybe throw in some hot sauce?",
+        "make_or_break": "McCaffrey\u2019s health is the only thing keeping this team from true greatness."
+      }
+    },
+    {
+      "team_name": "jdamocles",
+      "roster_id": 6,
+      "rank": 6,
+      "summary": "A middle-of-the-pack team with a few diamonds in the rough, but it\u2019s rougher than a sandpaper hug.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Kyler Murray",
+            "note": "Kyler's back from injury\u2014hope he\u2019s not rusty like an old bicycle!"
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "note": "St. Brown is a fantasy darling, but don\u2019t get too cozy; he can still ghost you."
+          }
+        ],
+        "bench_potential": "Could use some bench help; it\u2019s looking more like a waiting room than a backup squad.",
+        "make_or_break": "Murray\u2019s performance could propel this team up the standings or leave them in the dust."
+      }
+    },
+    {
+      "team_name": "Hit it From the Dak",
+      "roster_id": 9,
+      "rank": 7,
+      "summary": "A struggling team that needs to find its mojo; right now, it\u2019s got all the pop of a flat soda.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Dak Prescott",
+            "note": "Dak's been more inconsistent than a WiFi connection in a basement."
+          }
+        ],
+        "bench_potential": "The bench isn't much to write home about; it's more like a postcard from the edge of irrelevance.",
+        "make_or_break": "Prescott needs to get it together, or this team will be in trouble faster than you can say 'bad trade.'"
+      }
+    },
+    {
+      "team_name": "DQBuquets9",
+      "roster_id": 5,
+      "rank": 8,
+      "summary": "This team is a hot mess, but there\u2019s a glimmer of hope. Maybe next time, just draft better?",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Tyreek Hill",
+            "note": "Hill can score from anywhere, but he can\u2019t do it all himself."
+          }
+        ],
+        "bench_potential": "Bench depth is lacking; could use a miracle or two from the waiver wire.",
+        "make_or_break": "Hill's performance is crucial; if he gets shut down, it's curtains for this team."
+      }
+    },
+    {
+      "team_name": "DerekCal4",
+      "roster_id": 4,
+      "rank": 9,
+      "summary": "This team is floundering like a fish out of water. Is it too late to tank for a better future?",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Nick Chubb",
+            "note": "Chubb's great, but he can't carry the whole team, or can he?"
+          }
+        ],
+        "bench_potential": "The bench is like a ghost town\u2014nothing but tumbleweeds.",
+        "make_or_break": "Chubb\u2019s performances are key, but if he falters, this team is in deep water."
+      }
+    },
+    {
+      "team_name": "benm1",
+      "roster_id": 10,
+      "rank": 10,
+      "summary": "The bottom of the barrel, and it smells like last week's leftovers. Someone call a hazmat team.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Mike Evans",
+            "note": "Evans needs to channel his inner superhero if he wants to save this sinking ship."
+          },
+          {
+            "name": "Joe Burrow",
+            "note": "Burrow\u2019s been MIA. Maybe he took a wrong turn on the way to the end zone?"
+          }
+        ],
+        "bench_potential": "Bench looks like it\u2019s ready for retirement. Time to shake things up!",
+        "make_or_break": "If Burrow can find his groove, maybe there's hope. If not, it's time for a complete overhaul."
       }
     }
   ]

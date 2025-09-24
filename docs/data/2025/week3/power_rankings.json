@@ -4,135 +4,203 @@
   "week": 3,
   "rankings": [
     {
-      "roster_id": 5,
-      "team_name": "DQBuquets9",
-      "rank": 1,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 4,
-      "team_name": "DerekCal4",
-      "rank": 2,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 9,
-      "team_name": "Hit it From the Dak",
-      "rank": 3,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 2,
-      "team_name": "OTPHJSN",
-      "rank": 4,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 1,
       "team_name": "She Bledsoe I\u2019m Good",
-      "rank": 5,
-      "summary": "",
+      "roster_id": 1,
+      "rank": 1,
+      "summary": "The undefeated juggernaut keeps rolling, led by a dynamic duo of Jalen Hurts and Jonathan Taylor.",
       "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
+        "key_players": [
+          {
+            "name": "Jalen Hurts",
+            "note": "A QB1 in a league of his own, but don't let him hear you call him that."
+          },
+          {
+            "name": "Jonathan Taylor",
+            "note": "Finally back in action, he\u2019s like a well-trained puppy on a leash."
+          }
+        ],
+        "bench_potential": "With the likes of George Kittle and Brandon Aiyuk on the bench, this team is like a buffet that no one can finish.",
+        "make_or_break": "If Hurts keeps spinning magic, the only breaking will be opponents\u2019 spirits."
       }
     },
     {
-      "roster_id": 12,
       "team_name": "TClark1742",
-      "rank": 6,
-      "summary": "",
+      "roster_id": 12,
+      "rank": 2,
+      "summary": "Consistent scoring keeps this team in the upper echelons despite a few close calls.",
       "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
+        "key_players": [
+          {
+            "name": "Patrick Mahomes",
+            "note": "Still the magician, but even Houdini has his off days."
+          },
+          {
+            "name": "Travis Kelce",
+            "note": "When he\u2019s not busy being a reality TV star, he\u2019s racking up yards."
+          }
+        ],
+        "bench_potential": "With Alvin Kamara and D'Andre Swift waiting for their chance, this bench is like a treasure chest of gold.",
+        "make_or_break": "If Mahomes doesn\u2019t pull a rabbit out of his hat, it might be a rough week."
       }
     },
     {
-      "roster_id": 10,
-      "team_name": "benm1",
-      "rank": 7,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 11,
-      "team_name": "bwilt44",
-      "rank": 8,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 7,
-      "team_name": "evanras9",
-      "rank": 9,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 6,
-      "team_name": "jdamocles",
-      "rank": 10,
-      "summary": "",
-      "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
-      }
-    },
-    {
-      "roster_id": 3,
       "team_name": "maxsauers13",
-      "rank": 11,
-      "summary": "",
+      "roster_id": 3,
+      "rank": 3,
+      "summary": "Saquon Barkley and Lamar Jackson have shown flashes of brilliance, but consistency is key.",
       "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
+        "key_players": [
+          {
+            "name": "Lamar Jackson",
+            "note": "Running more than a marathon runner in a hurry."
+          },
+          {
+            "name": "Saquon Barkley",
+            "note": "When healthy, he\u2019s a top-tier RB; when not, he\u2019s just a bench ornament."
+          }
+        ],
+        "bench_potential": "With Trevor Lawrence and Tee Higgins sitting there, the bench might as well be a throne room.",
+        "make_or_break": "Jackson needs to keep the magic alive; otherwise, it could be a pumpkin carriage situation."
       }
     },
     {
-      "roster_id": 8,
-      "team_name": "schweiger14",
-      "rank": 12,
-      "summary": "",
+      "team_name": "evanras9",
+      "roster_id": 7,
+      "rank": 4,
+      "summary": "This team is hanging in there with a balanced attack, but they need more from Derrick Henry.",
       "analysis": {
-        "key_players": [],
-        "bench_potential": "",
-        "make_or_break": ""
+        "key_players": [
+          {
+            "name": "Derrick Henry",
+            "note": "The king of the hill is running uphill with a boulder."
+          },
+          {
+            "name": "Stefon Diggs",
+            "note": "If only he could dig his way out of the fantasy abyss."
+          }
+        ],
+        "bench_potential": "With players like Kyren Williams and David Montgomery waiting for their shot, the bench is a gold mine.",
+        "make_or_break": "Henry needs to step up or this team might just step back into mediocrity."
+      }
+    },
+    {
+      "team_name": "schweiger14",
+      "roster_id": 8,
+      "rank": 5,
+      "summary": "Christian McCaffrey is a beast, but the rest of the squad needs to catch up to keep pace.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Christian McCaffrey",
+            "note": "The Swiss army knife of fantasy."
+          },
+          {
+            "name": "Ja'Marr Chase",
+            "note": "A wide receiver that could literally catch a cold."
+          }
+        ],
+        "bench_potential": "With Tua and Deebo on the bench, this team has more options than a menu at a diner.",
+        "make_or_break": "McCaffrey needs to keep producing; otherwise, it\u2019s a one-man show."
+      }
+    },
+    {
+      "team_name": "jdamocles",
+      "roster_id": 6,
+      "rank": 6,
+      "summary": "Struggling to find consistency, but Amon-Ra St. Brown is shining bright amidst the clouds.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Amon-Ra St. Brown",
+            "note": "The sun in this otherwise gloomy fantasy forecast."
+          },
+          {
+            "name": "Bijan Robinson",
+            "note": "Rookie of the year candidate if he keeps it up."
+          }
+        ],
+        "bench_potential": "The bench is a complete circus; let\u2019s hope they don\u2019t juggle any injuries.",
+        "make_or_break": "If St. Brown has a bad week, the whole team might just throw in the towel."
+      }
+    },
+    {
+      "team_name": "benm1",
+      "roster_id": 10,
+      "rank": 7,
+      "summary": "A team without a win, but don\u2019t count them out; this squad has potential.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Breece Hall",
+            "note": "Looks like a Hall of Famer in the making, but needs to wake up."
+          },
+          {
+            "name": "Joe Burrow",
+            "note": "When he\u2019s not injured, he\u2019s a top QB; when he is, he\u2019s a ghost."
+          }
+        ],
+        "bench_potential": "With players like Kyle Pitts, this bench might just pull a rabbit out of a hat.",
+        "make_or_break": "Burrow needs to find his groove or it\u2019ll be a long season of 'what could have been.'"
+      }
+    },
+    {
+      "team_name": "Hit it From the Dak",
+      "roster_id": 9,
+      "rank": 8,
+      "summary": "Dak Prescott isn\u2019t exactly lighting it up, and the rest of the team needs a kick in the pants.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "CeeDee Lamb",
+            "note": "More like CeeDee 'meh' lately."
+          },
+          {
+            "name": "Austin Ekeler",
+            "note": "Waiting for him to return to form like it\u2019s a lost art."
+          }
+        ],
+        "bench_potential": "With players like Kenneth Walker, there\u2019s potential, but it\u2019s like finding a needle in a haystack.",
+        "make_or_break": "If Prescott can\u2019t find his rhythm, this team is in deep trouble."
+      }
+    },
+    {
+      "team_name": "DQBuquets9",
+      "roster_id": 5,
+      "rank": 9,
+      "summary": "This team is like a rollercoaster ride\u2014thrilling at times but mostly just nauseating.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Justin Jefferson",
+            "note": "The shining star, but he can\u2019t do it alone."
+          },
+          {
+            "name": "Aaron Jones",
+            "note": "More like Aaron 'who?' lately."
+          }
+        ],
+        "bench_potential": "With Kincaid and Gesicki, the bench might as well be a strategy guide for a game no one wants to play.",
+        "make_or_break": "If Jefferson doesn\u2019t show up, it\u2019s game over, man."
+      }
+    },
+    {
+      "team_name": "DerekCal4",
+      "roster_id": 4,
+      "rank": 10,
+      "summary": "An abysmal start to the season; it feels like they\u2019re playing with one hand tied behind their back.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Nick Chubb",
+            "note": "The only bright spot, but he's been more 'meh' than magnificent."
+          },
+          {
+            "name": "Lamar Jackson",
+            "note": "When he\u2019s not busy running for his life, he\u2019s running for the end zone."
+          }
+        ],
+        "bench_potential": "With Cole Kmet and Jake Ferguson, this bench is more like a waiting room.",
+        "make_or_break": "If they can\u2019t turn this ship around, it\u2019ll be a long, lonely season."
       }
     }
   ]
