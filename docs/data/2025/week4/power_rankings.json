@@ -7,399 +7,241 @@
       "team_name": "She Bledsoe I\u2019m Good",
       "roster_id": 1,
       "rank": 1,
-      "summary": "Still undefeated and rolling like a freight train.",
+      "summary": "Still unbeaten and flexing their roster like it's leg day, this team is stacked with talent, especially at WR and QB.",
       "analysis": {
         "key_players": [
           {
             "name": "Jalen Hurts",
-            "note": "The QB1 is still in MVP form."
-          },
-          {
-            "name": "George Kittle",
-            "note": "Tight end production still on point."
+            "note": "The man is like a cheat code at QB."
           },
           {
             "name": "Jonathan Taylor",
-            "note": "Finally back to full health!"
+            "note": "Finally back, like a bad penny that actually plays well."
+          },
+          {
+            "name": "Brandon Aiyuk",
+            "note": "Aiyuk up the competition like a burrito at 2 AM."
           }
         ],
-        "bench_potential": "With depth like this, the bench could start elsewhere.",
-        "make_or_break": "Avoid injuries and keep the momentum."
-      },
-      "sources": [
-        {
-          "title": "Where is she? or Where is she at? - English Language & Usage \u2026",
-          "url": "https://english.stackexchange.com/questions/546467/where-is-she-or-where-is-she-at"
-        },
-        {
-          "title": "\u6253\u6e38\u620f\u65f6\u600e\u4e48\u9a82\u8001\u5916\u6bd4\u8f83\u89e3\u6c14\uff1f - \u77e5\u4e4e",
-          "url": "https://www.zhihu.com/question/269561421"
-        }
-      ]
-    },
-    {
-      "team_name": "maxsauers13",
-      "roster_id": 3,
-      "rank": 2,
-      "summary": "Winning consistently with a potent offense.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Lamar Jackson",
-            "note": "Dual-threat elite."
-          },
-          {
-            "name": "Saquon Barkley",
-            "note": "Healthy and performing."
-          },
-          {
-            "name": "Tee Higgins",
-            "note": "Big play threat every week."
-          }
-        ],
-        "bench_potential": "Solid options ready to step up if needed.",
-        "make_or_break": "Consistency from the WR corps is crucial."
-      },
-      "sources": [
-        {
-          "title": "Get directions & show routes in Google Maps",
-          "url": "https://support.google.com/maps/answer/144339?hl=en&co=GENIE.Platform=Desktop"
-        },
-        {
-          "title": "Search by latitude & longitude in Google Maps",
-          "url": "https://support.google.com/maps/answer/18539?hl=en&co=GENIE.Platform=Desktop"
-        }
-      ]
-    },
-    {
-      "team_name": "evanras9",
-      "roster_id": 7,
-      "rank": 3,
-      "summary": "Strong performances keeping them in playoff contention.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Josh Allen",
-            "note": "The man can deliver in big spots."
-          },
-          {
-            "name": "Stefon Diggs",
-            "note": "Always a WR1."
-          },
-          {
-            "name": "Derrick Henry",
-            "note": "Still a powerhouse."
-          }
-        ],
-        "bench_potential": "Quality depth with potential starters.",
-        "make_or_break": "Can they maintain health and form?"
-      },
-      "sources": [
-        {
-          "title": "Prof. Dr. \u4e0e Prof.\u6709\u4ec0\u4e48\u533a\u522b\uff1f - \u77e5\u4e4e",
-          "url": "https://www.zhihu.com/question/19957221"
-        },
-        {
-          "title": "\u4e3a\u4ec0\u4e48\u6709\u7684\u6559\u6388\u7684title\u662fProf\u6709\u7684\u662fDr\uff1f - \u77e5\u4e4e",
-          "url": "https://www.zhihu.com/question/323204207"
-        }
-      ]
+        "bench_potential": "With Mason Taylor and George Kittle on the bench, it's like having a Ferrari in the garage.",
+        "make_or_break": "Keep Hurts healthy and this team could ride the wave to the championship!"
+      }
     },
     {
       "team_name": "TClark1742",
       "roster_id": 12,
-      "rank": 4,
-      "summary": "A force with a solid QB duo and strong skill players.",
+      "rank": 2,
+      "summary": "With Mahomes and Kelce leading the charge, this roster is as potent as a double shot of espresso.",
       "analysis": {
         "key_players": [
           {
             "name": "Patrick Mahomes",
-            "note": "Still among the best."
+            "note": "He\u2019s doing magic tricks on the field, just don\u2019t let him throw left-handed."
           },
           {
             "name": "Travis Kelce",
-            "note": "Reliability at tight end."
+            "note": "Still the top TE, and not just because of his dating life."
           },
           {
-            "name": "Alvin Kamara",
-            "note": "Back from suspension and ready to roll."
+            "name": "Jahmyr Gibbs",
+            "note": "This rookie is starting to show why he was a first-round pick."
           }
         ],
-        "bench_potential": "Solid options if injuries hit.",
-        "make_or_break": "Need Mahomes to keep slinging."
-      },
-      "sources": [
-        {
-          "title": "TypeError: \u2018list\u2019 object is not callable in Python - Its Linux FOSS",
-          "url": "https://itslinuxfoss.com/type-error-list-object-callable-python/"
-        },
-        {
-          "title": "How to fix \"'list' object is not callable\" in Python",
-          "url": "https://www.geeksforgeeks.org/python/how-to-fix-list-object-is-not-callable-in-python/"
-        }
-      ]
+        "bench_potential": "With Kamara and Dobbins on the bench, it\u2019s a buffet of talent waiting to be served.",
+        "make_or_break": "Staying healthy and consistent will keep this team in contention."
+      }
     },
     {
-      "team_name": "schweiger14",
-      "roster_id": 8,
-      "rank": 5,
-      "summary": "Consistency and depth making for a formidable lineup.",
+      "team_name": "maxsauers13",
+      "roster_id": 3,
+      "rank": 3,
+      "summary": "Breaking into the top three, this team combines veteran savvy with rookie energy.",
       "analysis": {
         "key_players": [
           {
-            "name": "Christian McCaffrey",
-            "note": "A true PPR monster."
+            "name": "Lamar Jackson",
+            "note": "The human highlight reel, but please stop getting hurt!"
           },
           {
-            "name": "Ja'Marr Chase",
-            "note": "Always a threat."
+            "name": "Saquon Barkley",
+            "note": "If he can stay on the field, he\u2019s a game-changer."
           },
           {
-            "name": "Tua Tagovailoa",
-            "note": "Showing he can lead."
+            "name": "Tee Higgins",
+            "note": "As dependable as your morning coffee... unless he gets double-teamed."
           }
         ],
-        "bench_potential": "Good depth, ready to capitalize.",
-        "make_or_break": "Injuries could derail their playoff push."
-      },
-      "sources": [
-        {
-          "title": "Microsoft \u2013 AI, Cloud, Productivity, Computing, Gaming & Apps",
-          "url": "https://www.microsoft.com/en-us?msockid=30acfe21fee861b80a75e850ff0a60c0"
-        },
-        {
-          "title": "Microsoft account | Sign In or Create Your Account Today \u2013 Microsoft",
-          "url": "https://account.microsoft.com/account"
-        }
-      ]
-    },
-    {
-      "team_name": "benm1",
-      "roster_id": 10,
-      "rank": 6,
-      "summary": "Struggling but has potential for an upswing.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Joe Burrow",
-            "note": "Needs to find his rhythm."
-          },
-          {
-            "name": "Mike Evans",
-            "note": "Still a reliable WR."
-          },
-          {
-            "name": "Breece Hall",
-            "note": "Looking to be a key piece."
-          }
-        ],
-        "bench_potential": "Young talents could surprise.",
-        "make_or_break": "Burrow must perform to salvage the season."
-      },
-      "sources": [
-        {
-          "title": "Microsoft campus - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Microsoft_campus"
-        },
-        {
-          "title": "Microsoft Headquarters 1 in Redmond, WA 98052 - (888) 7...",
-          "url": "https://www.chamberofcommerce.com/business-directory/washington/redmond/software-company/32777015-microsoft-headquarters-1"
-        }
-      ]
+        "bench_potential": "Solid options like Kendre Miller waiting to step up.",
+        "make_or_break": "Consistency from the RBs will determine if this team can compete."
+      }
     },
     {
       "team_name": "jdamocles",
       "roster_id": 6,
-      "rank": 7,
-      "summary": "Mid-pack but with flashes of brilliance.",
+      "rank": 4,
+      "summary": "With a mixed bag of stars and potential, they need a few players to step up to avoid the dreaded mediocrity zone.",
       "analysis": {
         "key_players": [
           {
-            "name": "Bijan Robinson",
-            "note": "Rookie sensation."
-          },
-          {
             "name": "Amon-Ra St. Brown",
-            "note": "Solid WR1."
+            "note": "He's the shining star in a sea of question marks."
           },
           {
             "name": "Kyler Murray",
-            "note": "Returning soon to shake things up."
+            "note": "He\u2019s got the talent; now we just need the focus."
+          },
+          {
+            "name": "Bijan Robinson",
+            "note": "Rookie sensation, but don't expect him to carry the team yet."
           }
         ],
-        "bench_potential": "Could see some lineup changes with Murray's return.",
-        "make_or_break": "Murray's return could be a game changer."
-      },
-      "sources": [
-        {
-          "title": "Used Cars for Sale in Wichita, KS (with Photos) - CARFAX",
-          "url": "https://www.carfax.com/Used-Cars-in-Wichita-KS_c23075?msockid=30acfe21fee861b80a75e850ff0a60c0"
-        },
-        {
-          "title": "Used Cars for Sale Near Me in Wichita, KS - Autotrader",
-          "url": "https://www.autotrader.com/cars-for-sale/wichita-ks?msockid=30acfe21fee861b80a75e850ff0a60c0"
-        }
-      ]
+        "bench_potential": "If the RBs find their footing, it could turn into a juggernaut.",
+        "make_or_break": "Murray needs to be the MVP he can be to elevate this team."
+      }
     },
     {
-      "team_name": "OTPHSN",
-      "roster_id": 2,
-      "rank": 8,
-      "summary": "Fighting an uphill battle but talent is there.",
+      "team_name": "evanras9",
+      "roster_id": 7,
+      "rank": 5,
+      "summary": "Doing well, but relying heavily on a few stars. Take care of those knees, Diggs!",
       "analysis": {
         "key_players": [
           {
-            "name": "Tyler Lockett",
-            "note": "Consistent performer."
+            "name": "Stefon Diggs",
+            "note": "If he gets open, he\u2019s a walking touchdown."
           },
           {
+            "name": "Josh Allen",
+            "note": "Can\u2019t rely on him to run every play, but it\u2019s a good backup plan."
+          },
+          {
+            "name": "Derrick Henry",
+            "note": "Still a beast, but how much longer can he keep it up?"
+          }
+        ],
+        "bench_potential": "A couple of hidden gems just waiting for their chance.",
+        "make_or_break": "Injuries could derail this team's playoff hopes."
+      }
+    },
+    {
+      "team_name": "OTPHJSN",
+      "roster_id": 2,
+      "rank": 6,
+      "summary": "A rollercoaster of a roster with plenty of upside, but consistency is key.",
+      "analysis": {
+        "key_players": [
+          {
             "name": "Chris Godwin",
-            "note": "Solid PPR contributor."
+            "note": "Solid WR, but needs to find the end zone more."
           },
           {
             "name": "Tony Pollard",
-            "note": "Needs to step up."
+            "note": "If he can avoid injury, he\u2019s a great RB2."
+          },
+          {
+            "name": "Brock Bowers",
+            "note": "Rookie TE that could be the next big thing."
           }
         ],
-        "bench_potential": "Some intriguing prospects waiting for a chance.",
-        "make_or_break": "Lockett and Godwin need to deliver."
+        "bench_potential": "With Geno Smith on the bench, it\u2019s not all doom and gloom.",
+        "make_or_break": "Finding steady production from the WRs will be crucial."
+      }
+    },
+    {
+      "team_name": "Hit it From the Dak",
+      "roster_id": 9,
+      "rank": 7,
+      "summary": "Off to a rough start but has players that could turn it around in a flash.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "CeeDee Lamb",
+            "note": "A star waiting to shine; just needs Dak to find him."
+          },
+          {
+            "name": "Austin Ekeler",
+            "note": "When healthy, he's a game-wrecker."
+          },
+          {
+            "name": "Chris Olave",
+            "note": "Rookie with potential, but he needs to be consistent."
+          }
+        ],
+        "bench_potential": "A couple of promising rookies could become key contributors.",
+        "make_or_break": "Consistency from Dak and the O-line will determine their fate."
       }
     },
     {
       "team_name": "DQBuquets9",
       "roster_id": 5,
-      "rank": 9,
-      "summary": "Struggling but potential remains.",
+      "rank": 8,
+      "summary": "Struggling to find their footing, but there\u2019s talent lurking in the shadows.",
       "analysis": {
         "key_players": [
-          {
-            "name": "Tyreek Hill",
-            "note": "Always a game-changer."
-          },
           {
             "name": "Justin Jefferson",
-            "note": "Top-tier WR when healthy."
+            "note": "The best WR in the league; just needs someone to throw to him."
           },
           {
-            "name": "Jordan Love",
-            "note": "Needs to find his footing."
+            "name": "Mark Andrews",
+            "note": "A top TE, but can he save the day alone?"
+          },
+          {
+            "name": "Rhamondre Stevenson",
+            "note": "Needs to step up and be the lead back."
           }
         ],
-        "bench_potential": "A few young guys could surprise.",
-        "make_or_break": "Health and QB play are critical."
-      },
-      "sources": [
-        {
-          "title": "1 EUR to INR - Euros to Indian Rupees Exchange Rate - Xe",
-          "url": "https://www.xe.com/en/currencyconverter/convert/?Amount=1&From=EUR&To=INR"
-        },
-        {
-          "title": "1 Euro (EUR) to Indian Rupees (INR) today - Exchange Rate",
-          "url": "https://exchangerate.guru/eur/inr/1/"
-        }
-      ]
-    },
-    {
-      "team_name": "Hit it From the Dak",
-      "roster_id": 9,
-      "rank": 10,
-      "summary": "Rebuilding phase with some bright spots.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Dak Prescott",
-            "note": "Needs to find consistency."
-          },
-          {
-            "name": "CeeDee Lamb",
-            "note": "Potential WR1."
-          },
-          {
-            "name": "Austin Ekeler",
-            "note": "Injury concerns but elite."
-          }
-        ],
-        "bench_potential": "Some rookies could emerge.",
-        "make_or_break": "Prescott's performance will dictate success."
-      },
-      "sources": [
-        {
-          "title": "\u54c8\u5c14\u6ee8\u5de5\u4e1a\u5927\u5b66",
-          "url": "https://www.hit.edu.cn/"
-        },
-        {
-          "title": "\u6559\u5b66\u4e0e\u79d1\u7814\u673a\u6784 - \u54c8\u5c14\u6ee8\u5de5\u4e1a\u5927\u5b66",
-          "url": "https://www.hit.edu.cn/11589/list.htm"
-        }
-      ]
-    },
-    {
-      "team_name": "DerekCal4",
-      "roster_id": 4,
-      "rank": 11,
-      "summary": "In dire need of a turnaround.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Nick Chubb",
-            "note": "Injured, tough loss."
-          },
-          {
-            "name": "Michael Penix",
-            "note": "Needs to step up."
-          },
-          {
-            "name": "Marvin Harrison",
-            "note": "Bright future ahead."
-          }
-        ],
-        "bench_potential": "Some players waiting for their shot.",
-        "make_or_break": "Injuries are crippling the lineup."
-      },
-      "sources": [
-        {
-          "title": "ChatGBT - Use Unlimited Free",
-          "url": "https://chatgbt.one/"
-        },
-        {
-          "title": "What is DeepSeek? - ChatGBT",
-          "url": "https://chatgbt.one/what-is-deepseek/"
-        }
-      ]
+        "bench_potential": "Potential breakout players waiting for their moment.",
+        "make_or_break": "A trade or two could revitalize this team."
+      }
     },
     {
       "team_name": "benm1",
       "roster_id": 10,
-      "rank": 12,
-      "summary": "Desperate for a win, but the talent is aging.",
+      "rank": 9,
+      "summary": "Struggling at the bottom of the standings, but hope springs eternal.",
       "analysis": {
         "key_players": [
           {
-            "name": "Daniel Jones",
-            "note": "Needs to elevate his game."
+            "name": "Joe Burrow",
+            "note": "Please stop wearing hoodies; it\u2019s affecting your game!"
           },
           {
-            "name": "Evan Engram",
-            "note": "Solid TE but inconsistent."
+            "name": "Mike Evans",
+            "note": "Love the talent, but age is creeping in."
           },
           {
-            "name": "Justin Fields",
-            "note": "Inconsistent performances."
+            "name": "Tyjae Spears",
+            "note": "Rookie potential, but needs to prove himself quickly."
           }
         ],
-        "bench_potential": "Some young players could be the key.",
-        "make_or_break": "Needs to find a winning formula soon."
-      },
-      "sources": [
-        {
-          "title": "Microsoft campus - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Microsoft_campus"
-        },
-        {
-          "title": "Microsoft Headquarters 1 in Redmond, WA 98052 - (888) 7...",
-          "url": "https://www.chamberofcommerce.com/business-directory/washington/redmond/software-company/32777015-microsoft-headquarters-1"
-        }
-      ]
+        "bench_potential": "A few young guys could shake things up if they get a chance.",
+        "make_or_break": "Burrow needs to find his rhythm to salvage the season."
+      }
+    },
+    {
+      "team_name": "DerekCal4",
+      "roster_id": 4,
+      "rank": 10,
+      "summary": "Trying not to trip over their own feet, this team needs to turn it around, fast.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Saquon Barkley",
+            "note": "Injuries have hurt him; can he bounce back?"
+          },
+          {
+            "name": "Michael Penix",
+            "note": "Rookie QB; let\u2019s hope he figures it out quickly."
+          },
+          {
+            "name": "Marvin Harrison",
+            "note": "A bright spot, but can\u2019t do it alone."
+          }
+        ],
+        "bench_potential": "Some young talents that could break out, but it\u2019s a gamble.",
+        "make_or_break": "Need a miracle to turn this ship around."
+      }
     }
   ]
 }
