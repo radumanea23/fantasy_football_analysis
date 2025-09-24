@@ -1,48 +1,5 @@
 {
   "league_id": "1248075580834856960",
   "season": 2025,
-  "week": 4,
-  "predictions": [
-    {
-      "home_roster_id": 1,
-      "away_roster_id": 11,
-      "predicted_winner_roster_id": 1,
-      "reasoning": "She Bledsoe I\u2019m Good is swimming in fantasy gems like Jalen Hurts and Jonathan Taylor, while bwilt44 is hoping Baker Mayfield and a hobbled Josh Jacobs can work miracles. Spoiler: They can\u2019t."
-    },
-    {
-      "home_roster_id": 2,
-      "away_roster_id": 9,
-      "predicted_winner_roster_id": 2,
-      "reasoning": "OTPHJSN has the quarterback advantage with Geno Smith, who can outgun Dak Prescott, and Chuba Hubbard likely provides more juice than Kenneth Walker. This matchup is as juicy as a ripe avocado."
-    },
-    {
-      "home_roster_id": 3,
-      "away_roster_id": 5,
-      "predicted_winner_roster_id": 3,
-      "reasoning": "maxsauers13 boasts a treasure trove with Lamar Jackson and Saquon Barkley, while DQBuquets9 is stuck riding the rollercoaster of Jordan Love and inconsistent WRs. Buckle up for a swift victory!"
-    },
-    {
-      "home_roster_id": 4,
-      "away_roster_id": 6,
-      "predicted_winner_roster_id": 4,
-      "reasoning": "DerekCal4 may not be flashy, but with Nick Chubb and Marvin Harrison, they will edge out jdamocles, whose Kyler Murray and Amon-Ra St. Brown combo won't be enough to counterbalance."
-    },
-    {
-      "home_roster_id": 7,
-      "away_roster_id": 10,
-      "predicted_winner_roster_id": 7,
-      "reasoning": "Josh Allen and Derrick Henry are a duo that even a Rams defense couldn't handle, while benm1 is starting Daniel Jones and a bunch of Uber drivers. Allen has a solid day, and it's game over!"
-    },
-    {
-      "home_roster_id": 8,
-      "away_roster_id": 12,
-      "predicted_winner_roster_id": 12,
-      "reasoning": "TClark1742 is bringing the big guns with Mahomes and Kelce, which is like bringing a bazooka to a knife fight. C.J. Stroud and Travis Etienne might be decent, but they won't put up enough fireworks."
-    }
-  ],
-  "spicy_matchup": {
-    "home_roster_id": 5,
-    "away_roster_id": 4,
-    "why": "DQBuquets9 is no slouch with elite talents like Tyreek Hill and Justin Jefferson. If Love can pull a rabbit out of the hat and his WRs wake up, they could unceremoniously spoil DerekCal4's party. Get your popcorn ready!"
-  }
+  "week": 4
 }
