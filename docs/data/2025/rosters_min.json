@@ -41,10 +41,10 @@
           "nfl_team": "NYJ"
         },
         {
-          "player_id": "4137",
-          "name": "James Conner",
-          "position": "RB",
-          "nfl_team": "ARI"
+          "player_id": "7049",
+          "name": "Jauan Jennings",
+          "position": "WR",
+          "nfl_team": "SF"
         },
         {
           "player_id": "12514",
@@ -65,10 +65,10 @@
           "nfl_team": "PHI"
         },
         {
-          "player_id": "NYJ",
-          "name": "New York",
+          "player_id": "BUF",
+          "name": "Buffalo",
           "position": "DEF",
-          "nfl_team": "NYJ"
+          "nfl_team": "BUF"
         }
       ]
     },
@@ -76,10 +76,10 @@
       "roster_id": 2,
       "starters": [
         {
-          "player_id": "8183",
-          "name": "Brock Purdy",
+          "player_id": "1373",
+          "name": "Geno Smith",
           "position": "QB",
-          "nfl_team": "SF"
+          "nfl_team": "LV"
         },
         {
           "player_id": "7594",
@@ -88,10 +88,10 @@
           "nfl_team": "CAR"
         },
         {
-          "player_id": "12533",
-          "name": "Jacory Croskey-Merritt",
+          "player_id": "8408",
+          "name": "Jordan Mason",
           "position": "RB",
-          "nfl_team": "WAS"
+          "nfl_team": "MIN"
         },
         {
           "player_id": "11632",
@@ -124,22 +124,22 @@
           "nfl_team": "DEN"
         },
         {
-          "player_id": "1373",
-          "name": "Geno Smith",
+          "player_id": "12522",
+          "name": "Cam Ward",
           "position": "QB",
-          "nfl_team": "LV"
+          "nfl_team": "TEN"
         },
         {
-          "player_id": "11539",
-          "name": "Jake Bates",
+          "player_id": "12185",
+          "name": "Spencer Shrader",
           "position": "K",
-          "nfl_team": "DET"
+          "nfl_team": "IND"
         },
         {
-          "player_id": "ARI",
-          "name": "Arizona",
+          "player_id": "SEA",
+          "name": "Seattle",
           "position": "DEF",
-          "nfl_team": "ARI"
+          "nfl_team": "SEA"
         }
       ]
     },
@@ -165,10 +165,10 @@
           "nfl_team": "PIT"
         },
         {
-          "player_id": "6801",
-          "name": "Tee Higgins",
+          "player_id": "7526",
+          "name": "Jaylen Waddle",
           "position": "WR",
-          "nfl_team": "CIN"
+          "nfl_team": "MIA"
         },
         {
           "player_id": "8146",
@@ -189,16 +189,16 @@
           "nfl_team": "BAL"
         },
         {
-          "player_id": "7526",
-          "name": "Jaylen Waddle",
+          "player_id": "6819",
+          "name": "Michael Pittman",
           "position": "WR",
-          "nfl_team": "MIA"
+          "nfl_team": "IND"
         },
         {
-          "player_id": "7523",
-          "name": "Trevor Lawrence",
+          "player_id": "4943",
+          "name": "Sam Darnold",
           "position": "QB",
-          "nfl_team": "JAX"
+          "nfl_team": "SEA"
         },
         {
           "player_id": "6650",
@@ -218,10 +218,10 @@
       "roster_id": 4,
       "starters": [
         {
-          "player_id": "11566",
-          "name": "Jayden Daniels",
+          "player_id": "7527",
+          "name": "Mac Jones",
           "position": "QB",
-          "nfl_team": "WAS"
+          "nfl_team": "SF"
         },
         {
           "player_id": "12529",
@@ -230,10 +230,10 @@
           "nfl_team": "NE"
         },
         {
-          "player_id": "8205",
-          "name": "Isiah Pacheco",
+          "player_id": "4988",
+          "name": "Nick Chubb",
           "position": "RB",
-          "nfl_team": "KC"
+          "nfl_team": "HOU"
         },
         {
           "player_id": "12530",
@@ -301,10 +301,10 @@
           "nfl_team": "BUF"
         },
         {
-          "player_id": "4199",
-          "name": "Aaron Jones",
+          "player_id": "7611",
+          "name": "Rhamondre Stevenson",
           "position": "RB",
-          "nfl_team": "MIN"
+          "nfl_team": "NE"
         },
         {
           "player_id": "6794",
@@ -319,16 +319,16 @@
           "nfl_team": "ATL"
         },
         {
-          "player_id": "5012",
-          "name": "Mark Andrews",
+          "player_id": "10236",
+          "name": "Dalton Kincaid",
           "position": "TE",
-          "nfl_team": "BAL"
+          "nfl_team": "BUF"
         },
         {
-          "player_id": "11624",
-          "name": "Xavier Worthy",
+          "player_id": "1426",
+          "name": "DeAndre Hopkins",
           "position": "WR",
-          "nfl_team": "KC"
+          "nfl_team": "BAL"
         },
         {
           "player_id": "3321",
@@ -372,10 +372,10 @@
           "nfl_team": "ATL"
         },
         {
-          "player_id": "8136",
-          "name": "Rachaad White",
+          "player_id": "12481",
+          "name": "Cam Skattebo",
           "position": "RB",
-          "nfl_team": "TB"
+          "nfl_team": "NYG"
         },
         {
           "player_id": "7547",
@@ -384,10 +384,10 @@
           "nfl_team": "DET"
         },
         {
-          "player_id": "2133",
-          "name": "Davante Adams",
+          "player_id": "12526",
+          "name": "Tetairoa McMillan",
           "position": "WR",
-          "nfl_team": "LAR"
+          "nfl_team": "CAR"
         },
         {
           "player_id": "8130",
@@ -396,10 +396,10 @@
           "nfl_team": "ARI"
         },
         {
-          "player_id": "12526",
-          "name": "Tetairoa McMillan",
+          "player_id": "4981",
+          "name": "Calvin Ridley",
           "position": "WR",
-          "nfl_team": "CAR"
+          "nfl_team": "TEN"
         },
         {
           "player_id": "4983",
@@ -420,10 +420,10 @@
           "nfl_team": "HOU"
         },
         {
-          "player_id": "LAR",
-          "name": "Los Angeles",
+          "player_id": "NE",
+          "name": "New England",
           "position": "DEF",
-          "nfl_team": "LAR"
+          "nfl_team": "NE"
         }
       ]
     },
@@ -467,10 +467,10 @@
           "nfl_team": "DET"
         },
         {
-          "player_id": "1339",
-          "name": "Zach Ertz",
-          "position": "TE",
-          "nfl_team": "WAS"
+          "player_id": "8125",
+          "name": "Calvin Austin",
+          "position": "WR",
+          "nfl_team": "PIT"
         },
         {
           "player_id": "5892",
@@ -514,16 +514,16 @@
           "nfl_team": "JAX"
         },
         {
-          "player_id": "9226",
-          "name": "De'Von Achane",
+          "player_id": "4034",
+          "name": "Christian McCaffrey",
           "position": "RB",
-          "nfl_team": "MIA"
+          "nfl_team": "SF"
         },
         {
-          "player_id": "7564",
-          "name": "Ja'Marr Chase",
+          "player_id": "9754",
+          "name": "Quentin Johnston",
           "position": "WR",
-          "nfl_team": "CIN"
+          "nfl_team": "LAC"
         },
         {
           "player_id": "5872",
@@ -538,16 +538,16 @@
           "nfl_team": "GB"
         },
         {
-          "player_id": "6783",
-          "name": "Jerry Jeudy",
+          "player_id": "7564",
+          "name": "Ja'Marr Chase",
           "position": "WR",
-          "nfl_team": "CLE"
+          "nfl_team": "CIN"
         },
         {
-          "player_id": "4034",
-          "name": "Christian McCaffrey",
+          "player_id": "9226",
+          "name": "De'Von Achane",
           "position": "RB",
-          "nfl_team": "SF"
+          "nfl_team": "MIA"
         },
         {
           "player_id": "3163",
@@ -585,10 +585,10 @@
           "nfl_team": "SEA"
         },
         {
-          "player_id": "4663",
-          "name": "Austin Ekeler",
+          "player_id": "12490",
+          "name": "Bhayshul Tuten",
           "position": "RB",
-          "nfl_team": "WAS"
+          "nfl_team": "JAX"
         },
         {
           "player_id": "6786",
@@ -603,10 +603,10 @@
           "nfl_team": "JAX"
         },
         {
-          "player_id": "5022",
-          "name": "Dallas Goedert",
+          "player_id": "7002",
+          "name": "Juwan Johnson",
           "position": "TE",
-          "nfl_team": "PHI"
+          "nfl_team": "NO"
         },
         {
           "player_id": "9500",
@@ -633,10 +633,10 @@
           "nfl_team": "PIT"
         },
         {
-          "player_id": "TB",
-          "name": "Tampa Bay",
+          "player_id": "GB",
+          "name": "Green Bay",
           "position": "DEF",
-          "nfl_team": "TB"
+          "nfl_team": "GB"
         }
       ]
     },
@@ -644,10 +644,10 @@
       "roster_id": 10,
       "starters": [
         {
-          "player_id": "6770",
-          "name": "Joe Burrow",
+          "player_id": "5870",
+          "name": "Daniel Jones",
           "position": "QB",
-          "nfl_team": "CIN"
+          "nfl_team": "IND"
         },
         {
           "player_id": "11584",
@@ -656,33 +656,15 @@
           "nfl_team": "TB"
         },
         {
-          "player_id": "8155",
-          "name": "Breece Hall",
+          "player_id": "12507",
+          "name": "Omarion Hampton",
           "position": "RB",
-          "nfl_team": "NYJ"
+          "nfl_team": "LAC"
         },
         {
           "player_id": "11635",
           "name": "Ladd McConkey",
           "position": "WR",
-          "nfl_team": "LAC"
-        },
-        {
-          "player_id": "2216",
-          "name": "Mike Evans",
-          "position": "WR",
-          "nfl_team": "TB"
-        },
-        {
-          "player_id": "4066",
-          "name": "Evan Engram",
-          "position": "TE",
-          "nfl_team": "DEN"
-        },
-        {
-          "player_id": "12507",
-          "name": "Omarion Hampton",
-          "position": "RB",
           "nfl_team": "LAC"
         },
         {
@@ -692,22 +674,40 @@
           "nfl_team": "BUF"
         },
         {
-          "player_id": "7591",
-          "name": "Justin Fields",
-          "position": "QB",
+          "player_id": "7553",
+          "name": "Kyle Pitts",
+          "position": "TE",
+          "nfl_team": "ATL"
+        },
+        {
+          "player_id": "8155",
+          "name": "Breece Hall",
+          "position": "RB",
           "nfl_team": "NYJ"
         },
         {
-          "player_id": "4227",
-          "name": "Harrison Butker",
-          "position": "K",
-          "nfl_team": "KC"
+          "player_id": "12499",
+          "name": "Elic Ayomanor",
+          "position": "WR",
+          "nfl_team": "TEN"
         },
         {
-          "player_id": "KC",
-          "name": "Kansas City",
+          "player_id": "6111",
+          "name": "Jake Browning",
+          "position": "QB",
+          "nfl_team": "CIN"
+        },
+        {
+          "player_id": "17",
+          "name": "Matt Prater",
+          "position": "K",
+          "nfl_team": "BUF"
+        },
+        {
+          "player_id": "HOU",
+          "name": "Houston",
           "position": "DEF",
-          "nfl_team": "KC"
+          "nfl_team": "HOU"
         }
       ]
     },
@@ -733,16 +733,16 @@
           "nfl_team": "GB"
         },
         {
-          "player_id": "8137",
-          "name": "George Pickens",
+          "player_id": "2133",
+          "name": "Davante Adams",
           "position": "WR",
-          "nfl_team": "DAL"
+          "nfl_team": "LAR"
         },
         {
-          "player_id": "7525",
-          "name": "DeVonta Smith",
+          "player_id": "9493",
+          "name": "Puka Nacua",
           "position": "WR",
-          "nfl_team": "PHI"
+          "nfl_team": "LAR"
         },
         {
           "player_id": "5844",
@@ -757,28 +757,28 @@
           "nfl_team": "DEN"
         },
         {
-          "player_id": "9493",
-          "name": "Puka Nacua",
+          "player_id": "7525",
+          "name": "DeVonta Smith",
           "position": "WR",
-          "nfl_team": "LAR"
+          "nfl_team": "PHI"
         },
         {
-          "player_id": "11565",
-          "name": "J.J. McCarthy",
-          "position": "QB",
-          "nfl_team": "MIN"
+          "player_id": "8137",
+          "name": "George Pickens",
+          "position": "WR",
+          "nfl_team": "DAL"
         },
         {
-          "player_id": "7839",
-          "name": "Evan McPherson",
+          "player_id": "2747",
+          "name": "Jason Myers",
           "position": "K",
-          "nfl_team": "CIN"
+          "nfl_team": "SEA"
         },
         {
-          "player_id": "SF",
-          "name": "San Francisco",
+          "player_id": "IND",
+          "name": "Indianapolis",
           "position": "DEF",
-          "nfl_team": "SF"
+          "nfl_team": "IND"
         }
       ]
     },

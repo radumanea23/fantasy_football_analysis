@@ -1,0 +1,48 @@
+{
+  "league_id": "1248075580834856960",
+  "season": 2025,
+  "week": 4,
+  "predictions": [
+    {
+      "home_roster_id": 1,
+      "away_roster_id": 11,
+      "predicted_winner_roster_id": 1,
+      "reasoning": "She Bledsoe I\u2019m Good has Jalen Hurts and Jonathan Taylor in prime form. Meanwhile, bwilt44 is relying on Baker Mayfield and a questionable bench. Sorry, T.P.O. (Team Playoff Overdrive), but this won't be your week!"
+    },
+    {
+      "home_roster_id": 2,
+      "away_roster_id": 9,
+      "predicted_winner_roster_id": 2,
+      "reasoning": "OTPHJSN has Geno Smith and a surprisingly strong WR corps. Hit it From the Dak's Dak Prescott might be in for a rough outing against tough defenses. Looks like they\u2019ll struggle to hit their mark this week!"
+    },
+    {
+      "home_roster_id": 3,
+      "away_roster_id": 5,
+      "predicted_winner_roster_id": 5,
+      "reasoning": "DQBuquets9 flaunts an elite trio of receivers in Jefferson, Hill, and Hopkins. maxsauers13\u2019s lineup has got to hope on the backs of Barkley and Jackson, which might not be enough to outgun the high-flying offense!"
+    },
+    {
+      "home_roster_id": 4,
+      "away_roster_id": 6,
+      "predicted_winner_roster_id": 4,
+      "reasoning": "DerekCal4 is chock-full of offensive firepower with Nick Chubb and Marvin Harrison. jdamocles might be hiding in the shadows, but they\u2019ll need more than Kyler Murray\u2019s magic to pull an upset here."
+    },
+    {
+      "home_roster_id": 7,
+      "away_roster_id": 10,
+      "predicted_winner_roster_id": 7,
+      "reasoning": "Josh Allen and Derrick Henry on the same team? Yes, please! evanras9\u2019s lineup is looking solid compared to the underwhelming efforts of benm1. It\u2019s a simple formula: great QB + great RB = victory!"
+    },
+    {
+      "home_roster_id": 8,
+      "away_roster_id": 12,
+      "predicted_winner_roster_id": 12,
+      "reasoning": "TClark1742 with Mahomes, A.J. Brown, and Kelce is a bona fide fantasy juggernaut. schweiger14's roster might need more than Etienne and McCaffrey to compete. Don't underestimate Patrick, T.S.A. (Team Super Alpha)!"
+    }
+  ],
+  "spicy_matchup": {
+    "home_roster_id": 6,
+    "away_roster_id": 4,
+    "why": "jdamocles could deliver a spicy upset against a well-ranked DerekCal4 team. With Bijan Robinson and Amon-Ra St. Brown, they could catch fire just when Derek least expects it. Don't sleep on Kyler's magic returning to form!"
+  }
+}

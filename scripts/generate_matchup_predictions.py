@@ -125,9 +125,10 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 	load_dotenv()
 	api_key = os.getenv("OPENAI_API_KEY")
-	if not api_key:
-		print("Missing OPENAI_API_KEY environment variable.")
-		return 2
+	fallback_mode = False
+	if not api_key or OpenAI is None:
+		# Fallback: produce deterministic predictions from ranks without OpenAI
+		fallback_mode = True
 
 	league_id = str(args.league_id)
 	season = int(args.season)
@@ -194,13 +195,78 @@ def main(argv: Optional[List[str]] = None) -> int:
 		rosters=rosters_text,
 	)
 
-	result = call_openai(args.model, api_key, SYSTEM_PROMPT, user_prompt)
+	if not fallback_mode:
+		result = call_openai(args.model, api_key, SYSTEM_PROMPT, user_prompt)
+		out = {"league_id": league_id, "season": season, "week": week, **result}
+	else:
+		# Build simple predictions: choose lower (better) rank as winner; pick closest-rank game as spicy
+		# Reconstruct matchups list (ids only) from team_info order
+		pairs = []
+		if matchups:
+			from collections import defaultdict
+			by_mid = defaultdict(list)
+			for m in matchups:
+				by_mid[m.get("matchup_id")].append(m)
+			for mid, entries in by_mid.items():
+				ids = [int(e.get("roster_id")) for e in entries if e.get("roster_id") is not None]
+				if len(ids) >= 2:
+					pairs.append((ids[0], ids[1]))
+		if not pairs:
+			rids = sorted(team_info.keys())
+			for i in range(0, len(rids), 2):
+				if i + 1 < len(rids):
+					pairs.append((rids[i], rids[i+1]))
+
+		predictions = []
+		closest = None
+		closest_delta = 999
+		for A, B in pairs:
+			ra = ranks_by_roster.get(A, 999)
+			rb = ranks_by_roster.get(B, 999)
+			winner = A if ra <= rb else B
+			ai = team_info.get(A, {"team_name": f"Team {A}"})
+			bi = team_info.get(B, {"team_name": f"Team {B}"})
+			reason = (
+				f"{ai.get('team_name')} (rank {ra}) vs {bi.get('team_name')} (rank {rb}). "
+				f"Picking the better-ranked squad this week."
+			)
+			predictions.append({
+				"home_roster_id": A,
+				"away_roster_id": B,
+				"predicted_winner_roster_id": winner,
+				"reasoning": reason,
+			})
+			d = abs((ra or 999) - (rb or 999))
+			if d < closest_delta:
+				closest_delta = d
+				closest = (A, B)
+
+		spicy = None
+		if closest:
+			A, B = closest
+			ra = ranks_by_roster.get(A, 999)
+			rb = ranks_by_roster.get(B, 999)
+			# Underdog is higher numeric rank
+			underdog = A if (ra or 999) > (rb or 999) else B
+			fav = B if underdog == A else A
+			spicy = {
+				"home_roster_id": A,
+				"away_roster_id": B,
+				"why": (
+					f"Closest ranks on the slate (Δ={closest_delta}). "
+					f"Watch for roster {underdog} to upset {fav}."
+				),
+			}
+
+		out = {"league_id": league_id, "season": season, "week": week, "predictions": predictions}
+		if spicy:
+			out["spicy_matchup"] = spicy
 
 	# Persist predictions JSON
 	out_path = data_dir / f"{season}/week{week}/matchup_predictions.json"
 	out_path.parent.mkdir(parents=True, exist_ok=True)
 	with out_path.open("w", encoding="utf-8") as f:
-		json.dump({"league_id": league_id, "season": season, "week": week, **result}, f, indent=2)
+		json.dump(out, f, indent=2)
 	print(f"Wrote: {out_path}")
 	return 0
 

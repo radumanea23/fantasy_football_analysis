@@ -1,0 +1,48 @@
+{
+  "league_id": "1248075580834856960",
+  "season": 2025,
+  "week": 3,
+  "predictions": [
+    {
+      "home_roster_id": 1,
+      "away_roster_id": 5,
+      "predicted_winner_roster_id": 5,
+      "reasoning": "DQBuquets9 is on fire with Justin Jefferson and Tyreek Hill ready to light it up. Sorry, She Bledsoe I\u2019m Good, but the defensive backs are going to have a roasting from your opponent!"
+    },
+    {
+      "home_roster_id": 2,
+      "away_roster_id": 10,
+      "predicted_winner_roster_id": 2,
+      "reasoning": "OTPHJSN\u2019s lineup has Geno Smith and a promising Chuba Hubbard. Daniel Jones will have to be Houdini to keep up with that. Not today, benm1!"
+    },
+    {
+      "home_roster_id": 3,
+      "away_roster_id": 8,
+      "predicted_winner_roster_id": 3,
+      "reasoning": "Lamar Jackson and Saquon Barkley are too much firepower for maxsauers13. Sorry, CJ Stroud; you\u2019re going to need a miracle, not just good plays."
+    },
+    {
+      "home_roster_id": 4,
+      "away_roster_id": 12,
+      "predicted_winner_roster_id": 4,
+      "reasoning": "DerekCal4 is flexing with Nick Chubb and Marvin Harrison. TClark1742 needs more than Mahomes magic to match this tough roster."
+    },
+    {
+      "home_roster_id": 6,
+      "away_roster_id": 7,
+      "predicted_winner_roster_id": 7,
+      "reasoning": "Josh Allen and Derrick Henry are a dynamic duo that jdamocles just can\u2019t handle. Sorry, Kyler, but your team looks more like a puppy than a lion this week."
+    },
+    {
+      "home_roster_id": 9,
+      "away_roster_id": 11,
+      "predicted_winner_roster_id": 9,
+      "reasoning": "Hit it From the Dak has a sharp squad with Dak Prescott and CeeDee Lamb. bwilt44\u2019s running backs need more than just good names to keep up!"
+    }
+  ],
+  "spicy_matchup": {
+    "home_roster_id": 3,
+    "away_roster_id": 8,
+    "why": "Ja'Marr Chase and Christian McCaffrey could easily flip the script for schweiger14, especially if those stars decide to have a day! It could be a miracle in the making!"
+  }
+}
