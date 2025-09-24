@@ -1,48 +1,5 @@
 {
   "league_id": "1248075580834856960",
   "season": 2025,
-  "week": 3,
-  "predictions": [
-    {
-      "home_roster_id": 1,
-      "away_roster_id": 5,
-      "predicted_winner_roster_id": 1,
-      "reasoning": "She Bledsoe I\u2019m Good has the top-ranked starting QB in Jalen Hurts and a solid supporting cast. DQBuquets9 will need a miracle from Justin Jefferson and Tyreek Hill to keep up; good luck with that!"
-    },
-    {
-      "home_roster_id": 2,
-      "away_roster_id": 10,
-      "predicted_winner_roster_id": 2,
-      "reasoning": "OTPHJSN has a sneaky good roster with Geno Smith at the helm and plenty of weapons. Benm1\u2019s lineup is as shaky as Daniel Jones\u2019 decision-making; OTPHJSN gets the W!"
-    },
-    {
-      "home_roster_id": 3,
-      "away_roster_id": 8,
-      "predicted_winner_roster_id": 3,
-      "reasoning": "Maxsauers13 is armed with Lamar Jackson and Saquon Barkley, while Schweiger14\u2019s C.J. Stroud needs more than just a rookie's luck. This matchup is one-sided enough to make a referee blush."
-    },
-    {
-      "home_roster_id": 4,
-      "away_roster_id": 12,
-      "predicted_winner_roster_id": 12,
-      "reasoning": "TClark1742 boasts Patrick Mahomes and Travis Kelce, while DerekCal4 is just trying to survive on a diet of mediocre Mac Jones. Mahomes will feast on that defense like it\u2019s Thanksgiving!"
-    },
-    {
-      "home_roster_id": 6,
-      "away_roster_id": 7,
-      "predicted_winner_roster_id": 7,
-      "reasoning": "Even with Kyler Murray back, jdamocles still can't outscore Allen and Henry. Josh Allen\u2019s going to make jdamocles wish he stayed on the bench instead of starting that overhyped QB!"
-    },
-    {
-      "home_roster_id": 9,
-      "away_roster_id": 11,
-      "predicted_winner_roster_id": 9,
-      "reasoning": "Hit it From the Dak has a solid mix of talent, while bwilt44 is a soup of randomness; Dak should slice through that defense like butter on warm toast."
-    }
-  ],
-  "spicy_matchup": {
-    "home_roster_id": 6,
-    "away_roster_id": 7,
-    "why": "jdamocles isn\u2019t the favorite, but if Kyler Murray revives his old form, it could turn Josh Allen's Sunday into a disaster. This game could be hotter than a jalape\u00f1o on a summer day!"
-  }
+  "week": 3
 }
