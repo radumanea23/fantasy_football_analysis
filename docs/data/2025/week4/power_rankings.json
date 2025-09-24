@@ -7,240 +7,220 @@
       "team_name": "She Bledsoe I\u2019m Good",
       "roster_id": 1,
       "rank": 1,
-      "summary": "Still unbeaten and flexing their roster like it's leg day, this team is stacked with talent, especially at WR and QB.",
+      "summary": "Undisputed top dog with a 6-0 record. Jalen Hurts and Jonathan Taylor leading the charge.",
       "analysis": {
         "key_players": [
           {
             "name": "Jalen Hurts",
-            "note": "The man is like a cheat code at QB."
+            "note": "Still waiting for him to start throwing to his own receivers instead of the other team."
           },
           {
             "name": "Jonathan Taylor",
-            "note": "Finally back, like a bad penny that actually plays well."
-          },
-          {
-            "name": "Brandon Aiyuk",
-            "note": "Aiyuk up the competition like a burrito at 2 AM."
+            "note": "If he stays healthy, expect him to start living up to that hype."
           }
         ],
-        "bench_potential": "With Mason Taylor and George Kittle on the bench, it's like having a Ferrari in the garage.",
-        "make_or_break": "Keep Hurts healthy and this team could ride the wave to the championship!"
-      }
-    },
-    {
-      "team_name": "TClark1742",
-      "roster_id": 12,
-      "rank": 2,
-      "summary": "With Mahomes and Kelce leading the charge, this roster is as potent as a double shot of espresso.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Patrick Mahomes",
-            "note": "He\u2019s doing magic tricks on the field, just don\u2019t let him throw left-handed."
-          },
-          {
-            "name": "Travis Kelce",
-            "note": "Still the top TE, and not just because of his dating life."
-          },
-          {
-            "name": "Jahmyr Gibbs",
-            "note": "This rookie is starting to show why he was a first-round pick."
-          }
-        ],
-        "bench_potential": "With Kamara and Dobbins on the bench, it\u2019s a buffet of talent waiting to be served.",
-        "make_or_break": "Staying healthy and consistent will keep this team in contention."
+        "bench_potential": "Solid depth with George Kittle and Adam Thielen lurking.",
+        "make_or_break": "Avoid injuries, especially at QB."
       }
     },
     {
       "team_name": "maxsauers13",
       "roster_id": 3,
-      "rank": 3,
-      "summary": "Breaking into the top three, this team combines veteran savvy with rookie energy.",
+      "rank": 2,
+      "summary": "Strong contenders with Lamar Jackson and Saquon Barkley leading the way.",
       "analysis": {
         "key_players": [
           {
             "name": "Lamar Jackson",
-            "note": "The human highlight reel, but please stop getting hurt!"
+            "note": "Dude just needs to remember that running backs are for handing off, not for playing tag."
           },
           {
             "name": "Saquon Barkley",
-            "note": "If he can stay on the field, he\u2019s a game-changer."
-          },
-          {
-            "name": "Tee Higgins",
-            "note": "As dependable as your morning coffee... unless he gets double-teamed."
+            "note": "Just needs to avoid the injury bug \u2013 again."
           }
         ],
-        "bench_potential": "Solid options like Kendre Miller waiting to step up.",
-        "make_or_break": "Consistency from the RBs will determine if this team can compete."
-      }
-    },
-    {
-      "team_name": "jdamocles",
-      "roster_id": 6,
-      "rank": 4,
-      "summary": "With a mixed bag of stars and potential, they need a few players to step up to avoid the dreaded mediocrity zone.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Amon-Ra St. Brown",
-            "note": "He's the shining star in a sea of question marks."
-          },
-          {
-            "name": "Kyler Murray",
-            "note": "He\u2019s got the talent; now we just need the focus."
-          },
-          {
-            "name": "Bijan Robinson",
-            "note": "Rookie sensation, but don't expect him to carry the team yet."
-          }
-        ],
-        "bench_potential": "If the RBs find their footing, it could turn into a juggernaut.",
-        "make_or_break": "Murray needs to be the MVP he can be to elevate this team."
+        "bench_potential": "Tons of WR depth to swap in if needed.",
+        "make_or_break": "Consistency is key. No more 2-point games, please."
       }
     },
     {
       "team_name": "evanras9",
       "roster_id": 7,
-      "rank": 5,
-      "summary": "Doing well, but relying heavily on a few stars. Take care of those knees, Diggs!",
+      "rank": 3,
+      "summary": "Solid team with Josh Allen and Stefon Diggs, but can they keep the momentum going?",
       "analysis": {
         "key_players": [
           {
-            "name": "Stefon Diggs",
-            "note": "If he gets open, he\u2019s a walking touchdown."
-          },
-          {
             "name": "Josh Allen",
-            "note": "Can\u2019t rely on him to run every play, but it\u2019s a good backup plan."
+            "note": "More turnovers than a bakery on a Sunday."
           },
           {
-            "name": "Derrick Henry",
-            "note": "Still a beast, but how much longer can he keep it up?"
+            "name": "Stefon Diggs",
+            "note": "A target machine, but he can't do it all alone."
           }
         ],
-        "bench_potential": "A couple of hidden gems just waiting for their chance.",
-        "make_or_break": "Injuries could derail this team's playoff hopes."
+        "bench_potential": "Plenty of WRs to choose from.",
+        "make_or_break": "Defense needs to step it up \u2013 they\u2019re leaking points like a broken faucet."
       }
     },
     {
       "team_name": "OTPHJSN",
       "roster_id": 2,
-      "rank": 6,
-      "summary": "A rollercoaster of a roster with plenty of upside, but consistency is key.",
+      "rank": 4,
+      "summary": "4-2 and still in the mix, but loses some luster with Geno Smith at QB.",
       "analysis": {
         "key_players": [
           {
-            "name": "Chris Godwin",
-            "note": "Solid WR, but needs to find the end zone more."
+            "name": "Geno Smith",
+            "note": "Is he a starter or just a glorified backup? We're still trying to figure that out."
           },
           {
-            "name": "Tony Pollard",
-            "note": "If he can avoid injury, he\u2019s a great RB2."
-          },
-          {
-            "name": "Brock Bowers",
-            "note": "Rookie TE that could be the next big thing."
+            "name": "Tyler Lockett",
+            "note": "Consistent as ever \u2013 at least he\u2019s not dropping the ball\u2026 usually."
           }
         ],
-        "bench_potential": "With Geno Smith on the bench, it\u2019s not all doom and gloom.",
-        "make_or_break": "Finding steady production from the WRs will be crucial."
+        "bench_potential": "Brock Purdy could be a sneaky QB option if Geno flops.",
+        "make_or_break": "Geno needs to channel his inner 2022 version."
+      }
+    },
+    {
+      "team_name": "jdamocles",
+      "roster_id": 6,
+      "rank": 5,
+      "summary": "Currently trending down with a 2-4 record, but potential is there.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Cooper Kupp",
+            "note": "Back from injury \u2013 can he carry this squad or just look pretty?"
+          },
+          {
+            "name": "Bijan Robinson",
+            "note": "Rookie sensation, but let's not pretend he\u2019s the savior just yet."
+          }
+        ],
+        "bench_potential": "Kyler Murray could bring a spark, if he ever comes back.",
+        "make_or_break": "Kupp must perform; otherwise, it's going to be a long season."
+      }
+    },
+    {
+      "team_name": "DQBuquets9",
+      "roster_id": 5,
+      "rank": 6,
+      "summary": "Struggling at 1-5, but got some big names like Tyreek Hill.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Tyreek Hill",
+            "note": "Fastest man alive, but can he outrun the rest of his team\u2019s performance?"
+          },
+          {
+            "name": "Justin Jefferson",
+            "note": "Injured, which is like losing your WiFi during a Zoom call."
+          }
+        ],
+        "bench_potential": "Limited, but who knows, maybe the backups will surprise us.",
+        "make_or_break": "Need to win now or risk losing the season."
       }
     },
     {
       "team_name": "Hit it From the Dak",
       "roster_id": 9,
       "rank": 7,
-      "summary": "Off to a rough start but has players that could turn it around in a flash.",
+      "summary": "Struggling at 2-4 but has potential with Dak and CeeDee.",
       "analysis": {
         "key_players": [
+          {
+            "name": "Dak Prescott",
+            "note": "When he\u2019s good, he\u2019s great; when he\u2019s bad, we just cry."
+          },
           {
             "name": "CeeDee Lamb",
-            "note": "A star waiting to shine; just needs Dak to find him."
-          },
-          {
-            "name": "Austin Ekeler",
-            "note": "When healthy, he's a game-wrecker."
-          },
-          {
-            "name": "Chris Olave",
-            "note": "Rookie with potential, but he needs to be consistent."
+            "note": "Can catch like a pro; just needs the ball thrown to him."
           }
         ],
-        "bench_potential": "A couple of promising rookies could become key contributors.",
-        "make_or_break": "Consistency from Dak and the O-line will determine their fate."
-      }
-    },
-    {
-      "team_name": "DQBuquets9",
-      "roster_id": 5,
-      "rank": 8,
-      "summary": "Struggling to find their footing, but there\u2019s talent lurking in the shadows.",
-      "analysis": {
-        "key_players": [
-          {
-            "name": "Justin Jefferson",
-            "note": "The best WR in the league; just needs someone to throw to him."
-          },
-          {
-            "name": "Mark Andrews",
-            "note": "A top TE, but can he save the day alone?"
-          },
-          {
-            "name": "Rhamondre Stevenson",
-            "note": "Needs to step up and be the lead back."
-          }
-        ],
-        "bench_potential": "Potential breakout players waiting for their moment.",
-        "make_or_break": "A trade or two could revitalize this team."
+        "bench_potential": "Not much, but let\u2019s hope the backups are secretly amazing.",
+        "make_or_break": "Dak needs to find his groove before this season is a bust."
       }
     },
     {
       "team_name": "benm1",
       "roster_id": 10,
-      "rank": 9,
-      "summary": "Struggling at the bottom of the standings, but hope springs eternal.",
+      "rank": 8,
+      "summary": "Still searching for their first win at 0-6. Yikes.",
       "analysis": {
         "key_players": [
           {
             "name": "Joe Burrow",
-            "note": "Please stop wearing hoodies; it\u2019s affecting your game!"
+            "note": "Still trying to shake off the rust \u2013 it\u2019s like he\u2019s trying to play in quicksand."
           },
           {
             "name": "Mike Evans",
-            "note": "Love the talent, but age is creeping in."
-          },
-          {
-            "name": "Tyjae Spears",
-            "note": "Rookie potential, but needs to prove himself quickly."
+            "note": "Just got traded \u2013 hopefully, he\u2019s got fresh legs."
           }
         ],
-        "bench_potential": "A few young guys could shake things up if they get a chance.",
-        "make_or_break": "Burrow needs to find his rhythm to salvage the season."
+        "bench_potential": "Might as well try someone new at this point.",
+        "make_or_break": "Need a miracle or a trade \u2013 either will work."
+      }
+    },
+    {
+      "team_name": "bwilt44",
+      "roster_id": 11,
+      "rank": 9,
+      "summary": "A mediocre 4-2 record but with some solid players.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Davante Adams",
+            "note": "Still a beast, but the QB situation is questionable."
+          },
+          {
+            "name": "Najee Harris",
+            "note": "Running like a turtle \u2013 at least he\u2019s not hurt... yet."
+          }
+        ],
+        "bench_potential": "Could potentially fill in with decent options from the bench.",
+        "make_or_break": "Consistency will determine if they can keep this going."
       }
     },
     {
       "team_name": "DerekCal4",
       "roster_id": 4,
       "rank": 10,
-      "summary": "Trying not to trip over their own feet, this team needs to turn it around, fast.",
+      "summary": "A sad 0-6 record \u2013 a team full of wishful thinkers.",
       "analysis": {
         "key_players": [
           {
+            "name": "Nick Chubb",
+            "note": "Injured and probably sadder than his owners."
+          },
+          {
             "name": "Saquon Barkley",
-            "note": "Injuries have hurt him; can he bounce back?"
-          },
-          {
-            "name": "Michael Penix",
-            "note": "Rookie QB; let\u2019s hope he figures it out quickly."
-          },
-          {
-            "name": "Marvin Harrison",
-            "note": "A bright spot, but can\u2019t do it alone."
+            "note": "Like a rollercoaster \u2013 hard to love when he\u2019s not on the field."
           }
         ],
-        "bench_potential": "Some young talents that could break out, but it\u2019s a gamble.",
-        "make_or_break": "Need a miracle to turn this ship around."
+        "bench_potential": "Not much, might want to consider starting a rebuild.",
+        "make_or_break": "Find any spark to avoid a complete disaster."
+      }
+    },
+    {
+      "team_name": "TClark1742",
+      "roster_id": 12,
+      "rank": 11,
+      "summary": "4-2 record but with a tendency to be inconsistent.",
+      "analysis": {
+        "key_players": [
+          {
+            "name": "Patrick Mahomes",
+            "note": "As always, can turn the game around single-handedly."
+          },
+          {
+            "name": "Travis Kelce",
+            "note": "When he\u2019s not getting double-teamed, he\u2019s a monster."
+          }
+        ],
+        "bench_potential": "Good depth, but can they put it all together?",
+        "make_or_break": "Mahomes needs to channel his inner superhero."
       }
     }
   ]

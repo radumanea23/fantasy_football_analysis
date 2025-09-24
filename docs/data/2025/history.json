@@ -132,8 +132,8 @@
         "rank": 1
       },
       {
-        "roster_id": 12,
-        "team_name": "TClark1742",
+        "roster_id": 2,
+        "team_name": "OTPHJSN",
         "rank": 2
       },
       {
@@ -142,28 +142,28 @@
         "rank": 3
       },
       {
-        "roster_id": 7,
-        "team_name": "evanras9",
+        "roster_id": 6,
+        "team_name": "jdamocles",
         "rank": 4
       },
       {
-        "roster_id": 5,
-        "team_name": "DQBuquets9",
+        "roster_id": 7,
+        "team_name": "evanras9",
         "rank": 5
       },
       {
-        "roster_id": 6,
-        "team_name": "jdamocles",
+        "roster_id": 8,
+        "team_name": "schweiger14",
         "rank": 6
-      },
-      {
-        "roster_id": 2,
-        "team_name": "OTPHJSN",
-        "rank": 7
       },
       {
         "roster_id": 9,
         "team_name": "Hit it From the Dak",
+        "rank": 7
+      },
+      {
+        "roster_id": 5,
+        "team_name": "DQBuquets9",
         "rank": 8
       },
       {
@@ -172,9 +172,14 @@
         "rank": 9
       },
       {
+        "roster_id": 11,
+        "team_name": "bwilt44",
+        "rank": 10
+      },
+      {
         "roster_id": 4,
         "team_name": "DerekCal4",
-        "rank": 10
+        "rank": 11
       }
     ],
     "4": [
@@ -184,28 +189,28 @@
         "rank": 1
       },
       {
-        "roster_id": 12,
-        "team_name": "TClark1742",
-        "rank": 2
-      },
-      {
         "roster_id": 3,
         "team_name": "maxsauers13",
-        "rank": 3
-      },
-      {
-        "roster_id": 6,
-        "team_name": "jdamocles",
-        "rank": 4
+        "rank": 2
       },
       {
         "roster_id": 7,
         "team_name": "evanras9",
-        "rank": 5
+        "rank": 3
       },
       {
         "roster_id": 2,
         "team_name": "OTPHJSN",
+        "rank": 4
+      },
+      {
+        "roster_id": 6,
+        "team_name": "jdamocles",
+        "rank": 5
+      },
+      {
+        "roster_id": 5,
+        "team_name": "DQBuquets9",
         "rank": 6
       },
       {
@@ -214,19 +219,24 @@
         "rank": 7
       },
       {
-        "roster_id": 5,
-        "team_name": "DQBuquets9",
+        "roster_id": 10,
+        "team_name": "benm1",
         "rank": 8
       },
       {
-        "roster_id": 10,
-        "team_name": "benm1",
+        "roster_id": 11,
+        "team_name": "bwilt44",
         "rank": 9
       },
       {
         "roster_id": 4,
         "team_name": "DerekCal4",
         "rank": 10
+      },
+      {
+        "roster_id": 12,
+        "team_name": "TClark1742",
+        "rank": 11
       }
     ]
   }
